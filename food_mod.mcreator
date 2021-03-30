@@ -70,26 +70,50 @@
       "ids": {},
       "registry_name": "sunflower_oil",
       "path": "~/Items"
+    },
+    {
+      "name": "ChoppingHammer",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chopping_hammer",
+      "path": "~/Items"
+    },
+    {
+      "name": "SeedSalad",
+      "type": "food",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seed_salad",
+      "path": "~/Foods"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
+      "item.food_mod.seed_salad": "Seed Salad",
       "item.food_mod.berry_jam": "Berry Jam",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
       "item.food_mod.sunflower_oil": "Sunflower Oil",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
       "item.food_mod.choco_cookie": "Choco Cookie",
+      "item.food_mod.chopping_hammer": "Chopping Hammer",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
       "item.food_mod.choco_milk": "Choco Milk"
     },
     "en_us": {
+      "item.food_mod.seed_salad": "Seed Salad",
       "item.food_mod.berry_jam": "Berry Jam Jar",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
       "item.food_mod.sunflower_oil": "Sunflower Oil",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
       "item.food_mod.choco_cookie": "Choco Chip Cookie",
+      "item.food_mod.chopping_hammer": "Chopping Hammer",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
       "item.food_mod.choco_milk": "Choco Milk"
     }
