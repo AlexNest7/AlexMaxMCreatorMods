@@ -60,6 +60,16 @@
       "ids": {},
       "registry_name": "chocolate_bar",
       "path": "~/Foods"
+    },
+    {
+      "name": "SunflowerOil",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sunflower_oil",
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -68,6 +78,7 @@
     "ru_ru": {
       "item.food_mod.berry_jam": "Berry Jam",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
+      "item.food_mod.sunflower_oil": "Sunflower Oil",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
       "item.food_mod.choco_cookie": "Choco Cookie",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
@@ -76,6 +87,7 @@
     "en_us": {
       "item.food_mod.berry_jam": "Berry Jam Jar",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
+      "item.food_mod.sunflower_oil": "Sunflower Oil",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
       "item.food_mod.choco_cookie": "Choco Chip Cookie",
       "item.food_mod.chocolate_bar": "Chocolate Bar",

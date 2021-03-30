@@ -1,0 +1,35 @@
+{
+  "_fv": 17,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "sunfloweroil",
+    "customModelName": "Normal",
+    "name": "Sunflower Oil",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "stackSize": 16,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": "Items.GLASS_BOTTLE"
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Useful for frying and making salads."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 16
+  }
+}
