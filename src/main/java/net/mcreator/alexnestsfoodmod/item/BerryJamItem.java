@@ -17,9 +17,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
+import net.mcreator.alexnestsfoodmod.procedures.BerryJamLivingSmthIsHitWithProcedure;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 
 @FoodModModElements.ModElement.Tag
 public class BerryJamItem extends FoodModModElements.ModElement {
@@ -47,7 +50,12 @@ public class BerryJamItem extends FoodModModElements.ModElement {
 
 		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.EAT;
+			return UseAction.DRINK;
+		}
+
+		@Override
+		public net.minecraft.util.SoundEvent getEatSound() {
+			return net.minecraft.util.SoundEvents.ENTITY_GENERIC_DRINK;
 		}
 
 		@Override
@@ -70,6 +78,25 @@ public class BerryJamItem extends FoodModModElements.ModElement {
 				}
 				return itemstack;
 			}
+		}
+
+		@Override
+		public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+			boolean retval = super.hitEntity(itemstack, entity, sourceentity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			World world = entity.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BerryJamLivingSmthIsHitWithProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

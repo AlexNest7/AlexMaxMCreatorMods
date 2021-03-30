@@ -188,6 +188,40 @@
       "ids": {},
       "registry_name": "sunflower_oil_craft",
       "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "BerryJamLivingSmthIsHitWith",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berry_jam_living_smth_is_hit_with",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
     }
   ],
   "variable_elements": [],
