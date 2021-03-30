@@ -5,8 +5,8 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 6,
-    "group": "am_foodmod",
+    "recipeRetstackSize": 1,
+    "group": "amfoodmod",
     "recipeShapeless": false,
     "recipeSlots": [
       {
@@ -22,25 +22,25 @@
         "value": ""
       },
       {
-        "value": "Blocks.WHEAT"
-      },
-      {
-        "value": "CUSTOM:ChocolateBar"
+        "value": "Blocks.DOUBLE_PLANT#0"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.WHEAT"
+        "value": ""
       },
       {
-        "value": "CUSTOM:ChocolateBar"
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:ChocoCookie"
+      "value": "CUSTOM:SunflowerOil"
     },
-    "name": "choco_coockies_craft",
+    "name": "sunflower_oil_craft",
     "namespace": "mod"
   }
 }
