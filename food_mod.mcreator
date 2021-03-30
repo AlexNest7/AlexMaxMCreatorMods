@@ -115,7 +115,7 @@
       "name": "BerryJamFoodEaten",
       "type": "procedure",
       "sortid": 14,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "berry_jam_food_eaten",
@@ -197,6 +197,16 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sunflower_oil_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "ChocoMilkCraft",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "choco_milk_craft",
       "path": "~/Craft_Recipes"
     }
   ],
