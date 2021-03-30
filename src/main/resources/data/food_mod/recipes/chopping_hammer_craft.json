@@ -1,0 +1,22 @@
+{
+  "group": "am_foodmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "food_mod:chopping_hammer",
+    "count": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 17,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 8,
+    "group": "am_foodmod",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "CUSTOM:ChocolateBar"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChocoCookie"
+    },
+    "name": "choco_coockies_craft",
+    "namespace": "mod"
+  }
+}

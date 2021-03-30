@@ -4,9 +4,9 @@
   "experience": 3,
   "cookingtime": 180,
   "ingredient": {
-    "item": "food_mod:raw_chopped_pork"
+    "item": "food_mod:deleted_mod_element"
   },
   "result": {
-    "item": "food_mod:cooked_chopped_pork"
+    "item": "food_mod:deleted_mod_element"
   }
 }
