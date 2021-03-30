@@ -200,6 +200,16 @@
       "path": "~/Craft_Recipes"
     },
     {
+      "name": "ChocoMilkCraft",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "choco_milk_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
       "name": "BerryJamLivingSmthIsHitWith",
       "type": "procedure",
       "sortid": 16,
