@@ -8,14 +8,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.alexnestsfoodmod.item.BrokenBerryJamJarItem;
+import net.mcreator.alexnestsfoodmod.item.BerryJamItem;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 import net.mcreator.alexnestsfoodmod.FoodModMod;
 
-import java.util.Random;
 import java.util.Map;
 
 @FoodModModElements.ModElement.Tag
@@ -55,13 +56,6 @@ public class BerryJamLivingSmthIsHitWithProcedure extends FoodModModElements.Mod
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		{
-			ItemStack _ist = (ItemStack.EMPTY);
-			if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
-				_ist.shrink(1);
-				_ist.setDamage(0);
-			}
-		}
 		if (world instanceof World && !world.isRemote()) {
 			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
@@ -71,12 +65,15 @@ public class BerryJamLivingSmthIsHitWithProcedure extends FoodModModElements.Mod
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(BerryJamItem.block, (int) (1));
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
+		}
 		if (world instanceof World && !world.isRemote()) {
 			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BrokenBerryJamJarItem.block, (int) (1)));
 			entityToSpawn.setPickupDelay((int) 10);
 			world.addEntity(entityToSpawn);
 		}
-		if (!entity.world.isRemote())
-			entity.remove();
 	}
 }

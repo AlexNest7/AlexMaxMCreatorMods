@@ -23,6 +23,9 @@
     "forDogs": false,
     "isAlwaysEdible": true,
     "animation": "drink",
-    "hasGlow": false
+    "hasGlow": false,
+    "onEaten": {
+      "name": "HotChocoFoodEaten"
+    }
   }
 }

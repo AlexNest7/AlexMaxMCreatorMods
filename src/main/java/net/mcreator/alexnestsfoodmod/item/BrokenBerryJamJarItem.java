@@ -12,11 +12,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
+import net.mcreator.alexnestsfoodmod.procedures.BrokenBerryJamJarEatenProcedure;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 
 @FoodModModElements.ModElement.Tag
 public class BrokenBerryJamJarItem extends FoodModModElements.ModElement {
@@ -51,6 +55,20 @@ public class BrokenBerryJamJarItem extends FoodModModElements.ModElement {
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("Why did you do this?"));
+		}
+
+		@Override
+		public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
+			ItemStack retval = super.onItemUseFinish(itemstack, world, entity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				BrokenBerryJamJarEatenProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

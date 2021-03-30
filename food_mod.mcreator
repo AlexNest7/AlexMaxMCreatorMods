@@ -115,7 +115,7 @@
       "name": "BerryJamFoodEaten",
       "type": "procedure",
       "sortid": 14,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "berry_jam_food_eaten",
@@ -232,36 +232,218 @@
         ]
       },
       "path": "~/Food_Rules"
+    },
+    {
+      "name": "RootAchievement",
+      "type": "achievement",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "root_achievement",
+      "path": "~/Achievements"
+    },
+    {
+      "name": "SweetTooth",
+      "type": "achievement",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sweet_tooth",
+      "path": "~/Achievements"
+    },
+    {
+      "name": "VeganAchievement",
+      "type": "achievement",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vegan_achievement",
+      "path": "~/Achievements"
+    },
+    {
+      "name": "BewareOfMosquitos",
+      "type": "achievement",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beware_of_mosquitos",
+      "path": "~/Achievements"
+    },
+    {
+      "name": "JamHater",
+      "type": "achievement",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jam_hater",
+      "path": "~/Achievements"
+    },
+    {
+      "name": "RedstoneSyrup",
+      "type": "food",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstone_syrup",
+      "path": "~/Foods"
+    },
+    {
+      "name": "RedstoneSyrupCraft",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstone_syrup_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "RedstoneSyrupFoodEaten",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstone_syrup_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
+    },
+    {
+      "name": "ChocoMilkFoodEaten",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "choco_milk_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
+    },
+    {
+      "name": "HotChocoFoodEaten",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hot_choco_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
+    },
+    {
+      "name": "CookedPorkchopFoodEaten",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_porkchop_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
+    },
+    {
+      "name": "BrokenBerryJamJarEaten",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "broken_berry_jam_jar_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
-      "item.food_mod.seed_salad": "Seed Salad",
-      "item.food_mod.berry_jam": "Berry Jam",
-      "item.food_mod.hot_chocolate": "Hot Chocolate",
-      "item.food_mod.sunflower_oil": "Sunflower Oil",
-      "item.food_mod.cooked_chopped_pork": "Cooked Chopped Pork",
-      "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
-      "item.food_mod.choco_cookie": "Choco Cookie",
-      "item.food_mod.chopping_hammer": "Chopping Hammer",
-      "item.food_mod.chocolate_bar": "Chocolate Bar",
-      "item.food_mod.choco_milk": "Choco Milk",
-      "item.food_mod.raw_chopped_pork": "Raw Chopped Pork"
+      "item.food_mod.seed_salad": "Салат из семян",
+      "item.food_mod.berry_jam": "Варенье из Сладких ягод",
+      "item.food_mod.hot_chocolate": "Горячий шоколад",
+      "advancements.beware_of_mosquitos.descr": "Джунгли - это опасное место, полное еды.",
+      "advancements.jam_hater.title": "Я, блин, ненавижу это варенье",
+      "item.food_mod.broken_berry_jam_jar": "Рахбитая банка Ягодного варенья",
+      "item.food_mod.chopping_hammer": "Отбивной молоток",
+      "item.food_mod.choco_cookie": "Гоколадное печенье",
+      "item.food_mod.redstone_syrup": "Redstone Syrup",
+      "advancements.root_achievement.descr": "Наше кулинарное приключение начинается!",
+      "item.food_mod.chocolate_bar": "Плитка шоколада",
+      "item.food_mod.choco_milk": "Шоколадное молоко",
+      "advancements.beware_of_mosquitos.title": "Остерегайся насекомых!",
+      "item.food_mod.sunflower_oil": "Подсолнечное Масло",
+      "item.food_mod.cooked_chopped_pork": "Приготовленая Свиная Отбивная",
+      "advancements.root_achievement.title": "AM Food Mod Достижения",
+      "advancements.vegan_achievement.descr": "Сделай семенной салат. И да, он съедобен.",
+      "advancements.sweet_tooth.title": "Сладкоежка",
+      "advancements.vegan_achievement.title": "100% Веганский!",
+      "item.food_mod.raw_chopped_pork": "Сырая Свиная Отбивная",
+      "advancements.sweet_tooth.descr": "Сделай плитку шоколада. Ммм, шоколад...",
+      "advancements.jam_hater.descr": "Эм...Зачем ты это сделал?"
     },
     "en_us": {
       "item.food_mod.seed_salad": "Seed Salad",
       "item.food_mod.berry_jam": "Berry Jam Jar",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
-      "item.food_mod.sunflower_oil": "Sunflower Oil",
-      "item.food_mod.cooked_chopped_pork": "Cooked Chopped Pork",
+      "advancements.beware_of_mosquitos.descr": "Jungle is a dangerous, yet rewarding place.",
+      "advancements.jam_hater.title": "Jam Hater",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
-      "item.food_mod.choco_cookie": "Choco Chip Cookie",
       "item.food_mod.chopping_hammer": "Chopping Hammer",
+      "item.food_mod.choco_cookie": "Chocolate Chip Cookie",
+      "item.food_mod.redstone_syrup": "Redstone Syrup",
+      "advancements.root_achievement.descr": "Our food tour begins here!",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
       "item.food_mod.choco_milk": "Choco Milk",
-      "item.food_mod.raw_chopped_pork": "Raw Chopped Pork"
+      "advancements.beware_of_mosquitos.title": "Beware Of Mosquitos!",
+      "item.food_mod.sunflower_oil": "Sunflower Oil",
+      "item.food_mod.cooked_chopped_pork": "Cooked Chopped Pork",
+      "advancements.root_achievement.title": "AM Food Mod Achievements",
+      "advancements.vegan_achievement.descr": "Make a seed salat! Trust me, it\u0027s edible.",
+      "advancements.sweet_tooth.title": "Sweet Tooth",
+      "advancements.vegan_achievement.title": "100% Vegan!",
+      "item.food_mod.raw_chopped_pork": "Raw Chopped Pork",
+      "advancements.sweet_tooth.descr": "Make a chocolate bar. Mmm, chocolate...",
+      "advancements.jam_hater.descr": "...Why did you do this?"
     }
   },
   "foldersRoot": {

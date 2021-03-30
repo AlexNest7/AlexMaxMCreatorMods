@@ -18,6 +18,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.alexnestsfoodmod.procedures.BerryJamLivingSmthIsHitWithProcedure;
+import net.mcreator.alexnestsfoodmod.procedures.BerryJamFoodEatenProcedure;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
 import java.util.Map;
@@ -68,6 +69,14 @@ public class BerryJamItem extends FoodModModElements.ModElement {
 		public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
 			ItemStack retval = new ItemStack(Items.GLASS_BOTTLE, (int) (1));
 			super.onItemUseFinish(itemstack, world, entity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				BerryJamFoodEatenProcedure.executeProcedure($_dependencies);
+			}
 			if (itemstack.isEmpty()) {
 				return retval;
 			} else {
