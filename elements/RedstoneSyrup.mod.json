@@ -3,29 +3,29 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "chocomilk",
+    "texture": "redstonesyrup",
     "customModelName": "Normal",
-    "name": "Choco Milk",
+    "name": "Redstone Syrup",
     "rarity": "UNCOMMON",
     "specialInfo": [
-      "It contains both chocolate and milk."
+      "Should I even drink this?"
     ],
     "creativeTab": {
       "value": "FOOD"
     },
-    "stackSize": 8,
-    "nutritionalValue": 7,
-    "saturation": 1.0,
-    "eatingSpeed": 37,
+    "stackSize": 16,
+    "nutritionalValue": 3,
+    "saturation": 0.5,
+    "eatingSpeed": 30,
     "resultItem": {
-      "value": ""
+      "value": "Items.GLASS_BOTTLE"
     },
     "forDogs": false,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "drink",
     "hasGlow": false,
     "onEaten": {
-      "name": "ChocoMilkFoodEaten"
+      "name": "RedstoneSyrupFoodEaten"
     }
   }
 }

@@ -11,21 +11,21 @@ import net.mcreator.alexnestsfoodmod.FoodModMod;
 import java.util.Map;
 
 @FoodModModElements.ModElement.Tag
-public class BerryJamFoodEatenProcedure extends FoodModModElements.ModElement {
-	public BerryJamFoodEatenProcedure(FoodModModElements instance) {
-		super(instance, 14);
+public class ChocoMilkFoodEatenProcedure extends FoodModModElements.ModElement {
+	public ChocoMilkFoodEatenProcedure(FoodModModElements instance) {
+		super(instance, 25);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				FoodModMod.LOGGER.warn("Failed to load dependency entity for procedure BerryJamFoodEaten!");
+				FoodModMod.LOGGER.warn("Failed to load dependency entity for procedure ChocoMilkFoodEaten!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 600, (int) 2, (false), (false)));
+			((LivingEntity) entity).clearActivePotions();
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 200, (int) 1, (false), (false)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.STRENGTH, (int) 600, (int) 1));
 	}
 }

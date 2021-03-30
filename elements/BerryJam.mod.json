@@ -24,6 +24,9 @@
     "isAlwaysEdible": false,
     "animation": "drink",
     "hasGlow": false,
+    "onEaten": {
+      "name": "BerryJamFoodEaten"
+    },
     "onEntityHitWith": {
       "name": "BerryJamLivingSmthIsHitWith"
     }

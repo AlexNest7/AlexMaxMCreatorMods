@@ -11,21 +11,23 @@ import net.mcreator.alexnestsfoodmod.FoodModMod;
 import java.util.Map;
 
 @FoodModModElements.ModElement.Tag
-public class BerryJamFoodEatenProcedure extends FoodModModElements.ModElement {
-	public BerryJamFoodEatenProcedure(FoodModModElements instance) {
-		super(instance, 14);
+public class RedstoneSyrupFoodEatenProcedure extends FoodModModElements.ModElement {
+	public RedstoneSyrupFoodEatenProcedure(FoodModModElements instance) {
+		super(instance, 24);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				FoodModMod.LOGGER.warn("Failed to load dependency entity for procedure BerryJamFoodEaten!");
+				FoodModMod.LOGGER.warn("Failed to load dependency entity for procedure RedstoneSyrupFoodEaten!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 600, (int) 2, (false), (false)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.GLOWING, (int) 600, (int) 1));
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 200, (int) 1, (false), (false)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, (int) 600, (int) 1));
+		if (entity instanceof LivingEntity)
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, (int) 600, (int) 1, (false), (false)));
 	}
 }
