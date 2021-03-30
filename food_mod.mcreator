@@ -90,6 +90,36 @@
       "ids": {},
       "registry_name": "seed_salad",
       "path": "~/Foods"
+    },
+    {
+      "name": "ChoppingHammerCraft",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chopping_hammer_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "ChocolateBarCraft",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chocolate_bar_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "ChocoCoockiesCraft",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "choco_coockies_craft",
+      "path": "~/Craft_Recipes"
     }
   ],
   "variable_elements": [],
