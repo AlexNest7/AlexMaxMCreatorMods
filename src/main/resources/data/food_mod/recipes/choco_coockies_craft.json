@@ -3,7 +3,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "01",
-    "2 "
+    "23"
   ],
   "key": {
     "0": {
@@ -14,10 +14,13 @@
     },
     "2": {
       "item": "minecraft:wheat"
+    },
+    "3": {
+      "item": "food_mod:chocolate_bar"
     }
   },
   "result": {
     "item": "food_mod:choco_cookie",
-    "count": 8
+    "count": 6
   }
 }
