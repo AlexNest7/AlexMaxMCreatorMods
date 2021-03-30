@@ -1,12 +1,27 @@
 
 package net.mcreator.alexnestsfoodmod.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.item.UseAction;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.Food;
+import net.minecraft.client.util.ITooltipFlag;
+
+import net.mcreator.alexnestsfoodmod.FoodModModElements;
+
+import java.util.List;
+
 @FoodModModElements.ModElement.Tag
 public class CookedChoppedPorkItem extends FoodModModElements.ModElement {
-
 	@ObjectHolder("food_mod:cooked_chopped_pork")
 	public static final Item block = null;
-
 	public CookedChoppedPorkItem(FoodModModElements instance) {
 		super(instance, 12);
 	}
@@ -15,14 +30,10 @@ public class CookedChoppedPorkItem extends FoodModModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new FoodItemCustom());
 	}
-
 	public static class FoodItemCustom extends Item {
-
 		public FoodItemCustom() {
 			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.UNCOMMON)
-					.food((new Food.Builder()).hunger(13).saturation(1.1f)
-
-							.meat().build()));
+					.food((new Food.Builder()).hunger(13).saturation(1.1f).meat().build()));
 			setRegistryName("cooked_chopped_pork");
 		}
 
@@ -40,9 +51,7 @@ public class CookedChoppedPorkItem extends FoodModModElements.ModElement {
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("A cooked piece of chopped pork."));
-			list.add(new StringTextComponent("Can't Wait to try it out!"));
+			list.add(new StringTextComponent("Can't wait to try it out!"));
 		}
-
 	}
-
 }
