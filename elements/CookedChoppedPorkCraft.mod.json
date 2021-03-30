@@ -1,0 +1,20 @@
+{
+  "_fv": 17,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 3.0,
+    "cookingTime": 180,
+    "recipeRetstackSize": 1,
+    "group": "amfoodmod",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:RawChoppedPork"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:CookedChoppedPork"
+    },
+    "name": "cooked_chopped_pork_craft",
+    "namespace": "mod"
+  }
+}

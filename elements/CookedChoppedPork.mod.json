@@ -1,0 +1,29 @@
+{
+  "_fv": 17,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "cookedporkchop",
+    "customModelName": "Normal",
+    "name": "Cooked Chopped Pork",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "A cooked piece of chopped pork.",
+      "Can't Wait to try it out!"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 13,
+    "saturation": 1.1,
+    "eatingSpeed": 35,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

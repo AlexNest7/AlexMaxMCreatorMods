@@ -90,6 +90,64 @@
       "ids": {},
       "registry_name": "seed_salad",
       "path": "~/Foods"
+    },
+    {
+      "name": "SeedSaladCraft",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seed_salad_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "RawChoppedPork",
+      "type": "food",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_chopped_pork",
+      "path": "~/Foods"
+    },
+    {
+      "name": "CookedChoppedPork",
+      "type": "food",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_chopped_pork",
+      "path": "~/Foods"
+    },
+    {
+      "name": "CookedChoppedPorkCraft",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_chopped_pork_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "BerryJamFoodEaten",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berry_jam_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
     }
   ],
   "variable_elements": [],
@@ -99,23 +157,27 @@
       "item.food_mod.seed_salad": "Seed Salad",
       "item.food_mod.berry_jam": "Berry Jam",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
-      "item.food_mod.sunflower_oil": "Sunflower Oil",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
       "item.food_mod.choco_cookie": "Choco Cookie",
       "item.food_mod.chopping_hammer": "Chopping Hammer",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
-      "item.food_mod.choco_milk": "Choco Milk"
+      "item.food_mod.choco_milk": "Choco Milk",
+      "item.food_mod.sunflower_oil": "Sunflower Oil",
+      "item.food_mod.cooked_chopped_pork": "Cooked Chopped Pork",
+      "item.food_mod.raw_chopped_pork": "Raw Chopped Pork"
     },
     "en_us": {
       "item.food_mod.seed_salad": "Seed Salad",
       "item.food_mod.berry_jam": "Berry Jam Jar",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
-      "item.food_mod.sunflower_oil": "Sunflower Oil",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
       "item.food_mod.choco_cookie": "Choco Chip Cookie",
       "item.food_mod.chopping_hammer": "Chopping Hammer",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
-      "item.food_mod.choco_milk": "Choco Milk"
+      "item.food_mod.choco_milk": "Choco Milk",
+      "item.food_mod.sunflower_oil": "Sunflower Oil",
+      "item.food_mod.cooked_chopped_pork": "Cooked Chopped Pork",
+      "item.food_mod.raw_chopped_pork": "Raw Chopped Pork"
     }
   },
   "foldersRoot": {
