@@ -220,8 +220,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -393,6 +393,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "broken_berry_jam_jar_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
+    },
+    {
+      "name": "SeedSaladEaten",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seed_salad_eaten",
       "metadata": {
         "dependencies": [
           {

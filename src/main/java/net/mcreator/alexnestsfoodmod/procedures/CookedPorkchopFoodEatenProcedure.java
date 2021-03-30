@@ -26,6 +26,6 @@ public class CookedPorkchopFoodEatenProcedure extends FoodModModElements.ModElem
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HEALTH_BOOST, (int) 400, (int) 1, (false), (false)));
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SATURATION, (int) 200, (int) 1));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SATURATION, (int) 400, (int) 1));
 	}
 }
