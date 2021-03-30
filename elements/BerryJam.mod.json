@@ -22,7 +22,10 @@
     },
     "forDogs": false,
     "isAlwaysEdible": false,
-    "animation": "eat",
-    "hasGlow": false
+    "animation": "drink",
+    "hasGlow": false,
+    "onEntityHitWith": {
+      "name": "BerryJamLivingSmthIsHitWith"
+    }
   }
 }
