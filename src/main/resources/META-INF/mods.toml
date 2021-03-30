@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="What's a license?"
+
+[[mods]]
+modId="food_mod"
+version="1.0.4"
+displayName="AlexNest's Food Mod"
+credits="Created using mod maker MCreator. Check it out!"
+displayURL="https://mcreator.net"
+authors="AlexNest"
+description='''
+My first food mod. Hope you'll like it!
+'''
+
+[[dependencies.food_mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

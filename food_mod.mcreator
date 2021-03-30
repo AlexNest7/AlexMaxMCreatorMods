@@ -1,0 +1,130 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "BerryJam",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berry_jam",
+      "path": "~/Foods"
+    },
+    {
+      "name": "BrokenBerryJamJar",
+      "type": "food",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "broken_berry_jam_jar",
+      "path": "~/Foods"
+    },
+    {
+      "name": "ChocoCookie",
+      "type": "food",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "choco_cookie",
+      "path": "~/Foods"
+    },
+    {
+      "name": "HotChocolate",
+      "type": "food",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hot_chocolate",
+      "path": "~/Foods"
+    },
+    {
+      "name": "ChocoMilk",
+      "type": "food",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "choco_milk",
+      "path": "~/Foods"
+    },
+    {
+      "name": "ChocolateBar",
+      "type": "food",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chocolate_bar",
+      "path": "~/Foods"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "ru_ru": {
+      "item.food_mod.berry_jam": "Berry Jam",
+      "item.food_mod.hot_chocolate": "Hot Chocolate",
+      "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
+      "item.food_mod.choco_cookie": "Choco Cookie",
+      "item.food_mod.chocolate_bar": "Chocolate Bar",
+      "item.food_mod.choco_milk": "Choco Milk"
+    },
+    "en_us": {
+      "item.food_mod.berry_jam": "Berry Jam Jar",
+      "item.food_mod.hot_chocolate": "Hot Chocolate",
+      "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
+      "item.food_mod.choco_cookie": "Choco Chip Cookie",
+      "item.food_mod.chocolate_bar": "Chocolate Bar",
+      "item.food_mod.choco_milk": "Choco Milk"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Achievements",
+        "children": []
+      },
+      {
+        "name": "Foods",
+        "children": []
+      },
+      {
+        "name": "Food_Rules",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Craft_Recipes",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "food_mod",
+    "modName": "AlexNest\u0027s Food Mod",
+    "version": "1.0.4",
+    "description": "My first food mod. Hope you\u0027ll like it!",
+    "author": "AlexNest",
+    "websiteURL": "https://mcreator.net",
+    "license": "What\u0027s a license?",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator. Check it out!",
+    "modElementsPackage": "net.mcreator.alexnestsfoodmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100112313
+}

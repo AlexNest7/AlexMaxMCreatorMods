@@ -1,0 +1,28 @@
+{
+  "_fv": 17,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "chococookie",
+    "customModelName": "Normal",
+    "name": "Choco Chip Cookie",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "A chocolate chip cookie. Looks tasty."
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 0.5,
+    "eatingSpeed": 30,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

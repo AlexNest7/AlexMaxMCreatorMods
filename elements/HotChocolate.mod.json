@@ -1,0 +1,28 @@
+{
+  "_fv": 17,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "hotchocolate",
+    "customModelName": "Normal",
+    "name": "Hot Chocolate",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "Ouch , it's still hot!"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 6,
+    "saturation": 0.7,
+    "eatingSpeed": 36,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false
+  }
+}

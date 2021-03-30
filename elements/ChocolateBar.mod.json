@@ -1,0 +1,28 @@
+{
+  "_fv": 17,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "chocolatebar",
+    "customModelName": "Normal",
+    "name": "Chocolate Bar",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "A delicious self-made chocolate bar."
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 32,
+    "nutritionalValue": 5,
+    "saturation": 0.6,
+    "eatingSpeed": 33,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

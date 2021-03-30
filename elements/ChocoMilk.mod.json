@@ -1,0 +1,28 @@
+{
+  "_fv": 17,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "chocomilk",
+    "customModelName": "Normal",
+    "name": "Choco Milk",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "It contains both chocolate and milk."
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 8,
+    "nutritionalValue": 7,
+    "saturation": 1.0,
+    "eatingSpeed": 37,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "drink",
+    "hasGlow": false
+  }
+}
