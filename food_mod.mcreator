@@ -115,7 +115,7 @@
       "name": "BerryJamFoodEaten",
       "type": "procedure",
       "sortid": 14,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "berry_jam_food_eaten",
