@@ -115,7 +115,7 @@
       "name": "BerryJamFoodEaten",
       "type": "procedure",
       "sortid": 14,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "berry_jam_food_eaten",
@@ -177,6 +177,16 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "chopping_hammer_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "BerryJamCraft",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berry_jam_craft",
       "path": "~/Craft_Recipes"
     },
     {
