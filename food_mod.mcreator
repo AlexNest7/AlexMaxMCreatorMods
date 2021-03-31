@@ -445,7 +445,7 @@
       "name": "KichenKnife",
       "type": "item",
       "sortid": 33,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "kichen_knife",
