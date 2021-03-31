@@ -22,7 +22,7 @@ public class ChoppingHammerItem extends FoodModModElements.ModElement {
 	@ObjectHolder("food_mod:chopping_hammer")
 	public static final Item block = null;
 	public ChoppingHammerItem(FoodModModElements instance) {
-		super(instance, 8);
+		super(instance, 30);
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class ChoppingHammerItem extends FoodModModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxDamage(40).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(ItemGroup.MISC).maxDamage(60).rarity(Rarity.COMMON));
 			setRegistryName("chopping_hammer");
 		}
 
@@ -57,7 +57,7 @@ public class ChoppingHammerItem extends FoodModModElements.ModElement {
 
 		@Override
 		public int getUseDuration(ItemStack itemstack) {
-			return 2;
+			return 1;
 		}
 
 		@Override
@@ -68,7 +68,7 @@ public class ChoppingHammerItem extends FoodModModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("A hammer used for chopping raw meat."));
+			list.add(new StringTextComponent("A hammer used for chopping meat."));
 		}
 	}
 }

@@ -1,0 +1,35 @@
+{
+  "_fv": 17,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "choppinghammer",
+    "customModelName": "Normal",
+    "name": "Chopping Hammer",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "stackSize": 53,
+    "enchantability": 0,
+    "useDuration": 1,
+    "toolType": 1.0,
+    "damageCount": 60,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 1.0,
+    "specialInfo": [
+      "A hammer used for chopping meat."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 1
+  }
+}

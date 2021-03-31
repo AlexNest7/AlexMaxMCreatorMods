@@ -72,16 +72,6 @@
       "path": "~/Items"
     },
     {
-      "name": "ChoppingHammer",
-      "type": "item",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chopping_hammer",
-      "path": "~/Items"
-    },
-    {
       "name": "SeedSalad",
       "type": "food",
       "sortid": 9,
@@ -420,6 +410,16 @@
         ]
       },
       "path": "~/Food_Rules"
+    },
+    {
+      "name": "ChoppingHammer",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chopping_hammer",
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -432,9 +432,9 @@
       "advancements.beware_of_mosquitos.descr": "Джунгли - это опасное место, но полное еды.",
       "advancements.jam_hater.title": "Я, блин, ненавижу это варенье",
       "item.food_mod.broken_berry_jam_jar": "Разбитая банка Ягодного варенья",
-      "item.food_mod.chopping_hammer": "Отбивной молоток",
       "item.food_mod.choco_cookie": "Гоколадное печенье",
       "item.food_mod.redstone_syrup": "Редстоуновый Сироп",
+      "item.food_mod.chopping_hammer": "Chopping Hammer",
       "advancements.root_achievement.descr": "Наше кулинарное приключение начинается!",
       "item.food_mod.chocolate_bar": "Плитка шоколада",
       "item.food_mod.choco_milk": "Шоколадное молоко",
@@ -456,9 +456,9 @@
       "advancements.beware_of_mosquitos.descr": "Jungle is a dangerous, yet rewarding place.",
       "advancements.jam_hater.title": "Jam Hater",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
-      "item.food_mod.chopping_hammer": "Chopping Hammer",
       "item.food_mod.choco_cookie": "Chocolate Chip Cookie",
       "item.food_mod.redstone_syrup": "Redstone Syrup",
+      "item.food_mod.chopping_hammer": "Chopping Hammer",
       "advancements.root_achievement.descr": "Our food tour begins here!",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
       "item.food_mod.choco_milk": "Choco Milk",
