@@ -1,0 +1,35 @@
+{
+  "_fv": 17,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "kichenknife",
+    "customModelName": "Normal",
+    "name": "Kichen Knife",
+    "rarity": "UNCOMMON",
+    "creativeTab": {
+      "value": "CUSTOM:AMFoodMod"
+    },
+    "stackSize": 1,
+    "enchantability": 8,
+    "useDuration": 0,
+    "toolType": 1.6,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 2.0,
+    "specialInfo": [
+      "Crab-hands dont touch this."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 1
+  }
+}
