@@ -11,7 +11,7 @@
       "A jar of sweet berry jam. Better not eat too much!"
     ],
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:AMFoodMod"
     },
     "stackSize": 1,
     "nutritionalValue": 8,

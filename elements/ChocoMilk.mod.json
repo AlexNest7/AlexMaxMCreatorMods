@@ -11,7 +11,7 @@
       "It contains both chocolate and milk."
     ],
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:AMFoodMod"
     },
     "stackSize": 8,
     "nutritionalValue": 7,

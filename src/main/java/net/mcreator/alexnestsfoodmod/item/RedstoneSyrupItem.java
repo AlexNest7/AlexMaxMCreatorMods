@@ -10,7 +10,6 @@ import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.player.PlayerEntity;
@@ -18,6 +17,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.alexnestsfoodmod.procedures.RedstoneSyrupFoodEatenProcedure;
+import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
 import java.util.Map;
@@ -38,7 +38,7 @@ public class RedstoneSyrupItem extends FoodModModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(16).rarity(Rarity.UNCOMMON)
+			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(16).rarity(Rarity.UNCOMMON)
 					.food((new Food.Builder()).hunger(3).saturation(0.5f).setAlwaysEdible().build()));
 			setRegistryName("redstone_syrup");
 		}

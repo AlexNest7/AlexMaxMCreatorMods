@@ -9,11 +9,11 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
 import java.util.List;
@@ -32,7 +32,7 @@ public class SunflowerOilItem extends FoodModModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(16).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON));
 			setRegistryName("sunflower_oil");
 		}
 

@@ -11,7 +11,7 @@
       "A chocolate chip cookie. Looks tasty."
     ],
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:AMFoodMod"
     },
     "stackSize": 64,
     "nutritionalValue": 4,

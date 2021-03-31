@@ -1,0 +1,11 @@
+{
+  "_fv": 17,
+  "_type": "tab",
+  "definition": {
+    "name": "AM Food Mod",
+    "icon": {
+      "value": "CUSTOM:ChocoCookie"
+    },
+    "showSearch": true
+  }
+}

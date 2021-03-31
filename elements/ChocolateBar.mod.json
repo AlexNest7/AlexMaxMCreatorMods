@@ -11,7 +11,7 @@
       "A delicious self-made chocolate bar."
     ],
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:AMFoodMod"
     },
     "stackSize": 32,
     "nutritionalValue": 5,

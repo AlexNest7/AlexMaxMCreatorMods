@@ -8,7 +8,7 @@
     "name": "Chopping Hammer",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AMFoodMod"
     },
     "stackSize": 53,
     "enchantability": 0,
