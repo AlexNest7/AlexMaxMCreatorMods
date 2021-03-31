@@ -1,0 +1,29 @@
+{
+  "_fv": 17,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "kichenknife",
+    "customModelName": "Normal",
+    "name": "Kitchen Knife",
+    "specialInfo": [
+      "It's pretty sharp."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:AMFoodMod"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 2,
+    "efficiency": 5.0,
+    "attackSpeed": 1.8,
+    "enchantability": 5,
+    "damageVsEntity": 3.2,
+    "usageCount": 180,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true
+  }
+}
