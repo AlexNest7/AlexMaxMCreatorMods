@@ -220,10 +220,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -490,6 +486,42 @@
       "path": "~/Food_Rules"
     },
     {
+      "name": "GlowstoneSyrupFoodEaten",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glowstone_syrup_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
+    },
+    {
+      "name": "SunflowerOilCrafted",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sunflower_oil_crafted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
+    },
+    {
       "name": "Whetstone",
       "type": "item",
       "sortid": 35,
@@ -510,24 +542,6 @@
       "path": "~/Foods"
     },
     {
-      "name": "GlowstoneSyrupFoodEaten",
-      "type": "procedure",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "glowstone_syrup_food_eaten",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Food_Rules"
-    },
-    {
       "name": "GlowstoneSyrupCraft",
       "type": "recipe",
       "sortid": 39,
@@ -536,24 +550,6 @@
       "ids": {},
       "registry_name": "glowstone_syrup_craft",
       "path": "~/Craft_Recipes"
-    },
-    {
-      "name": "SunflowerOilCrafted",
-      "type": "procedure",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sunflower_oil_crafted",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Food_Rules"
     }
   ],
   "variable_elements": [],
