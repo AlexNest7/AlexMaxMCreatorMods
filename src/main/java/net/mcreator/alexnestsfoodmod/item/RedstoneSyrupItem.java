@@ -16,6 +16,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
+import net.mcreator.alexnestsfoodmod.procedures.RedstoneSyrupOnDropProcedure;
 import net.mcreator.alexnestsfoodmod.procedures.RedstoneSyrupFoodEatenProcedure;
 import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
@@ -86,6 +87,24 @@ public class RedstoneSyrupItem extends FoodModModElements.ModElement {
 				}
 				return itemstack;
 			}
+		}
+
+		@Override
+		public boolean onDroppedByPlayer(ItemStack itemstack, PlayerEntity entity) {
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			World world = entity.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				RedstoneSyrupOnDropProcedure.executeProcedure($_dependencies);
+			}
+			return true;
 		}
 	}
 }
