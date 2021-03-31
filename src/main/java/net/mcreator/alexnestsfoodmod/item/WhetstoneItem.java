@@ -7,27 +7,22 @@ import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.Rarity;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.alexnestsfoodmod.procedures.SunflowerOilCraftedProcedure;
-import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 
 @FoodModModElements.ModElement.Tag
-public class SunflowerOilItem extends FoodModModElements.ModElement {
-	@ObjectHolder("food_mod:sunflower_oil")
+public class WhetstoneItem extends FoodModModElements.ModElement {
+	@ObjectHolder("food_mod:whetstone")
 	public static final Item block = null;
-	public SunflowerOilItem(FoodModModElements instance) {
-		super(instance, 7);
+	public WhetstoneItem(FoodModModElements instance) {
+		super(instance, 35);
 	}
 
 	@Override
@@ -36,8 +31,8 @@ public class SunflowerOilItem extends FoodModModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON));
-			setRegistryName("sunflower_oil");
+			super(new Item.Properties().group(ItemGroup.MISC).maxDamage(120).rarity(Rarity.COMMON));
+			setRegistryName("whetstone");
 		}
 
 		@Override
@@ -47,7 +42,12 @@ public class SunflowerOilItem extends FoodModModElements.ModElement {
 
 		@Override
 		public ItemStack getContainerItem(ItemStack itemstack) {
-			return new ItemStack(Items.GLASS_BOTTLE, (int) (1));
+			ItemStack retval = new ItemStack(this);
+			retval.setDamage(itemstack.getDamage() + 1);
+			if (retval.getDamage() >= retval.getMaxDamage()) {
+				return ItemStack.EMPTY;
+			}
+			return retval;
 		}
 
 		@Override
@@ -57,7 +57,7 @@ public class SunflowerOilItem extends FoodModModElements.ModElement {
 
 		@Override
 		public int getUseDuration(ItemStack itemstack) {
-			return 0;
+			return 2;
 		}
 
 		@Override
@@ -68,20 +68,7 @@ public class SunflowerOilItem extends FoodModModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("Useful for frying and making salads."));
-		}
-
-		@Override
-		public void onCreated(ItemStack itemstack, World world, PlayerEntity entity) {
-			super.onCreated(itemstack, world, entity);
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				SunflowerOilCraftedProcedure.executeProcedure($_dependencies);
-			}
+			list.add(new StringTextComponent("A stone used for sharpening knives and other stuff"));
 		}
 	}
 }

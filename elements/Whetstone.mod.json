@@ -3,36 +3,33 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "sunfloweroil",
+    "texture": "grindstone",
     "customModelName": "Normal",
-    "name": "Sunflower Oil",
+    "name": "Whetstone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:AMFoodMod"
+      "value": "MISC"
     },
-    "stackSize": 16,
+    "stackSize": 4,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 2,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 120,
     "recipeRemainder": {
-      "value": "Items.GLASS_BOTTLE"
+      "value": ""
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": true,
-    "damageOnCrafting": false,
+    "damageOnCrafting": true,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Useful for frying and making salads."
+      "A stone used for sharpening knives and other stuff"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 16,
-    "onCrafted": {
-      "name": "SunflowerOilCrafted"
-    }
+    "inventoryStackSize": 4
   }
 }
