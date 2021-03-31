@@ -72,16 +72,6 @@
       "path": "~/Items"
     },
     {
-      "name": "ChoppingHammer",
-      "type": "item",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chopping_hammer",
-      "path": "~/Items"
-    },
-    {
       "name": "SeedSalad",
       "type": "food",
       "sortid": 9,
@@ -432,7 +422,6 @@
       "advancements.beware_of_mosquitos.descr": "Джунгли - это опасное место, полное еды.",
       "advancements.jam_hater.title": "Я, блин, ненавижу это варенье",
       "item.food_mod.broken_berry_jam_jar": "Рахбитая банка Ягодного варенья",
-      "item.food_mod.chopping_hammer": "Отбивной молоток",
       "item.food_mod.choco_cookie": "Гоколадное печенье",
       "item.food_mod.redstone_syrup": "Redstone Syrup",
       "advancements.root_achievement.descr": "Наше кулинарное приключение начинается!",
@@ -456,7 +445,6 @@
       "advancements.beware_of_mosquitos.descr": "Jungle is a dangerous, yet rewarding place.",
       "advancements.jam_hater.title": "Jam Hater",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
-      "item.food_mod.chopping_hammer": "Chopping Hammer",
       "item.food_mod.choco_cookie": "Chocolate Chip Cookie",
       "item.food_mod.redstone_syrup": "Redstone Syrup",
       "advancements.root_achievement.descr": "Our food tour begins here!",
