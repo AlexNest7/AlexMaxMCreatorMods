@@ -72,6 +72,16 @@
       "path": "~/Items"
     },
     {
+      "name": "ChoppingHammer",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chopping_hammer",
+      "path": "~/Items"
+    },
+    {
       "name": "SeedSalad",
       "type": "food",
       "sortid": 9,
@@ -412,16 +422,6 @@
       "path": "~/Food_Rules"
     },
     {
-      "name": "ChoppingHammer",
-      "type": "item",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chopping_hammer",
-      "path": "~/Items"
-    },
-    {
       "name": "RawChoppedPorkCraft",
       "type": "recipe",
       "sortid": 31,
@@ -439,12 +439,11 @@
       "item.food_mod.seed_salad": "Салат из семян",
       "item.food_mod.berry_jam": "Варенье из Сладких ягод",
       "item.food_mod.hot_chocolate": "Горячий шоколад",
-      "advancements.beware_of_mosquitos.descr": "Джунгли - это опасное место, но полное еды.",
+      "advancements.beware_of_mosquitos.descr": "Джунгли - это опасное место, полное еды.",
       "advancements.jam_hater.title": "Я, блин, ненавижу это варенье",
-      "item.food_mod.broken_berry_jam_jar": "Разбитая банка Ягодного варенья",
+      "item.food_mod.broken_berry_jam_jar": "Рахбитая банка Ягодного варенья",
       "item.food_mod.choco_cookie": "Гоколадное печенье",
-      "item.food_mod.redstone_syrup": "Редстоуновый Сироп",
-      "item.food_mod.chopping_hammer": "Chopping Hammer",
+      "item.food_mod.redstone_syrup": "Redstone Syrup",
       "advancements.root_achievement.descr": "Наше кулинарное приключение начинается!",
       "item.food_mod.chocolate_bar": "Плитка шоколада",
       "item.food_mod.choco_milk": "Шоколадное молоко",
