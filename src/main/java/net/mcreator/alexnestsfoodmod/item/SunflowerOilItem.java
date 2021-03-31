@@ -10,13 +10,17 @@ import net.minecraft.item.Rarity;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.alexnestsfoodmod.procedures.SunflowerOilCraftedProcedure;
 import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 
 @FoodModModElements.ModElement.Tag
 public class SunflowerOilItem extends FoodModModElements.ModElement {
@@ -65,6 +69,19 @@ public class SunflowerOilItem extends FoodModModElements.ModElement {
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("Useful for frying and making salads."));
+		}
+
+		@Override
+		public void onCreated(ItemStack itemstack, World world, PlayerEntity entity) {
+			super.onCreated(itemstack, world, entity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				SunflowerOilCraftedProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }
