@@ -442,6 +442,16 @@
       "path": "~/CreativeTab"
     },
     {
+      "name": "KitchenKnife",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kitchen_knife",
+      "path": "~/Tools"
+    },
+    {
       "name": "RedstoneSyrupOnDrop",
       "type": "procedure",
       "sortid": 33,
@@ -474,16 +484,6 @@
         ]
       },
       "path": "~/Food_Rules"
-    },
-    {
-      "name": "KitchenKnife",
-      "type": "tool",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kitchen_knife",
-      "path": "~/Tools"
     }
   ],
   "variable_elements": [],
@@ -499,7 +499,6 @@
       "advancements.root_achievement.title": "AM Food Mod Достижения",
       "advancements.vegan_achievement.descr": "Сделай семенной салат. И да, он съедобен.",
       "advancements.sweet_tooth.title": "Сладкоежка",
-      "item.food_mod.kitchen_knife": "Kitchen Knife",
       "advancements.vegan_achievement.title": "100% Веганский!",
       "itemGroup.tabam_food_mod": "AM Food Mod",
       "advancements.sweet_tooth.descr": "Сделай плитку шоколада. Ммм, шоколад...",
@@ -525,11 +524,10 @@
       "advancements.root_achievement.title": "AM Food Mod Achievements",
       "advancements.vegan_achievement.descr": "Make a seed salat! Trust me, it\u0027s edible.",
       "advancements.sweet_tooth.title": "Sweet Tooth",
-      "item.food_mod.kitchen_knife": "Kitchen Knife",
       "advancements.vegan_achievement.title": "100% Vegan!",
       "itemGroup.tabam_food_mod": "AM Food Mod",
-      "advancements.sweet_tooth.descr": "Make a chocolate bar. Mmm, chocolate...",
       "item.food_mod.raw_chopped_pork": "Raw Chopped Pork",
+      "advancements.sweet_tooth.descr": "Make a chocolate bar. Mmm, chocolate...",
       "item.food_mod.seed_salad": "Seed Salad",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
       "advancements.beware_of_mosquitos.descr": "Jungle is a dangerous, yet rewarding place.",
@@ -554,6 +552,10 @@
         "children": []
       },
       {
+        "name": "Tools",
+        "children": []
+      },
+      {
         "name": "Craft_Recipes",
         "children": []
       },
@@ -567,10 +569,6 @@
       },
       {
         "name": "Achievements",
-        "children": []
-      },
-      {
-        "name": "Tools",
         "children": []
       }
     ]
