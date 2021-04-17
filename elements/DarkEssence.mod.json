@@ -1,0 +1,31 @@
+{
+  "_fv": 17,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "darkessence",
+    "customModelName": "Normal",
+    "name": "Dark Essence",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "I feel like I'm looking into a void..."
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 5,
+    "saturation": 0.5,
+    "eatingSpeed": 27,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "DarkEssenceFoodEaten"
+    }
+  }
+}

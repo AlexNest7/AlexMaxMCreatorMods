@@ -1,0 +1,12 @@
+{
+  "group": "amfoodmod",
+  "type": "minecraft:smelting",
+  "experience": 3,
+  "cookingtime": 160,
+  "ingredient": {
+    "item": "food_mod:void_ore"
+  },
+  "result": {
+    "item": "food_mod:dark_essence"
+  }
+}

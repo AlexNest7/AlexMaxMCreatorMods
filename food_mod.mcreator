@@ -455,7 +455,7 @@
       "name": "RedstoneSyrupOnDrop",
       "type": "procedure",
       "sortid": 33,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "redstone_syrup_on_drop",
@@ -489,7 +489,7 @@
       "name": "Skipitaster",
       "type": "gun",
       "sortid": 35,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "skipitaster",
@@ -499,7 +499,7 @@
       "name": "GlowstoneSyrupFoodEaten",
       "type": "procedure",
       "sortid": 38,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "glowstone_syrup_food_eaten",
@@ -517,7 +517,7 @@
       "name": "SunflowerOilCrafted",
       "type": "procedure",
       "sortid": 40,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sunflower_oil_crafted",
@@ -535,7 +535,7 @@
       "name": "Whetstone",
       "type": "item",
       "sortid": 35,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "whetstone",
@@ -560,6 +560,82 @@
       "ids": {},
       "registry_name": "glowstone_syrup_craft",
       "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "DarkEssence",
+      "type": "food",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence",
+      "path": "~/Foods"
+    },
+    {
+      "name": "TheAbsorber",
+      "type": "achievement",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_absorber",
+      "path": "~/Achievements"
+    },
+    {
+      "name": "VoidOre",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DarkEssenceFoodEaten",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
+    },
+    {
+      "name": "DarkEssenceCraft",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "StaffBulletEntityHit",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "staff_bullet_entity_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tool_Rules"
     }
   ],
   "variable_elements": [],
@@ -571,7 +647,10 @@
       "item.food_mod.choco_cookie": "Шоколадное печенье",
       "item.food_mod.chopping_hammer": "Отбивной молоток",
       "item.food_mod.chocolate_bar": "Плитка шоколада",
+      "advancements.the_absorber.title": "The Absorber",
       "item.food_mod.choco_milk": "Шоколадное молоко",
+      "block.food_mod.void_ore": "Void Ore",
+      "advancements.the_absorber.descr": "Absorb the darkness, become the darkness",
       "advancements.root_achievement.title": "AM Food Mod Достижения",
       "advancements.vegan_achievement.descr": "Сделай семенной салат. И да, он съедобен.",
       "advancements.sweet_tooth.title": "Сладкоежка",
@@ -582,6 +661,7 @@
       "advancements.sweet_tooth.descr": "Сделай плитку шоколада. Ммм, шоколад...",
       "item.food_mod.raw_chopped_pork": "Сырая Свиная Отбивная",
       "item.food_mod.seed_salad": "Салат из семян",
+      "item.food_mod.dark_essence": "Dark Essence",
       "item.food_mod.hot_chocolate": "Горячий шоколад",
       "advancements.beware_of_mosquitos.descr": "Джунгли - это опасное место, полное еды.",
       "advancements.jam_hater.title": "Я, блин, ненавижу это варенье",
@@ -599,7 +679,10 @@
       "item.food_mod.choco_cookie": "Chocolate Chip Cookie",
       "item.food_mod.chopping_hammer": "Chopping Hammer",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
+      "advancements.the_absorber.title": "The Absorber",
       "item.food_mod.choco_milk": "Choco Milk",
+      "block.food_mod.void_ore": "Void Ore",
+      "advancements.the_absorber.descr": "Absorb the darkness, become the darkness",
       "advancements.root_achievement.title": "AM Food Mod Achievements",
       "advancements.vegan_achievement.descr": "Make a seed salat! Trust me, it\u0027s edible.",
       "advancements.sweet_tooth.title": "Sweet Tooth",
@@ -610,6 +693,7 @@
       "item.food_mod.raw_chopped_pork": "Raw Chopped Pork",
       "advancements.sweet_tooth.descr": "Make a chocolate bar. Mmm, chocolate...",
       "item.food_mod.seed_salad": "Seed Salad",
+      "item.food_mod.dark_essence": "Dark Essence",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
       "advancements.beware_of_mosquitos.descr": "Jungle is a dangerous, yet rewarding place.",
       "advancements.jam_hater.title": "Jam Hater",
@@ -655,6 +739,14 @@
       },
       {
         "name": "Achievements",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Tool_Rules",
         "children": []
       }
     ]
