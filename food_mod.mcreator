@@ -455,7 +455,7 @@
       "name": "RedstoneSyrupOnDrop",
       "type": "procedure",
       "sortid": 33,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "redstone_syrup_on_drop",
@@ -486,20 +486,10 @@
       "path": "~/Food_Rules"
     },
     {
-      "name": "Skipitaster",
-      "type": "gun",
-      "sortid": 35,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "skipitaster",
-      "path": "~/Test"
-    },
-    {
       "name": "GlowstoneSyrupFoodEaten",
       "type": "procedure",
       "sortid": 38,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "glowstone_syrup_food_eaten",
@@ -517,7 +507,7 @@
       "name": "SunflowerOilCrafted",
       "type": "procedure",
       "sortid": 40,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "sunflower_oil_crafted",
@@ -535,7 +525,7 @@
       "name": "Whetstone",
       "type": "item",
       "sortid": 35,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "whetstone",
@@ -636,6 +626,34 @@
         ]
       },
       "path": "~/Tool_Rules"
+    },
+    {
+      "name": "FireStaff",
+      "type": "gun",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_staff",
+      "path": "~/Ranged_Weapons"
+    },
+    {
+      "name": "StaffWhenUsed",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "staff_when_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tool_Rules"
     }
   ],
   "variable_elements": [],
@@ -669,6 +687,7 @@
       "advancements.root_achievement.descr": "Наше кулинарное приключение начинается!",
       "item.food_mod.glowstone_syrup": "Glowstone Syrup",
       "advancements.beware_of_mosquitos.title": "Остерегайся насекомых!",
+      "item.food_mod.fire_staff": "Fire Staff",
       "item.food_mod.sunflower_oil": "Подсолнечное Масло",
       "item.food_mod.cooked_chopped_pork": "Приготовленая Свиная Отбивная",
       "advancements.jam_hater.descr": "Эм...Зачем ты это сделал?"
@@ -701,6 +720,7 @@
       "advancements.root_achievement.descr": "Our food tour begins here!",
       "item.food_mod.glowstone_syrup": "Glowstone Syrup",
       "advancements.beware_of_mosquitos.title": "Beware Of Mosquitos!",
+      "item.food_mod.fire_staff": "Fire Staff",
       "item.food_mod.sunflower_oil": "Sunflower Oil",
       "item.food_mod.cooked_chopped_pork": "Cooked Chopped Pork",
       "advancements.jam_hater.descr": "...Why did you do this?"
@@ -726,10 +746,6 @@
         "children": []
       },
       {
-        "name": "Test",
-        "children": []
-      },
-      {
         "name": "Foods",
         "children": []
       },
@@ -747,6 +763,10 @@
       },
       {
         "name": "Tool_Rules",
+        "children": []
+      },
+      {
+        "name": "Ranged_Weapons",
         "children": []
       }
     ]

@@ -1,0 +1,48 @@
+{
+  "_fv": 17,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "skipi",
+    "customModelName": "Normal",
+    "name": "Fire Staff",
+    "specialInfo": [
+      "I feel like i know how to use it..."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:AMFoodMod"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 50,
+    "actionSound": {
+      "value": "entity.generic.extinguish_fire"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 2.0,
+    "onRangedItemUsed": {
+      "name": "StaffWhenUsed"
+    },
+    "bulletPower": 2.0,
+    "bulletDamage": 3.9999999999999996,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Items.BLAZE_POWDER"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsPlayer": {
+      "name": "StaffBulletEntityHit"
+    },
+    "onBulletHitsEntity": {
+      "name": "StaffBulletEntityHit"
+    }
+  }
+}
