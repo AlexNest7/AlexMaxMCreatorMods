@@ -4,8 +4,8 @@ license="What's a license?"
 
 [[mods]]
 modId="food_mod"
-version="1.0.4"
-displayName="AlexNest's Food Mod"
+version="1.0.9"
+displayName="AlexNest's Food and Stuff Mod"
 credits="Created using mod maker MCreator. Check it out!"
 displayURL="https://mcreator.net"
 authors="AlexNest"

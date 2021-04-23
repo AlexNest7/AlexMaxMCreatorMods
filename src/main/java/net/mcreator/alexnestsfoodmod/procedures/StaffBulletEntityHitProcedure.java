@@ -20,6 +20,6 @@ public class StaffBulletEntityHitProcedure extends FoodModModElements.ModElement
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		entity.setFire((int) 5);
+		entity.setFire((int) 2);
 	}
 }

@@ -21,16 +21,11 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.attributes.AttributeModifier;
-import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
@@ -39,8 +34,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
+import net.minecraft.block.Blocks;
 
-import net.mcreator.alexnestsfoodmod.procedures.StaffWhenUsedProcedure;
 import net.mcreator.alexnestsfoodmod.procedures.StaffBulletEntityHitProcedure;
 import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
@@ -50,17 +45,14 @@ import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 
-import com.google.common.collect.Multimap;
-import com.google.common.collect.ImmutableMultimap;
-
 @FoodModModElements.ModElement.Tag
-public class FireStaffItem extends FoodModModElements.ModElement {
-	@ObjectHolder("food_mod:fire_staff")
+public class FireBallItem extends FoodModModElements.ModElement {
+	@ObjectHolder("food_mod:fire_ball")
 	public static final Item block = null;
-	@ObjectHolder("food_mod:entitybulletfire_staff")
+	@ObjectHolder("food_mod:entitybulletfire_ball")
 	public static final EntityType arrow = null;
-	public FireStaffItem(FoodModModElements instance) {
-		super(instance, 46);
+	public FireBallItem(FoodModModElements instance) {
+		super(instance, 48);
 	}
 
 	@Override
@@ -68,7 +60,7 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		elements.items.add(() -> new ItemRanged());
 		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletfire_staff").setRegistryName("entitybulletfire_staff"));
+				.size(0.5f, 0.5f)).build("entitybulletfire_ball").setRegistryName("entitybulletfire_ball"));
 	}
 
 	@Override
@@ -79,8 +71,8 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxDamage(65));
-			setRegistryName("fire_staff");
+			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(16));
+			setRegistryName("fire_ball");
 		}
 
 		@Override
@@ -90,24 +82,9 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		}
 
 		@Override
-		public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-			boolean retval = super.onEntitySwing(itemstack, entity);
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-			World world = entity.world;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				StaffWhenUsedProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
-		}
-
-		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("I feel like i know how to use it..."));
+			list.add(new StringTextComponent("It's emitting wartmth."));
 		}
 
 		@Override
@@ -121,17 +98,9 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		}
 
 		@Override
-		public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlotType slot) {
-			if (slot == EquipmentSlotType.MAINHAND) {
-				ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
-				builder.putAll(super.getAttributeModifiers(slot));
-				builder.put(Attributes.ATTACK_DAMAGE,
-						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Ranged item modifier", (double) 0, AttributeModifier.Operation.ADDITION));
-				builder.put(Attributes.ATTACK_SPEED,
-						new AttributeModifier(ATTACK_SPEED_MODIFIER, "Ranged item modifier", -2.4, AttributeModifier.Operation.ADDITION));
-				return builder.build();
-			}
-			return super.getAttributeModifiers(slot);
+		@OnlyIn(Dist.CLIENT)
+		public boolean hasEffect(ItemStack itemstack) {
+			return true;
 		}
 
 		@Override
@@ -143,14 +112,9 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 3.5, 5);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.7000000000000001f, 5, 7);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
-					{
-						Map<String, Object> $_dependencies = new HashMap<>();
-						$_dependencies.put("entity", entity);
-						StaffWhenUsedProcedure.executeProcedure($_dependencies);
-					}
 					entity.stopActiveHand();
 				}
 			}
@@ -183,27 +147,12 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(Items.BLAZE_POWDER, (int) (1));
+			return new ItemStack(Blocks.FIRE, (int) (1));
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
 			return null;
-		}
-
-		@Override
-		public void onCollideWithPlayer(PlayerEntity entity) {
-			super.onCollideWithPlayer(entity);
-			Entity sourceentity = this.func_234616_v_();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			World world = this.world;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				StaffBulletEntityHitProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -248,7 +197,7 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.extinguish_fire")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.burn")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
@@ -258,10 +207,10 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 2f * 2, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 0.7000000000000001f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setDamage(3.5);
-		entityarrow.setKnockbackStrength(5);
+		entityarrow.setDamage(5);
+		entityarrow.setKnockbackStrength(7);
 		entityarrow.setIsCritical(true);
 		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);
@@ -269,7 +218,7 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.extinguish_fire")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.burn")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}

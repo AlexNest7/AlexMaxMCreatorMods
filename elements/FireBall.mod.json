@@ -1,0 +1,42 @@
+{
+  "_fv": 17,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "fire_ball",
+    "customModelName": "Normal",
+    "name": "Fire Ball",
+    "specialInfo": [
+      "It's emitting wartmth."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:AMFoodMod"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.blaze.burn"
+    },
+    "hasGlow": true,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.7000000000000001,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 7,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Blocks.FIRE"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "StaffBulletEntityHit"
+    }
+  }
+}

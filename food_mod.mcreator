@@ -654,6 +654,16 @@
         ]
       },
       "path": "~/Tool_Rules"
+    },
+    {
+      "name": "FireBall",
+      "type": "gun",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_ball",
+      "path": "~/Ranged_Weapons"
     }
   ],
   "variable_elements": [],
@@ -667,6 +677,7 @@
       "item.food_mod.chocolate_bar": "Плитка шоколада",
       "advancements.the_absorber.title": "The Absorber",
       "item.food_mod.choco_milk": "Шоколадное молоко",
+      "item.food_mod.fire_ball": "Fire Ball",
       "block.food_mod.void_ore": "Void Ore",
       "advancements.the_absorber.descr": "Absorb the darkness, become the darkness",
       "advancements.root_achievement.title": "AM Food Mod Достижения",
@@ -700,6 +711,7 @@
       "item.food_mod.chocolate_bar": "Chocolate Bar",
       "advancements.the_absorber.title": "The Absorber",
       "item.food_mod.choco_milk": "Choco Milk",
+      "item.food_mod.fire_ball": "Fire Ball",
       "block.food_mod.void_ore": "Void Ore",
       "advancements.the_absorber.descr": "Absorb the darkness, become the darkness",
       "advancements.root_achievement.title": "AM Food Mod Achievements",
@@ -773,8 +785,8 @@
   },
   "workspaceSettings": {
     "modid": "food_mod",
-    "modName": "AlexNest\u0027s Food Mod",
-    "version": "1.0.4",
+    "modName": "AlexNest\u0027s Food and Stuff Mod",
+    "version": "1.0.9",
     "description": "My first food mod. Hope you\u0027ll like it!",
     "author": "AlexNest",
     "websiteURL": "https://mcreator.net",

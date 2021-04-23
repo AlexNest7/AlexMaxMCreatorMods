@@ -21,6 +21,6 @@ public class StaffWhenUsedProcedure extends FoodModModElements.ModElement {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		entity.attackEntityFrom(DamageSource.MAGIC, (float) 1);
+		entity.attackEntityFrom(DamageSource.DRYOUT, (float) 1);
 	}
 }

@@ -17,7 +17,7 @@
       "value": ""
     },
     "shootConstantly": true,
-    "usageCount": 50,
+    "usageCount": 65,
     "actionSound": {
       "value": "entity.generic.extinguish_fire"
     },
@@ -28,10 +28,13 @@
     "onRangedItemUsed": {
       "name": "StaffWhenUsed"
     },
+    "onEntitySwing": {
+      "name": "StaffWhenUsed"
+    },
     "bulletPower": 2.0,
-    "bulletDamage": 3.9999999999999996,
+    "bulletDamage": 3.5,
     "bulletKnockback": 5,
-    "bulletParticles": false,
+    "bulletParticles": true,
     "bulletIgnitesFire": true,
     "bulletItemTexture": {
       "value": "Items.BLAZE_POWDER"
