@@ -15,12 +15,12 @@ public class StaffWhenUsedProcedure extends FoodModModElements.ModElement {
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				FoodModMod.LOGGER.warn("Failed to load dependency entity for procedure StaffWhenUsed!");
+		if (dependencies.get("sourceentity") == null) {
+			if (!dependencies.containsKey("sourceentity"))
+				FoodModMod.LOGGER.warn("Failed to load dependency sourceentity for procedure StaffWhenUsed!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
-		entity.attackEntityFrom(DamageSource.DRYOUT, (float) 1);
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		sourceentity.attackEntityFrom(DamageSource.DRYOUT, (float) 1);
 	}
 }

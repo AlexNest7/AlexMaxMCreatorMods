@@ -21,7 +21,6 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -40,7 +39,6 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.alexnestsfoodmod.procedures.StaffWhenUsedProcedure;
 import net.mcreator.alexnestsfoodmod.procedures.StaffBulletEntityHitProcedure;
 import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
@@ -90,21 +88,6 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		}
 
 		@Override
-		public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-			boolean retval = super.onEntitySwing(itemstack, entity);
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-			World world = entity.world;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				StaffWhenUsedProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
-		}
-
-		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("I feel like i know how to use it..."));
@@ -143,14 +126,9 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 3.5, 5);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 3.5, 3);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
-					{
-						Map<String, Object> $_dependencies = new HashMap<>();
-						$_dependencies.put("entity", entity);
-						StaffWhenUsedProcedure.executeProcedure($_dependencies);
-					}
 					entity.stopActiveHand();
 				}
 			}
@@ -183,7 +161,7 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(Items.BLAZE_POWDER, (int) (1));
+			return new ItemStack(FireBallItem.block, (int) (1));
 		}
 
 		@Override
@@ -261,7 +239,7 @@ public class FireStaffItem extends FoodModModElements.ModElement {
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 2f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setDamage(3.5);
-		entityarrow.setKnockbackStrength(5);
+		entityarrow.setKnockbackStrength(3);
 		entityarrow.setIsCritical(true);
 		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);

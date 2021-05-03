@@ -37,7 +37,7 @@ public class DarkEssenceItem extends FoodModModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(16).rarity(Rarity.UNCOMMON)
-					.food((new Food.Builder()).hunger(5).saturation(0.5f).meat().build()));
+					.food((new Food.Builder()).hunger(6).saturation(0.5f).meat().build()));
 			setRegistryName("dark_essence");
 		}
 

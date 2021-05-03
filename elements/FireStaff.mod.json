@@ -25,19 +25,13 @@
     "animation": "bow",
     "enableMeleeDamage": true,
     "damageVsEntity": 2.0,
-    "onRangedItemUsed": {
-      "name": "StaffWhenUsed"
-    },
-    "onEntitySwing": {
-      "name": "StaffWhenUsed"
-    },
     "bulletPower": 2.0,
     "bulletDamage": 3.5,
-    "bulletKnockback": 5,
+    "bulletKnockback": 3,
     "bulletParticles": true,
     "bulletIgnitesFire": true,
     "bulletItemTexture": {
-      "value": "Items.BLAZE_POWDER"
+      "value": "CUSTOM:FireBall"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
