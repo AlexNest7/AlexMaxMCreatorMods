@@ -1,7 +1,7 @@
 package net.mcreator.alexnestsfoodmod.procedures;
 
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
+import net.minecraft.util.DamageSource;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
@@ -23,7 +23,8 @@ public class DarkEssenceArmorWearProcedure extends FoodModModElements.ModElement
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WITHER, (int) 10, (int) 1, (false), (false)));
+		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getTotalArmorValue() : 0) > 1) && (entity instanceof PlayerEntity))) {
+			entity.attackEntityFrom(DamageSource.WITHER, (float) 1);
+		}
 	}
 }

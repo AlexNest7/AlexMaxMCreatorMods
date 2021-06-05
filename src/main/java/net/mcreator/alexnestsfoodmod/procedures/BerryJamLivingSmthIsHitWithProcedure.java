@@ -1,16 +1,15 @@
 package net.mcreator.alexnestsfoodmod.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.items.IItemHandlerModifiable;
+import net.minecraftforge.items.CapabilityItemHandler;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
 import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.alexnestsfoodmod.item.BrokenBerryJamJarItem;
@@ -72,12 +71,15 @@ public class BerryJamLivingSmthIsHitWithProcedure extends FoodModModElements.Mod
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 		}
-		if (entity instanceof LivingEntity) {
-			ItemStack _setstack = new ItemStack(BrokenBerryJamJarItem.block, (int) (1));
+		{
+			final ItemStack _setstack = new ItemStack(BrokenBerryJamJarItem.block, (int) (1));
+			final int _sltid = (int) (0);
 			_setstack.setCount((int) 1);
-			((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
-			if (entity instanceof ServerPlayerEntity)
-				((ServerPlayerEntity) entity).inventory.markDirty();
+			entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				if (capability instanceof IItemHandlerModifiable) {
+					((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+				}
+			});
 		}
 	}
 }

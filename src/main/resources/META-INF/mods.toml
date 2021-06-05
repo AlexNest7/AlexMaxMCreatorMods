@@ -1,16 +1,16 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="What's a license?"
+license="All Rights Reserved"
 
 [[mods]]
 modId="food_mod"
-version="1.0.9"
+version="1.1.1"
 displayName="AlexNest's Food and Stuff Mod"
 credits="Created using mod maker MCreator. Check it out!"
 displayURL="https://mcreator.net"
 authors="AlexNest"
 description='''
-My first food mod. Hope you'll like it!
+My first mod, which adds a lot of stuff. Hope you'll like it!
 '''
 
 [[dependencies.food_mod]]

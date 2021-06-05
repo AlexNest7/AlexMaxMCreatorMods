@@ -34,15 +34,12 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.alexnestsfoodmod.procedures.StaffBulletEntityHitProcedure;
 import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodmod.entity.renderer.FireBallRenderer;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
 import java.util.Random;
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 
 @FoodModModElements.ModElement.Tag
 public class FireBallItem extends FoodModModElements.ModElement {
@@ -115,7 +112,7 @@ public class FireBallItem extends FoodModModElements.ModElement {
 						}
 					}
 					if (entity.abilities.isCreativeMode || stack != ItemStack.EMPTY) {
-						ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.7000000000000001f, 5, 4);
+						ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.7000000000000001f, 5, 1);
 						itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 						if (entity.abilities.isCreativeMode) {
 							entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
@@ -178,16 +175,6 @@ public class FireBallItem extends FoodModModElements.ModElement {
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
-			Entity sourceentity = this.func_234616_v_();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			World world = this.world;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				StaffBulletEntityHitProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -229,7 +216,7 @@ public class FireBallItem extends FoodModModElements.ModElement {
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 0.7000000000000001f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setDamage(5);
-		entityarrow.setKnockbackStrength(4);
+		entityarrow.setKnockbackStrength(1);
 		entityarrow.setIsCritical(true);
 		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);

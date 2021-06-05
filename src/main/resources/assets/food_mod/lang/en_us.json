@@ -1,10 +1,12 @@
 {
   "item.food_mod.berry_jam": "Berry Jam Jar",
   "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
-  "item.food_mod.chopping_hammer": "Chopping Hammer",
+  "item.food_mod.flare_gun": "Flare Gun",
   "item.food_mod.choco_cookie": "Choco Chip Cookie",
+  "item.food_mod.chopping_hammer": "Chopping Hammer",
   "item.food_mod.chocolate_bar": "Chocolate Bar",
   "advancements.the_absorber.title": "The Absorber",
+  "item.food_mod.flaregun_ammo": "Flaregun Ammo",
   "item.food_mod.choco_milk": "Choco Milk",
   "item.food_mod.fire_ball": "Fire Ball",
   "block.food_mod.void_ore": "Void Ore",
@@ -14,7 +16,7 @@
   "advancements.sweet_tooth.title": "Sweet Tooth",
   "item.food_mod.kitchen_knife": "Kitchen Knife",
   "advancements.vegan_achievement.title": "100% Vegan!",
-  "itemGroup.tabam_food_mod": "AM Food Mod",
+  "itemGroup.tabam_food_mod": "AM Food And Stuff Mod",
   "item.food_mod.whetstone": "Whetstone",
   "item.food_mod.raw_chopped_pork": "Raw Chopped Pork",
   "advancements.sweet_tooth.descr": "Make a chocolate bar. Mmm, chocolate...",
@@ -34,6 +36,7 @@
   "advancements.beware_of_mosquitos.title": "Beware Of Mosquitos!",
   "item.food_mod.fire_staff": "Fire Staff",
   "item.food_mod.sunflower_oil": "Sunflower Oil",
+  "item.food_mod.usedflare": "Empty Flare",
   "item.food_mod.cooked_chopped_pork": "Cooked Chopped Pork",
   "advancements.jam_hater.descr": "...Why did you do this?"
 }

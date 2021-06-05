@@ -614,24 +614,6 @@
       "path": "~/Craft_Recipes"
     },
     {
-      "name": "StaffBulletEntityHit",
-      "type": "procedure",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "staff_bullet_entity_hit",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Tool_Rules"
-    },
-    {
       "name": "FireStaff",
       "type": "gun",
       "sortid": 46,
@@ -640,24 +622,6 @@
       "ids": {},
       "registry_name": "fire_staff",
       "path": "~/Ranged_Weapons"
-    },
-    {
-      "name": "StaffWhenUsed",
-      "type": "procedure",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "staff_when_used",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Tool_Rules"
     },
     {
       "name": "FireBall",
@@ -762,6 +726,46 @@
       "ids": {},
       "registry_name": "darkness_ingot_recipe",
       "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "FireballCraft",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fireball_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "Usedflare",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "usedflare",
+      "path": "~/Items"
+    },
+    {
+      "name": "FlaregunAmmo",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flaregun_ammo",
+      "path": "~/Items"
+    },
+    {
+      "name": "FlareGun",
+      "type": "gun",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flare_gun",
+      "path": "~/Ranged_Weapons"
     }
   ],
   "variable_elements": [],
@@ -770,10 +774,12 @@
     "ru_ru": {
       "item.food_mod.berry_jam": "Варенье из Сладких ягод",
       "item.food_mod.broken_berry_jam_jar": "Разбитая банка ягодного варенья",
-      "item.food_mod.chopping_hammer": "Отбивной молоток",
+      "item.food_mod.flare_gun": "Flare Gun",
       "item.food_mod.choco_cookie": "Шоколадное печенье",
+      "item.food_mod.chopping_hammer": "Отбивной молоток",
       "item.food_mod.chocolate_bar": "Плитка шоколада",
       "advancements.the_absorber.title": "The Absorber",
+      "item.food_mod.flaregun_ammo": "Flaregun Ammo",
       "item.food_mod.choco_milk": "Шоколадное молоко",
       "item.food_mod.fire_ball": "Fire Ball",
       "block.food_mod.void_ore": "Void Ore",
@@ -803,16 +809,19 @@
       "advancements.beware_of_mosquitos.title": "Остерегайся насекомых!",
       "item.food_mod.fire_staff": "Fire Staff",
       "item.food_mod.sunflower_oil": "Подсолнечное Масло",
+      "item.food_mod.usedflare": "Empty Flare",
       "item.food_mod.cooked_chopped_pork": "Приготовленая Свиная Отбивная",
       "advancements.jam_hater.descr": "Эм...Зачем ты это сделал?"
     },
     "en_us": {
       "item.food_mod.berry_jam": "Berry Jam Jar",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
-      "item.food_mod.chopping_hammer": "Chopping Hammer",
+      "item.food_mod.flare_gun": "Flare Gun",
       "item.food_mod.choco_cookie": "Choco Chip Cookie",
+      "item.food_mod.chopping_hammer": "Chopping Hammer",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
       "advancements.the_absorber.title": "The Absorber",
+      "item.food_mod.flaregun_ammo": "Flaregun Ammo",
       "item.food_mod.choco_milk": "Choco Milk",
       "item.food_mod.fire_ball": "Fire Ball",
       "block.food_mod.void_ore": "Void Ore",
@@ -822,7 +831,7 @@
       "advancements.sweet_tooth.title": "Sweet Tooth",
       "item.food_mod.kitchen_knife": "Kitchen Knife",
       "advancements.vegan_achievement.title": "100% Vegan!",
-      "itemGroup.tabam_food_mod": "AM Food Mod",
+      "itemGroup.tabam_food_mod": "AM Food And Stuff Mod",
       "item.food_mod.whetstone": "Whetstone",
       "item.food_mod.raw_chopped_pork": "Raw Chopped Pork",
       "advancements.sweet_tooth.descr": "Make a chocolate bar. Mmm, chocolate...",
@@ -842,6 +851,7 @@
       "advancements.beware_of_mosquitos.title": "Beware Of Mosquitos!",
       "item.food_mod.fire_staff": "Fire Staff",
       "item.food_mod.sunflower_oil": "Sunflower Oil",
+      "item.food_mod.usedflare": "Empty Flare",
       "item.food_mod.cooked_chopped_pork": "Cooked Chopped Pork",
       "advancements.jam_hater.descr": "...Why did you do this?"
     }
@@ -892,17 +902,21 @@
       {
         "name": "Armor",
         "children": []
+      },
+      {
+        "name": "Block Rules",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "food_mod",
     "modName": "AlexNest\u0027s Food and Stuff Mod",
-    "version": "1.0.9",
-    "description": "My first food mod. Hope you\u0027ll like it!",
+    "version": "1.1.1",
+    "description": "My first mod, which adds a lot of stuff. Hope you\u0027ll like it!",
     "author": "AlexNest",
     "websiteURL": "https://mcreator.net",
-    "license": "What\u0027s a license?",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],

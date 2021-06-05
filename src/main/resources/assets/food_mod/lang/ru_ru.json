@@ -1,10 +1,12 @@
 {
   "item.food_mod.berry_jam": "Варенье из Сладких ягод",
   "item.food_mod.broken_berry_jam_jar": "Разбитая банка ягодного варенья",
-  "item.food_mod.chopping_hammer": "Отбивной молоток",
+  "item.food_mod.flare_gun": "Flare Gun",
   "item.food_mod.choco_cookie": "Шоколадное печенье",
+  "item.food_mod.chopping_hammer": "Отбивной молоток",
   "item.food_mod.chocolate_bar": "Плитка шоколада",
   "advancements.the_absorber.title": "The Absorber",
+  "item.food_mod.flaregun_ammo": "Flaregun Ammo",
   "item.food_mod.choco_milk": "Шоколадное молоко",
   "item.food_mod.fire_ball": "Fire Ball",
   "block.food_mod.void_ore": "Void Ore",
@@ -34,6 +36,7 @@
   "advancements.beware_of_mosquitos.title": "Остерегайся насекомых!",
   "item.food_mod.fire_staff": "Fire Staff",
   "item.food_mod.sunflower_oil": "Подсолнечное Масло",
+  "item.food_mod.usedflare": "Empty Flare",
   "item.food_mod.cooked_chopped_pork": "Приготовленая Свиная Отбивная",
   "advancements.jam_hater.descr": "Эм...Зачем ты это сделал?"
 }

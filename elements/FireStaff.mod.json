@@ -27,19 +27,13 @@
     "damageVsEntity": 2.0,
     "bulletPower": 2.0,
     "bulletDamage": 3.5,
-    "bulletKnockback": 3,
+    "bulletKnockback": 2,
     "bulletParticles": true,
     "bulletIgnitesFire": true,
     "bulletItemTexture": {
       "value": "CUSTOM:FireBall"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": "",
-    "onBulletHitsPlayer": {
-      "name": "StaffBulletEntityHit"
-    },
-    "onBulletHitsEntity": {
-      "name": "StaffBulletEntityHit"
-    }
+    "customBulletModelTexture": ""
   }
 }

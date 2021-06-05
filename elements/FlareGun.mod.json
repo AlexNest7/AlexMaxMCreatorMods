@@ -3,35 +3,36 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "fire_ball",
+    "texture": "flare_gun",
     "customModelName": "Normal",
-    "name": "Fire Ball",
+    "name": "Flare Gun",
     "specialInfo": [
-      "It's emitting warmth."
+      "Only use in case of emergency! JK",
+      "go on."
     ],
     "creativeTab": {
-      "value": "CUSTOM:AMFoodMod"
+      "value": "COMBAT"
     },
-    "stackSize": 16,
+    "stackSize": 1,
     "ammoItem": {
-      "value": "CUSTOM:FireBall"
+      "value": "CUSTOM:FlaregunAmmo"
     },
     "shootConstantly": true,
-    "usageCount": 0,
+    "usageCount": 100,
     "actionSound": {
-      "value": "entity.blaze.burn"
+      "value": "entity.firework.launch"
     },
-    "hasGlow": true,
+    "hasGlow": false,
     "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 0.7000000000000001,
+    "bulletPower": 1.0,
     "bulletDamage": 5.0,
-    "bulletKnockback": 1,
-    "bulletParticles": true,
-    "bulletIgnitesFire": true,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "Blocks.FIRE"
+      "value": "CUSTOM:FlaregunAmmo"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": ""
