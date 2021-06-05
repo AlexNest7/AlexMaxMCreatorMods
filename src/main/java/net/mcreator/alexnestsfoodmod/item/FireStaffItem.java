@@ -5,8 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -36,11 +35,10 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.client.renderer.entity.SpriteRenderer;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.alexnestsfoodmod.procedures.StaffBulletEntityHitProcedure;
 import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
+import net.mcreator.alexnestsfoodmod.entity.renderer.FireStaffRenderer;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
 import java.util.Random;
@@ -55,25 +53,18 @@ import com.google.common.collect.ImmutableMultimap;
 public class FireStaffItem extends FoodModModElements.ModElement {
 	@ObjectHolder("food_mod:fire_staff")
 	public static final Item block = null;
-	@ObjectHolder("food_mod:entitybulletfire_staff")
-	public static final EntityType arrow = null;
+	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
+			.size(0.5f, 0.5f)).build("entitybulletfire_staff").setRegistryName("entitybulletfire_staff");
 	public FireStaffItem(FoodModModElements instance) {
 		super(instance, 46);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new FireStaffRenderer.ModelRegisterHandler());
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
-		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
-				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletfire_staff").setRegistryName("entitybulletfire_staff"));
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void init(FMLCommonSetupEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(arrow,
-				renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
+		elements.entities.add(() -> arrow);
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {

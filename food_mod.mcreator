@@ -668,6 +668,100 @@
       "ids": {},
       "registry_name": "fire_ball",
       "path": "~/Ranged_Weapons"
+    },
+    {
+      "name": "Darkessenceingot",
+      "type": "item",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessenceingot",
+      "path": "~/Items"
+    },
+    {
+      "name": "DarkessencearmorArmor",
+      "type": "armor",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "DarkessencearmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor_helmet_recipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "DarkessencearmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor_body_recipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "DarkessencearmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor_leggings_recipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "DarkessencearmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor_boots_recipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "DarkEssenceArmorWear",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence_armor_wear",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tool_Rules"
+    },
+    {
+      "name": "DarknessIngotRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkness_ingot_recipe",
+      "path": "~/Craft_Recipes"
     }
   ],
   "variable_elements": [],
@@ -676,8 +770,8 @@
     "ru_ru": {
       "item.food_mod.berry_jam": "Варенье из Сладких ягод",
       "item.food_mod.broken_berry_jam_jar": "Разбитая банка ягодного варенья",
-      "item.food_mod.choco_cookie": "Шоколадное печенье",
       "item.food_mod.chopping_hammer": "Отбивной молоток",
+      "item.food_mod.choco_cookie": "Шоколадное печенье",
       "item.food_mod.chocolate_bar": "Плитка шоколада",
       "advancements.the_absorber.title": "The Absorber",
       "item.food_mod.choco_milk": "Шоколадное молоко",
@@ -694,13 +788,18 @@
       "advancements.sweet_tooth.descr": "Сделай плитку шоколада. Ммм, шоколад...",
       "item.food_mod.raw_chopped_pork": "Сырая Свиная Отбивная",
       "item.food_mod.seed_salad": "Салат из семян",
+      "item.food_mod.darkessencearmor_armor_boots": "Darkessencearmor Boots",
       "item.food_mod.dark_essence": "Dark Essence",
       "item.food_mod.hot_chocolate": "Горячий шоколад",
       "advancements.beware_of_mosquitos.descr": "Джунгли - это опасное место, полное еды.",
+      "item.food_mod.darkessenceingot": "Dark Essence Ingot",
       "advancements.jam_hater.title": "Я, блин, ненавижу это варенье",
       "item.food_mod.redstone_syrup": "Редстоуновый сироп",
+      "item.food_mod.darkessencearmor_armor_chestplate": "Darkessencearmor Chestplate",
       "advancements.root_achievement.descr": "Наше кулинарное приключение начинается!",
       "item.food_mod.glowstone_syrup": "Glowstone Syrup",
+      "item.food_mod.darkessencearmor_armor_helmet": "Darkessencearmor Helmet",
+      "item.food_mod.darkessencearmor_armor_leggings": "Darkessencearmor Leggings",
       "advancements.beware_of_mosquitos.title": "Остерегайся насекомых!",
       "item.food_mod.fire_staff": "Fire Staff",
       "item.food_mod.sunflower_oil": "Подсолнечное Масло",
@@ -710,8 +809,8 @@
     "en_us": {
       "item.food_mod.berry_jam": "Berry Jam Jar",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
-      "item.food_mod.choco_cookie": "Chocolate Chip Cookie",
       "item.food_mod.chopping_hammer": "Chopping Hammer",
+      "item.food_mod.choco_cookie": "Choco Chip Cookie",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
       "advancements.the_absorber.title": "The Absorber",
       "item.food_mod.choco_milk": "Choco Milk",
@@ -728,13 +827,18 @@
       "item.food_mod.raw_chopped_pork": "Raw Chopped Pork",
       "advancements.sweet_tooth.descr": "Make a chocolate bar. Mmm, chocolate...",
       "item.food_mod.seed_salad": "Seed Salad",
+      "item.food_mod.darkessencearmor_armor_boots": "Darkness Ingot Boots",
       "item.food_mod.dark_essence": "Dark Essence",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
       "advancements.beware_of_mosquitos.descr": "Jungle is a dangerous, yet rewarding place.",
+      "item.food_mod.darkessenceingot": "Dark Essence Ingot",
       "advancements.jam_hater.title": "Jam Hater",
       "item.food_mod.redstone_syrup": "Redstone Syrup",
+      "item.food_mod.darkessencearmor_armor_chestplate": "Darkness Ingot Chestplate",
       "advancements.root_achievement.descr": "Our food tour begins here!",
       "item.food_mod.glowstone_syrup": "Glowstone Syrup",
+      "item.food_mod.darkessencearmor_armor_helmet": "Darkness Ingot Helmet",
+      "item.food_mod.darkessencearmor_armor_leggings": "Darkness Ingot Leggings",
       "advancements.beware_of_mosquitos.title": "Beware Of Mosquitos!",
       "item.food_mod.fire_staff": "Fire Staff",
       "item.food_mod.sunflower_oil": "Sunflower Oil",
@@ -784,6 +888,10 @@
       {
         "name": "Ranged_Weapons",
         "children": []
+      },
+      {
+        "name": "Armor",
+        "children": []
       }
     ]
   },
@@ -806,5 +914,5 @@
     "modElementsPackage": "net.mcreator.alexnestsfoodmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100112313
+  "mcreatorVersion": 202100118117
 }

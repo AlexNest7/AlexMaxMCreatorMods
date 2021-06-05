@@ -51,6 +51,11 @@ public class WhetstoneItem extends FoodModModElements.ModElement {
 		}
 
 		@Override
+		public boolean isRepairable(ItemStack itemstack) {
+			return false;
+		}
+
+		@Override
 		public int getItemEnchantability() {
 			return 0;
 		}

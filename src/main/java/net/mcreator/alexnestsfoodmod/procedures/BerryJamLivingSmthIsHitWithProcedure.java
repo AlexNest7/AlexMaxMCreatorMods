@@ -63,13 +63,6 @@ public class BerryJamLivingSmthIsHitWithProcedure extends FoodModModElements.Mod
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		((itemstack)).setCount((int) 0);
-		if (entity instanceof LivingEntity) {
-			ItemStack _setstack = new ItemStack(BrokenBerryJamJarItem.block, (int) (1));
-			_setstack.setCount((int) 1);
-			((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
-			if (entity instanceof ServerPlayerEntity)
-				((ServerPlayerEntity) entity).inventory.markDirty();
-		}
 		if (world instanceof World && !world.isRemote()) {
 			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
@@ -78,6 +71,13 @@ public class BerryJamLivingSmthIsHitWithProcedure extends FoodModModElements.Mod
 			((World) world).playSound(x, y, z,
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+		}
+		if (entity instanceof LivingEntity) {
+			ItemStack _setstack = new ItemStack(BrokenBerryJamJarItem.block, (int) (1));
+			_setstack.setCount((int) 1);
+			((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+			if (entity instanceof ServerPlayerEntity)
+				((ServerPlayerEntity) entity).inventory.markDirty();
 		}
 	}
 }
