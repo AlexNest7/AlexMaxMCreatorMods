@@ -178,9 +178,7 @@ public class FlareGunItem extends FoodModModElements.ModElement {
 			World world = this.world;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
+				$_dependencies.put("cmdparams", cmdparams);
 				$_dependencies.put("world", world);
 				FlareGunOnHitProcedure.executeProcedure($_dependencies);
 			}
@@ -197,9 +195,7 @@ public class FlareGunItem extends FoodModModElements.ModElement {
 			World world = this.world;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
+				$_dependencies.put("cmdparams", cmdparams);
 				$_dependencies.put("world", world);
 				FlareGunOnHitProcedure.executeProcedure($_dependencies);
 			}
@@ -216,9 +212,7 @@ public class FlareGunItem extends FoodModModElements.ModElement {
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
+					$_dependencies.put("cmdparams", cmdparams);
 					$_dependencies.put("world", world);
 					FlareGunOnHitProcedure.executeProcedure($_dependencies);
 				}

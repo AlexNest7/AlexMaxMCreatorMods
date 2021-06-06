@@ -5,42 +5,42 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 3,
+    "recipeRetstackSize": 2,
     "group": "amfoodmod",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.GLASS"
+        "value": ""
       },
       {
-        "value": "Blocks.GLASS"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Blocks.GLASS"
+        "value": ""
       },
       {
-        "value": "Blocks.GLASS"
+        "value": ""
       },
       {
-        "value": "Items.MAGMA_CREAM"
+        "value": "Items.BLAZE_POWDER"
       },
       {
-        "value": "Blocks.GLASS"
+        "value": ""
       },
       {
-        "value": "Blocks.GLASS"
+        "value": ""
       },
       {
-        "value": "Blocks.GLASS"
+        "value": "CUSTOM:Usedflare"
       },
       {
-        "value": "Blocks.GLASS"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:FireBall"
+      "value": "CUSTOM:FlaregunAmmo"
     },
-    "name": "fireball_craft",
+    "name": "flare_gun_ammo_craft",
     "namespace": "mod"
   }
 }
