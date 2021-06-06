@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "food_mod:items/flare_gun"
+    "layer0": "food_mod:items/flare_gun_new"
   },
   "display": {
     "thirdperson_righthand": {

@@ -31,7 +31,7 @@ public class UsedflareItem extends FoodModModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.COMMON));
 			setRegistryName("usedflare");
 		}
 

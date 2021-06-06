@@ -766,6 +766,36 @@
       "ids": {},
       "registry_name": "flare_gun",
       "path": "~/Ranged_Weapons"
+    },
+    {
+      "name": "FlareGunOnHit",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flare_gun_on_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ranged_Weapons_Rules"
     }
   ],
   "variable_elements": [],
@@ -905,6 +935,10 @@
       },
       {
         "name": "Block Rules",
+        "children": []
+      },
+      {
+        "name": "Ranged_Weapons_Rules",
         "children": []
       }
     ]

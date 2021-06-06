@@ -3,12 +3,11 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "flare_gun",
+    "texture": "flare_gun_new",
     "customModelName": "Normal",
     "name": "Flare Gun",
     "specialInfo": [
-      "Only use in case of emergency! JK",
-      "go on."
+      "Only use in case of emergency! JK, go on."
     ],
     "creativeTab": {
       "value": "COMBAT"
@@ -18,23 +17,32 @@
       "value": "CUSTOM:FlaregunAmmo"
     },
     "shootConstantly": true,
-    "usageCount": 100,
+    "usageCount": 70,
     "actionSound": {
-      "value": "entity.firework.launch"
+      "value": "entity.firework.shoot"
     },
     "hasGlow": false,
     "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 1.0,
-    "bulletDamage": 5.0,
-    "bulletKnockback": 5,
-    "bulletParticles": false,
-    "bulletIgnitesFire": false,
+    "bulletPower": 1.5,
+    "bulletDamage": 3.9999999999999996,
+    "bulletKnockback": 1,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
     "bulletItemTexture": {
       "value": "CUSTOM:FlaregunAmmo"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "FlareGunOnHit"
+    },
+    "onBulletHitsPlayer": {
+      "name": "FlareGunOnHit"
+    },
+    "onBulletHitsEntity": {
+      "name": "FlareGunOnHit"
+    }
   }
 }
