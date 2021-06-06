@@ -1,0 +1,39 @@
+{
+  "group": "food_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "2": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "3": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "4": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "5": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "6": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "7": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "8": {
+      "item": "food_mod:deleted_mod_element"
+    }
+  },
+  "result": {
+    "item": "food_mod:darkessencearmor_armor_chestplate",
+    "count": 1
+  }
+}

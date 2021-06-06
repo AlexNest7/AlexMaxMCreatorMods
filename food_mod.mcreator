@@ -564,6 +564,257 @@
       "ids": {},
       "registry_name": "glowstone_syrup_craft",
       "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "TODO",
+      "type": "code",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "todo"
+    },
+    {
+      "name": "FireBall",
+      "type": "gun",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_ball",
+      "path": "~/Ranged_Weapons"
+    },
+    {
+      "name": "DarkEssence",
+      "type": "food",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence",
+      "path": "~/Foods"
+    },
+    {
+      "name": "DarkEssenceCraft",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "FlaregunAmmo",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flaregun_ammo",
+      "path": "~/Items"
+    },
+    {
+      "name": "DarkEssenceFoodEaten",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Food_Rules"
+    },
+    {
+      "name": "DarkessencearmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor_helmet_recipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "DarkessencearmorArmor",
+      "type": "armor",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "DarknessIngotRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkness_ingot_recipe",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "FlareGunOnHit",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flare_gun_on_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ranged_Weapons_Rules"
+    },
+    {
+      "name": "DarkessencearmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor_body_recipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "FireStaff",
+      "type": "gun",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_staff",
+      "path": "~/Ranged_Weapons"
+    },
+    {
+      "name": "DarkessencearmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor_boots_recipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "FireballCraft",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fireball_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "TheAbsorber",
+      "type": "achievement",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_absorber",
+      "path": "~/Achievements"
+    },
+    {
+      "name": "Darkessenceingot",
+      "type": "item",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessenceingot",
+      "path": "~/Items"
+    },
+    {
+      "name": "VoidOre",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Usedflare",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "usedflare",
+      "path": "~/Items"
+    },
+    {
+      "name": "DarkEssenceArmorWear",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence_armor_wear",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tool_Rules"
+    },
+    {
+      "name": "FlareGun",
+      "type": "gun",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flare_gun",
+      "path": "~/Ranged_Weapons"
+    },
+    {
+      "name": "DarkessencearmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessencearmor_armor_leggings_recipe",
+      "path": "~/Armor"
     }
   ],
   "variable_elements": [],
@@ -587,12 +838,17 @@
       "advancements.sweet_tooth.descr": "Сделай плитку шоколада. Ммм, шоколад...",
       "item.food_mod.raw_chopped_pork": "Сырая Свиная Отбивная",
       "item.food_mod.seed_salad": "Салат из семян",
+      "item.food_mod.darkessencearmor_armor_boots": "Darkessencearmor Boots",
+      "item.food_mod.dark_essence": "Dark Essence",
       "item.food_mod.hot_chocolate": "Горячий шоколад",
       "advancements.beware_of_mosquitos.descr": "Джунгли - это опасное место, полное еды.",
       "advancements.jam_hater.title": "Я, блин, ненавижу это варенье",
       "item.food_mod.redstone_syrup": "Редстоуновый сироп",
+      "item.food_mod.darkessencearmor_armor_chestplate": "Darkessencearmor Chestplate",
       "advancements.root_achievement.descr": "Наше кулинарное приключение начинается!",
       "item.food_mod.glowstone_syrup": "Glowstone Syrup",
+      "item.food_mod.darkessencearmor_armor_helmet": "Darkessencearmor Helmet",
+      "item.food_mod.darkessencearmor_armor_leggings": "Darkessencearmor Leggings",
       "advancements.beware_of_mosquitos.title": "Остерегайся насекомых!",
       "item.food_mod.sunflower_oil": "Подсолнечное Масло",
       "item.food_mod.cooked_chopped_pork": "Приготовленая Свиная Отбивная",
@@ -632,6 +888,26 @@
     "name": "~",
     "children": [
       {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Craft_Recipes",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Tool_Rules",
+        "children": []
+      },
+      {
+        "name": "Block Rules",
+        "children": []
+      },
+      {
         "name": "Items",
         "children": []
       },
@@ -644,11 +920,11 @@
         "children": []
       },
       {
-        "name": "Craft_Recipes",
+        "name": "Ranged_Weapons_Rules",
         "children": []
       },
       {
-        "name": "Test",
+        "name": "Ranged_Weapons",
         "children": []
       },
       {
@@ -684,5 +960,5 @@
     "modElementsPackage": "net.mcreator.alexnestsfoodmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100223417
+  "mcreatorVersion": 202100112313
 }

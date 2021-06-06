@@ -1,24 +1,7 @@
 package net.mcreator.alexnestsfoodmod.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.alexnestsfoodmod.item.BrokenBerryJamJarItem;
-import net.mcreator.alexnestsfoodmod.FoodModMod;
-
-import java.util.Map;
-
 public class BerryJamLivingSmthIsHitWithProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -50,12 +33,14 @@ public class BerryJamLivingSmthIsHitWithProcedure {
 				FoodModMod.LOGGER.warn("Failed to load dependency world for procedure BerryJamLivingSmthIsHitWith!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		((itemstack)).setCount((int) 0);
 		if (entity instanceof LivingEntity) {
 			ItemStack _setstack = new ItemStack(BrokenBerryJamJarItem.block, (int) (1));
@@ -74,4 +59,5 @@ public class BerryJamLivingSmthIsHitWithProcedure {
 					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 		}
 	}
+
 }

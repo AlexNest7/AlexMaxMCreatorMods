@@ -1,0 +1,29 @@
+{
+  "group": "food_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "1": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "2": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "3": {
+      "item": "food_mod:deleted_mod_element"
+    },
+    "5": {
+      "item": "food_mod:deleted_mod_element"
+    }
+  },
+  "result": {
+    "item": "food_mod:deleted_mod_element_helmet",
+    "count": 1
+  }
+}
