@@ -69,6 +69,11 @@ public class KitchenKnifeItem extends FoodModModElements.ModElement {
 			}
 
 			@Override
+			public boolean isRepairable(ItemStack itemstack) {
+				return false;
+			}
+
+			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
 				list.add(new StringTextComponent("It's pretty sharp."));

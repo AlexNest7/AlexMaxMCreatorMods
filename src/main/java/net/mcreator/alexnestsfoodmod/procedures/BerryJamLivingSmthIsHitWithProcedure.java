@@ -14,17 +14,11 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.alexnestsfoodmod.item.BrokenBerryJamJarItem;
-import net.mcreator.alexnestsfoodmod.FoodModModElements;
 import net.mcreator.alexnestsfoodmod.FoodModMod;
 
 import java.util.Map;
 
-@FoodModModElements.ModElement.Tag
-public class BerryJamLivingSmthIsHitWithProcedure extends FoodModModElements.ModElement {
-	public BerryJamLivingSmthIsHitWithProcedure(FoodModModElements instance) {
-		super(instance, 16);
-	}
-
+public class BerryJamLivingSmthIsHitWithProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

@@ -220,6 +220,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -571,6 +575,7 @@
       "item.food_mod.choco_cookie": "Шоколадное печенье",
       "item.food_mod.chopping_hammer": "Отбивной молоток",
       "item.food_mod.chocolate_bar": "Плитка шоколада",
+      "item.food_mod.skipitaster": "Skipitaster",
       "item.food_mod.choco_milk": "Шоколадное молоко",
       "advancements.root_achievement.title": "AM Food Mod Достижения",
       "advancements.vegan_achievement.descr": "Сделай семенной салат. И да, он съедобен.",
@@ -596,9 +601,10 @@
     "en_us": {
       "item.food_mod.berry_jam": "Berry Jam Jar",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
-      "item.food_mod.choco_cookie": "Chocolate Chip Cookie",
+      "item.food_mod.choco_cookie": "Choco Chip Cookie",
       "item.food_mod.chopping_hammer": "Chopping Hammer",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
+      "item.food_mod.skipitaster": "Skipitaster",
       "item.food_mod.choco_milk": "Choco Milk",
       "advancements.root_achievement.title": "AM Food Mod Achievements",
       "advancements.vegan_achievement.descr": "Make a seed salat! Trust me, it\u0027s edible.",
@@ -678,5 +684,5 @@
     "modElementsPackage": "net.mcreator.alexnestsfoodmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100112313
+  "mcreatorVersion": 202100223417
 }
