@@ -4,7 +4,7 @@
   "experience": 3,
   "cookingtime": 160,
   "ingredient": {
-    "item": "food_mod:void_ore"
+    "item": "food_mod:deleted_mod_element"
   },
   "result": {
     "item": "food_mod:dark_essence"

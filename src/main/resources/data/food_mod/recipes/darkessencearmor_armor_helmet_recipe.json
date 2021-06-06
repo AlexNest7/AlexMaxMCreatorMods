@@ -7,23 +7,23 @@
   ],
   "key": {
     "0": {
-      "item": "food_mod:darkessenceingot"
+      "item": "food_mod:deleted_mod_element"
     },
     "1": {
-      "item": "food_mod:darkessenceingot"
+      "item": "food_mod:deleted_mod_element"
     },
     "2": {
-      "item": "food_mod:darkessenceingot"
+      "item": "food_mod:deleted_mod_element"
     },
     "3": {
-      "item": "food_mod:darkessenceingot"
+      "item": "food_mod:deleted_mod_element"
     },
     "5": {
-      "item": "food_mod:darkessenceingot"
+      "item": "food_mod:deleted_mod_element"
     }
   },
   "result": {
-    "item": "food_mod:darkessencearmor_armor_helmet",
+    "item": "food_mod:deleted_mod_element_helmet",
     "count": 1
   }
 }

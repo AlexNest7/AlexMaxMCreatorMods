@@ -1,34 +1,12 @@
 
 package net.mcreator.alexnestsfoodmod.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.item.UseAction;
-import net.minecraft.item.Rarity;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.Food;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.client.util.ITooltipFlag;
-
-import net.mcreator.alexnestsfoodmod.procedures.BerryJamLivingSmthIsHitWithProcedure;
-import net.mcreator.alexnestsfoodmod.procedures.BerryJamFoodEatenProcedure;
-import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
-import net.mcreator.alexnestsfoodmod.FoodModModElements;
-
-import java.util.Map;
-import java.util.List;
-import java.util.HashMap;
-
 @FoodModModElements.ModElement.Tag
 public class BerryJamItem extends FoodModModElements.ModElement {
+
 	@ObjectHolder("food_mod:berry_jam")
 	public static final Item block = null;
+
 	public BerryJamItem(FoodModModElements instance) {
 		super(instance, 1);
 	}
@@ -37,10 +15,14 @@ public class BerryJamItem extends FoodModModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new FoodItemCustom());
 	}
+
 	public static class FoodItemCustom extends Item {
+
 		public FoodItemCustom() {
 			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(1).rarity(Rarity.UNCOMMON)
-					.food((new Food.Builder()).hunger(8).saturation(0.7000000000000001f).build()));
+					.food((new Food.Builder()).hunger(8).saturation(0.7000000000000001f)
+
+							.build()));
 			setRegistryName("berry_jam");
 		}
 
@@ -69,14 +51,16 @@ public class BerryJamItem extends FoodModModElements.ModElement {
 		public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
 			ItemStack retval = new ItemStack(Items.GLASS_BOTTLE, (int) (1));
 			super.onItemUseFinish(itemstack, world, entity);
+
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
+
 				BerryJamFoodEatenProcedure.executeProcedure($_dependencies);
 			}
+
 			if (itemstack.isEmpty()) {
 				return retval;
 			} else {
@@ -98,15 +82,12 @@ public class BerryJamItem extends FoodModModElements.ModElement {
 			World world = entity.world;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("itemstack", itemstack);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
+
 				BerryJamLivingSmthIsHitWithProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
 		}
+
 	}
+
 }

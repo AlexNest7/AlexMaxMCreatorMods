@@ -1,28 +1,6 @@
 package net.mcreator.alexnestsfoodmod.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
-
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.alexnestsfoodmod.item.BrokenBerryJamJarItem;
-import net.mcreator.alexnestsfoodmod.FoodModModElements;
-import net.mcreator.alexnestsfoodmod.FoodModMod;
-
-import java.util.Map;
-
-@FoodModModElements.ModElement.Tag
-public class BerryJamLivingSmthIsHitWithProcedure extends FoodModModElements.ModElement {
-	public BerryJamLivingSmthIsHitWithProcedure(FoodModModElements instance) {
-		super(instance, 16);
-	}
+public class BerryJamLivingSmthIsHitWithProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
@@ -55,13 +33,22 @@ public class BerryJamLivingSmthIsHitWithProcedure extends FoodModModElements.Mod
 				FoodModMod.LOGGER.warn("Failed to load dependency world for procedure BerryJamLivingSmthIsHitWith!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		((itemstack)).setCount((int) 0);
+		if (entity instanceof LivingEntity) {
+			ItemStack _setstack = new ItemStack(BrokenBerryJamJarItem.block, (int) (1));
+			_setstack.setCount((int) 1);
+			((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+			if (entity instanceof ServerPlayerEntity)
+				((ServerPlayerEntity) entity).inventory.markDirty();
+		}
 		if (world instanceof World && !world.isRemote()) {
 			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
@@ -71,15 +58,6 @@ public class BerryJamLivingSmthIsHitWithProcedure extends FoodModModElements.Mod
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 		}
-		{
-			final ItemStack _setstack = new ItemStack(BrokenBerryJamJarItem.block, (int) (1));
-			final int _sltid = (int) (0);
-			_setstack.setCount((int) 1);
-			entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-				if (capability instanceof IItemHandlerModifiable) {
-					((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
-				}
-			});
-		}
 	}
+
 }

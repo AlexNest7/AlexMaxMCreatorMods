@@ -799,6 +799,16 @@
       "registry_name": "todo"
     },
     {
+      "name": "FlareGunAmmoCraft",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flare_gun_ammo_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
       "name": "FlareGunShellCraft",
       "type": "recipe",
       "sortid": 62,
@@ -809,14 +819,13 @@
       "path": "~/Craft_Recipes"
     },
     {
-      "name": "FlareGunAmmoCraft",
-      "type": "recipe",
-      "sortid": 63,
+      "name": "Skipitaster",
+      "type": "gun",
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "flare_gun_ammo_craft",
-      "path": "~/Craft_Recipes"
+      "registry_name": "skipitaster"
     }
   ],
   "variable_elements": [],
@@ -911,6 +920,26 @@
     "name": "~",
     "children": [
       {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Craft_Recipes",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Tool_Rules",
+        "children": []
+      },
+      {
+        "name": "Block Rules",
+        "children": []
+      },
+      {
         "name": "Items",
         "children": []
       },
@@ -923,7 +952,11 @@
         "children": []
       },
       {
-        "name": "Craft_Recipes",
+        "name": "Ranged_Weapons_Rules",
+        "children": []
+      },
+      {
+        "name": "Ranged_Weapons",
         "children": []
       },
       {
@@ -936,30 +969,6 @@
       },
       {
         "name": "Achievements",
-        "children": []
-      },
-      {
-        "name": "Blocks",
-        "children": []
-      },
-      {
-        "name": "Tool_Rules",
-        "children": []
-      },
-      {
-        "name": "Ranged_Weapons",
-        "children": []
-      },
-      {
-        "name": "Armor",
-        "children": []
-      },
-      {
-        "name": "Block Rules",
-        "children": []
-      },
-      {
-        "name": "Ranged_Weapons_Rules",
         "children": []
       }
     ]

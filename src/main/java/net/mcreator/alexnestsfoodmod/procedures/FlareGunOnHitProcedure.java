@@ -1,23 +1,11 @@
 package net.mcreator.alexnestsfoodmod.procedures;
 
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.item.ItemEntity;
-import net.minecraft.block.Blocks;
-
-import net.mcreator.alexnestsfoodmod.item.UsedflareItem;
-import net.mcreator.alexnestsfoodmod.FoodModModElements;
-import net.mcreator.alexnestsfoodmod.FoodModMod;
-
-import java.util.Map;
-import java.util.HashMap;
-
 @FoodModModElements.ModElement.Tag
 public class FlareGunOnHitProcedure extends FoodModModElements.ModElement {
+
 	public FlareGunOnHitProcedure(FoodModModElements instance) {
 		super(instance, 60);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -31,8 +19,10 @@ public class FlareGunOnHitProcedure extends FoodModModElements.ModElement {
 				FoodModMod.LOGGER.warn("Failed to load dependency world for procedure FlareGunOnHit!");
 			return;
 		}
+
 		HashMap cmdparams = (HashMap) dependencies.get("cmdparams");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		world.setBlockState(new BlockPos((int) new Object() {
 			int convert(String s) {
 				try {
@@ -135,5 +125,7 @@ public class FlareGunOnHitProcedure extends FoodModModElements.ModElement {
 			entityToSpawn.setPickupDelay((int) 10);
 			world.addEntity(entityToSpawn);
 		}
+
 	}
+
 }
