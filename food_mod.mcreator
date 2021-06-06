@@ -796,6 +796,15 @@
         ]
       },
       "path": "~/Ranged_Weapons_Rules"
+    },
+    {
+      "name": "TODO",
+      "type": "code",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "todo"
     }
   ],
   "variable_elements": [],
