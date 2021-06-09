@@ -1,12 +1,27 @@
 
 package net.mcreator.alexnestsfoodmod.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+import net.minecraft.client.util.ITooltipFlag;
+
+import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
+import net.mcreator.alexnestsfoodmod.FoodModModElements;
+
+import java.util.List;
+
 @FoodModModElements.ModElement.Tag
 public class KitchenKnifeItem extends FoodModModElements.ModElement {
-
 	@ObjectHolder("food_mod:kitchen_knife")
 	public static final Item block = null;
-
 	public KitchenKnifeItem(FoodModModElements instance) {
 		super(instance, 34);
 	}
@@ -38,7 +53,6 @@ public class KitchenKnifeItem extends FoodModModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2.2f, new Item.Properties().group(AMFoodModItemGroup.tab)) {
-
 			@Override
 			public boolean hasContainerItem() {
 				return true;
@@ -64,8 +78,6 @@ public class KitchenKnifeItem extends FoodModModElements.ModElement {
 				super.addInformation(itemstack, world, list, flag);
 				list.add(new StringTextComponent("It's pretty sharp."));
 			}
-
 		}.setRegistryName("kitchen_knife"));
 	}
-
 }
