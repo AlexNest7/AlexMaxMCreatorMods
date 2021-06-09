@@ -1,0 +1,33 @@
+{
+  "group": "amfoodmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "3": {
+      "item": "food_mod:darkessenceingot"
+    },
+    "4": {
+      "item": "food_mod:darkessencearmor_armor_leggings"
+    },
+    "5": {
+      "item": "food_mod:darkessenceingot"
+    },
+    "6": {
+      "item": "food_mod:darkessenceingot"
+    },
+    "8": {
+      "item": "food_mod:darkessenceingot"
+    }
+  },
+  "result": {
+    "item": "food_mod:enhanced_dark_metal_armor_leggings",
+    "count": 1
+  }
+}

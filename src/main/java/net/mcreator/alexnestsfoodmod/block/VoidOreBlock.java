@@ -136,6 +136,12 @@ public class VoidOreBlock extends FoodModModElements.ModElement {
 			boolean blockCriteria = false;
 			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 				blockCriteria = true;
+			if (blockAt.getBlock() == Blocks.ANDESITE.getDefaultState().getBlock())
+				blockCriteria = true;
+			if (blockAt.getBlock() == Blocks.GRANITE.getDefaultState().getBlock())
+				blockCriteria = true;
+			if (blockAt.getBlock() == Blocks.DIORITE.getDefaultState().getBlock())
+				blockCriteria = true;
 			return blockCriteria;
 		}
 
@@ -162,8 +168,8 @@ public class VoidOreBlock extends FoodModModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 11)).range(64)
-					.square().func_242731_b(5);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 9)).range(50)
+					.square().func_242731_b(15);
 			event.getRegistry().register(feature.setRegistryName("void_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("food_mod:void_ore"), configuredFeature);
 		}

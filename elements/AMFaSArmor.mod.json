@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "AM F&S Armor",
+    "icon": {
+      "value": "CUSTOM:EnhancedDarkMetalArmor.helmet"
+    },
+    "showSearch": true
+  }
+}

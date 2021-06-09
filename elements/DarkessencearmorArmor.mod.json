@@ -23,7 +23,7 @@
       "name": "DarkEssenceArmorWear"
     },
     "creativeTab": {
-      "value": "CUSTOM:AMFoodMod"
+      "value": "CUSTOM:AMFaSArmor"
     },
     "armorTextureFile": "darkessencearmor",
     "helmetName": "Dark Steel Helmet",
@@ -51,12 +51,12 @@
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
     "maxDamage": 18,
-    "damageValueHelmet": 2,
+    "damageValueHelmet": 3,
     "damageValueBody": 4,
-    "damageValueLeggings": 4,
-    "damageValueBoots": 3,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
     "enchantability": 10,
-    "toughness": 1.0,
+    "toughness": 0.5,
     "knockbackResistance": 0.0,
     "equipSound": {
       "value": "item.armor.equip_iron"

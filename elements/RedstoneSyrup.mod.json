@@ -26,9 +26,6 @@
     "hasGlow": false,
     "onEaten": {
       "name": "RedstoneSyrupFoodEaten"
-    },
-    "onDroppedByPlayer": {
-      "name": "RedstoneSyrupOnDrop"
     }
   }
 }

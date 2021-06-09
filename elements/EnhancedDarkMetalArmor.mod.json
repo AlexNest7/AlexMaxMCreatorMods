@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "enhanced_dark_metal_boots",
     "creativeTab": {
-      "value": "CUSTOM:AMFoodMod"
+      "value": "CUSTOM:AMFaSArmor"
     },
     "armorTextureFile": "enhanced_darksteel_armor_",
     "helmetName": "Enhanced Dark Metal Armor Helmet",
@@ -48,12 +48,12 @@
     "bootsModelTexture": "From armor",
     "maxDamage": 28,
     "damageValueHelmet": 4,
-    "damageValueBody": 6,
+    "damageValueBody": 5,
     "damageValueLeggings": 5,
     "damageValueBoots": 4,
     "enchantability": 7,
     "toughness": 1.0,
-    "knockbackResistance": 0.1,
+    "knockbackResistance": 0.05,
     "equipSound": {
       "value": "item.armor.equip_diamond"
     },

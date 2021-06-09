@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "amfoodmod",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": "Items.DYE#4"
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": "CUSTOM:DarkessencearmorArmor.body"
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnhancedDarkMetalArmor.body"
+    },
+    "name": "enhdmchestplaterecipe",
+    "namespace": "mod"
+  }
+}

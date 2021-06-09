@@ -34,6 +34,15 @@
       "value": "CUSTOM:FlaregunAmmo"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "FlareGunOnHit"
+    },
+    "onBulletHitsPlayer": {
+      "name": "FlareGunOnHit"
+    },
+    "onBulletHitsEntity": {
+      "name": "FlareGunOnHit"
+    }
   }
 }

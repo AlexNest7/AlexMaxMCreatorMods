@@ -12,7 +12,6 @@ import net.mcreator.alexnestsfoodmod.FoodModModElements;
 import net.mcreator.alexnestsfoodmod.FoodModMod;
 
 import java.util.Map;
-import java.util.HashMap;
 
 @FoodModModElements.ModElement.Tag
 public class FlareGunOnHitProcedure extends FoodModModElements.ModElement {
@@ -21,9 +20,19 @@ public class FlareGunOnHitProcedure extends FoodModModElements.ModElement {
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("cmdparams") == null) {
-			if (!dependencies.containsKey("cmdparams"))
-				FoodModMod.LOGGER.warn("Failed to load dependency cmdparams for procedure FlareGunOnHit!");
+		if (dependencies.get("x") == null) {
+			if (!dependencies.containsKey("x"))
+				FoodModMod.LOGGER.warn("Failed to load dependency x for procedure FlareGunOnHit!");
+			return;
+		}
+		if (dependencies.get("y") == null) {
+			if (!dependencies.containsKey("y"))
+				FoodModMod.LOGGER.warn("Failed to load dependency y for procedure FlareGunOnHit!");
+			return;
+		}
+		if (dependencies.get("z") == null) {
+			if (!dependencies.containsKey("z"))
+				FoodModMod.LOGGER.warn("Failed to load dependency z for procedure FlareGunOnHit!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
@@ -31,107 +40,13 @@ public class FlareGunOnHitProcedure extends FoodModModElements.ModElement {
 				FoodModMod.LOGGER.warn("Failed to load dependency world for procedure FlareGunOnHit!");
 			return;
 		}
-		HashMap cmdparams = (HashMap) dependencies.get("cmdparams");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		world.setBlockState(new BlockPos((int) new Object() {
-			int convert(String s) {
-				try {
-					return Integer.parseInt(s.trim());
-				} catch (Exception e) {
-				}
-				return 0;
-			}
-		}.convert((new Object() {
-			public String getText() {
-				String param = (String) cmdparams.get("0");
-				if (param != null) {
-					return param;
-				}
-				return "";
-			}
-		}.getText())), (int) new Object() {
-			int convert(String s) {
-				try {
-					return Integer.parseInt(s.trim());
-				} catch (Exception e) {
-				}
-				return 0;
-			}
-		}.convert((new Object() {
-			public String getText() {
-				String param = (String) cmdparams.get("1");
-				if (param != null) {
-					return param;
-				}
-				return "";
-			}
-		}.getText())), (int) new Object() {
-			int convert(String s) {
-				try {
-					return Integer.parseInt(s.trim());
-				} catch (Exception e) {
-				}
-				return 0;
-			}
-		}.convert((new Object() {
-			public String getText() {
-				String param = (String) cmdparams.get("2");
-				if (param != null) {
-					return param;
-				}
-				return "";
-			}
-		}.getText()))), Blocks.FIRE.getDefaultState(), 3);
+		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.FIRE.getDefaultState(), 3);
 		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, new Object() {
-				int convert(String s) {
-					try {
-						return Integer.parseInt(s.trim());
-					} catch (Exception e) {
-					}
-					return 0;
-				}
-			}.convert((new Object() {
-				public String getText() {
-					String param = (String) cmdparams.get("0");
-					if (param != null) {
-						return param;
-					}
-					return "";
-				}
-			}.getText())), new Object() {
-				int convert(String s) {
-					try {
-						return Integer.parseInt(s.trim());
-					} catch (Exception e) {
-					}
-					return 0;
-				}
-			}.convert((new Object() {
-				public String getText() {
-					String param = (String) cmdparams.get("1");
-					if (param != null) {
-						return param;
-					}
-					return "";
-				}
-			}.getText())), new Object() {
-				int convert(String s) {
-					try {
-						return Integer.parseInt(s.trim());
-					} catch (Exception e) {
-					}
-					return 0;
-				}
-			}.convert((new Object() {
-				public String getText() {
-					String param = (String) cmdparams.get("2");
-					if (param != null) {
-						return param;
-					}
-					return "";
-				}
-			}.getText())), new ItemStack(UsedflareItem.block, (int) (1)));
+			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(UsedflareItem.block, (int) (1)));
 			entityToSpawn.setPickupDelay((int) 10);
 			world.addEntity(entityToSpawn);
 		}

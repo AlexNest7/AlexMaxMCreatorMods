@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "amfoodmod",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.DYE#4"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": "CUSTOM:DarkessencearmorArmor.legs"
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnhancedDarkMetalArmor.legs"
+    },
+    "name": "enhdmleggingsrecipe",
+    "namespace": "mod"
+  }
+}

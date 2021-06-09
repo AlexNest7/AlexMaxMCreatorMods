@@ -1,0 +1,36 @@
+{
+  "group": "amfoodmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "food_mod:darkessenceingot"
+    },
+    "1": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "2": {
+      "item": "food_mod:darkessenceingot"
+    },
+    "3": {
+      "item": "food_mod:darkessenceingot"
+    },
+    "4": {
+      "item": "food_mod:darkessencearmor_armor_chestplate"
+    },
+    "5": {
+      "item": "food_mod:darkessenceingot"
+    },
+    "7": {
+      "item": "food_mod:darkessenceingot"
+    }
+  },
+  "result": {
+    "item": "food_mod:enhanced_dark_metal_armor_chestplate",
+    "count": 1
+  }
+}

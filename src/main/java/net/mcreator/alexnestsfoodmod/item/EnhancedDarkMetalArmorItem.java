@@ -19,7 +19,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 
-import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
+import net.mcreator.alexnestsfoodmod.itemgroup.AMFaSArmorItemGroup;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
 import java.util.List;
@@ -48,7 +48,7 @@ public class EnhancedDarkMetalArmorItem extends FoodModModElements.ModElement {
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{4, 5, 6, 4}[slot.getIndex()];
+				return new int[]{4, 5, 5, 4}[slot.getIndex()];
 			}
 
 			@Override
@@ -79,10 +79,10 @@ public class EnhancedDarkMetalArmorItem extends FoodModModElements.ModElement {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.1f;
+				return 0.05f;
 			}
 		};
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(AMFoodModItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(AMFaSArmorItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
@@ -94,7 +94,7 @@ public class EnhancedDarkMetalArmorItem extends FoodModModElements.ModElement {
 				return "food_mod:textures/models/armor/enhanced_darksteel_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("enhanced_dark_metal_armor_helmet"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(AMFoodModItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(AMFaSArmorItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
@@ -106,7 +106,7 @@ public class EnhancedDarkMetalArmorItem extends FoodModModElements.ModElement {
 				return "food_mod:textures/models/armor/enhanced_darksteel_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("enhanced_dark_metal_armor_chestplate"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(AMFoodModItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(AMFaSArmorItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
@@ -118,7 +118,7 @@ public class EnhancedDarkMetalArmorItem extends FoodModModElements.ModElement {
 				return "food_mod:textures/models/armor/enhanced_darksteel_armor__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("enhanced_dark_metal_armor_leggings"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(AMFoodModItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(AMFaSArmorItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

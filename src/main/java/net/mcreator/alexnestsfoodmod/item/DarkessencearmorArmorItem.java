@@ -18,7 +18,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.alexnestsfoodmod.procedures.DarkEssenceArmorWearProcedure;
-import net.mcreator.alexnestsfoodmod.itemgroup.AMFoodModItemGroup;
+import net.mcreator.alexnestsfoodmod.itemgroup.AMFaSArmorItemGroup;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
 import java.util.Map;
@@ -48,7 +48,7 @@ public class DarkessencearmorArmorItem extends FoodModModElements.ModElement {
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{3, 4, 4, 2}[slot.getIndex()];
+				return new int[]{2, 3, 4, 3}[slot.getIndex()];
 			}
 
 			@Override
@@ -74,7 +74,7 @@ public class DarkessencearmorArmorItem extends FoodModModElements.ModElement {
 
 			@Override
 			public float getToughness() {
-				return 1f;
+				return 0.5f;
 			}
 
 			@Override
@@ -82,7 +82,7 @@ public class DarkessencearmorArmorItem extends FoodModModElements.ModElement {
 				return 0f;
 			}
 		};
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(AMFoodModItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(AMFaSArmorItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "food_mod:textures/models/armor/darkessencearmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
@@ -101,7 +101,7 @@ public class DarkessencearmorArmorItem extends FoodModModElements.ModElement {
 				}
 			}
 		}.setRegistryName("darkessencearmor_armor_helmet"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(AMFoodModItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(AMFaSArmorItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "food_mod:textures/models/armor/darkessencearmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
@@ -119,7 +119,7 @@ public class DarkessencearmorArmorItem extends FoodModModElements.ModElement {
 				}
 			}
 		}.setRegistryName("darkessencearmor_armor_chestplate"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(AMFoodModItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(AMFaSArmorItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "food_mod:textures/models/armor/darkessencearmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
@@ -137,7 +137,7 @@ public class DarkessencearmorArmorItem extends FoodModModElements.ModElement {
 				}
 			}
 		}.setRegistryName("darkessencearmor_armor_leggings"));
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(AMFoodModItemGroup.tab)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(AMFaSArmorItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "food_mod:textures/models/armor/darkessencearmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";

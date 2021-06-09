@@ -34,11 +34,14 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 
+import net.mcreator.alexnestsfoodmod.procedures.FlareGunOnHitProcedure;
 import net.mcreator.alexnestsfoodmod.entity.renderer.FlareGunRenderer;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
 import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 
 @FoodModModElements.ModElement.Tag
 public class FlareGunItem extends FoodModModElements.ModElement {
@@ -166,9 +169,40 @@ public class FlareGunItem extends FoodModModElements.ModElement {
 		}
 
 		@Override
+		public void onCollideWithPlayer(PlayerEntity entity) {
+			super.onCollideWithPlayer(entity);
+			Entity sourceentity = this.func_234616_v_();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				FlareGunOnHitProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+			Entity sourceentity = this.func_234616_v_();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				FlareGunOnHitProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
@@ -180,6 +214,14 @@ public class FlareGunItem extends FoodModModElements.ModElement {
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
 			if (this.inGround) {
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					FlareGunOnHitProcedure.executeProcedure($_dependencies);
+				}
 				this.remove();
 			}
 		}

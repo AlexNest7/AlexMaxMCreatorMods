@@ -220,12 +220,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
+            "name": "sourceentity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "x",
@@ -467,6 +463,10 @@
         "dependencies": [
           {
             "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
             "type": "entity"
           },
           {
@@ -778,8 +778,16 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "cmdparams",
-            "type": "map"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -853,6 +861,56 @@
         "ec": true
       },
       "path": "~/Armor"
+    },
+    {
+      "name": "Enhanceddmhelmetrecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enhanceddmhelmetrecipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "Enhdmchestplaterecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enhdmchestplaterecipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "Enhdmleggingsrecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enhdmleggingsrecipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "Enhdmbootsrecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enhdmbootsrecipe",
+      "path": "~/Armor"
+    },
+    {
+      "name": "AMFaSArmor",
+      "type": "tab",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "am_fa_s_armor",
+      "path": "~/CreativeTab"
     }
   ],
   "variable_elements": [],
@@ -875,6 +933,7 @@
       "item.food_mod.enhanced_dark_metal_armor_chestplate": "Enhanced Dark Metal Armor Body",
       "item.food_mod.enhanced_dark_metal_armor_leggings": "Enhanced Dark Metal Armor Leggings",
       "advancements.the_absorber.descr": "Поглоти темноту, стань темнотой",
+      "itemGroup.tabam_fa_s_armor": "AM F\u0026S Armor",
       "advancements.root_achievement.title": "AM Food Mod Достижения",
       "advancements.vegan_achievement.descr": "Сделай семенной салат. И да, он съедобен.",
       "advancements.sweet_tooth.title": "Сладкоежка",
@@ -923,6 +982,7 @@
       "item.food_mod.enhanced_dark_metal_armor_chestplate": "Enhanced Dark Metal Armor Body",
       "item.food_mod.enhanced_dark_metal_armor_leggings": "Enhanced Dark Metal Armor Leggings",
       "advancements.the_absorber.descr": "Absorb the darkness, become the darkness",
+      "itemGroup.tabam_fa_s_armor": "AM F\u0026S Armor",
       "advancements.root_achievement.title": "AM Food Mod Achievements",
       "advancements.vegan_achievement.descr": "Make a seed salat! Trust me, it\u0027s edible.",
       "advancements.sweet_tooth.title": "Sweet Tooth",

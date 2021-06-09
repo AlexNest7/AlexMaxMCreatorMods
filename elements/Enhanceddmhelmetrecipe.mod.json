@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "amfoodmod",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": "CUSTOM:DarkessencearmorArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#11"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnhancedDarkMetalArmor.helmet"
+    },
+    "name": "enhancedmhelmetrecipe",
+    "namespace": "mod"
+  }
+}
