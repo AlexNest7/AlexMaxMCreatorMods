@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:cocoa"
+    },
+    "title": {
+      "translate": "advancements.beware_of_mosquitos.title"
+    },
+    "description": {
+      "translate": "advancements.beware_of_mosquitos.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beware_of_mosquitos": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "jungle"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "foodandstuff_mod:root_achievement"
+}

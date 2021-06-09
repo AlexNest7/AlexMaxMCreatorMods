@@ -3,8 +3,8 @@ loaderVersion="[36,)"
 license="All Rights Reserved"
 
 [[mods]]
-modId="food_mod"
-version="1.1.1"
+modId="foodandstuff_mod"
+version="1.2.0"
 displayName="AlexNest's Food and Stuff Mod"
 credits="Created using mod maker MCreator. Check it out!"
 displayURL="https://mcreator.net"
@@ -13,7 +13,7 @@ description='''
 My first mod, which adds a lot of stuff. Hope you'll like it!
 '''
 
-[[dependencies.food_mod]]
+[[dependencies.foodandstuff_mod]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5]"

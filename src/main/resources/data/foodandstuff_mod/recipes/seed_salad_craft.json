@@ -1,0 +1,30 @@
+{
+  "group": "amfoodmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "foodandstuff_mod:sunflower_oil"
+    },
+    "3": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "4": {
+      "item": "minecraft:beetroot"
+    },
+    "5": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "7": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "foodandstuff_mod:seed_salad",
+    "count": 1
+  }
+}

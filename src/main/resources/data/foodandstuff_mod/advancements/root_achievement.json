@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "foodandstuff_mod:choco_cookie"
+    },
+    "title": {
+      "translate": "advancements.root_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.root_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "root_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "foodandstuff_mod:chopping_hammer_craft",
+      "foodandstuff_mod:sunflower_oil_craft",
+      "foodandstuff_mod:chocolate_bar_craft"
+    ]
+  }
+}

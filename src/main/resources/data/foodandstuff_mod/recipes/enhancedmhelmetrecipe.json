@@ -1,0 +1,30 @@
+{
+  "group": "amfoodmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "foodandstuff_mod:darkessenceingot"
+    },
+    "3": {
+      "item": "foodandstuff_mod:darkessenceingot"
+    },
+    "4": {
+      "item": "foodandstuff_mod:darkessencearmor_armor_helmet"
+    },
+    "5": {
+      "item": "foodandstuff_mod:darkessenceingot"
+    },
+    "7": {
+      "item": "minecraft:blue_stained_glass_pane"
+    }
+  },
+  "result": {
+    "item": "foodandstuff_mod:enhanced_dark_metal_armor_helmet",
+    "count": 1
+  }
+}

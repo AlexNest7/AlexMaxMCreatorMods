@@ -4,10 +4,10 @@
   "definition": {
     "texture": "void_ore",
     "textureTop": "void_ore",
-    "textureLeft": "void_ore",
+    "textureLeft": "dark_essence_ore_side",
     "textureFront": "void_ore",
     "textureRight": "void_ore",
-    "textureBack": "void_ore",
+    "textureBack": "dark_essence_ore_side",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,

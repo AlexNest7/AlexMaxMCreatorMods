@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "foodandstuff_mod:dark_essence"
+    },
+    "title": {
+      "translate": "advancements.the_absorber.title"
+    },
+    "description": {
+      "translate": "advancements.the_absorber.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_absorber": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "foodandstuff_mod:dark_essence"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "foodandstuff_mod:root_achievement"
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "foodandstuff_mod:block/void_ore"
+    }
+  }
+}

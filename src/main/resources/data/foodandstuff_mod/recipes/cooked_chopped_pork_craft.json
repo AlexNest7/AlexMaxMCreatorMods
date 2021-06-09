@@ -1,0 +1,12 @@
+{
+  "group": "amfoodmod",
+  "type": "minecraft:smelting",
+  "experience": 3,
+  "cookingtime": 180,
+  "ingredient": {
+    "item": "foodandstuff_mod:raw_chopped_pork"
+  },
+  "result": {
+    "item": "foodandstuff_mod:cooked_chopped_pork"
+  }
+}

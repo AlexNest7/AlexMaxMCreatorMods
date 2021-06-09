@@ -1,0 +1,33 @@
+{
+  "group": "am_foodmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "1": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "2": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "3": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "4": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "5": {
+      "item": "minecraft:cocoa_beans"
+    }
+  },
+  "result": {
+    "item": "foodandstuff_mod:chocolate_bar",
+    "count": 1
+  }
+}

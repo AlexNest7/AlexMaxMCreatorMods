@@ -1,0 +1,16 @@
+{
+  "group": "amfoodmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:porkchop"
+    },
+    {
+      "item": "foodandstuff_mod:chopping_hammer"
+    }
+  ],
+  "result": {
+    "item": "foodandstuff_mod:raw_chopped_pork",
+    "count": 1
+  }
+}

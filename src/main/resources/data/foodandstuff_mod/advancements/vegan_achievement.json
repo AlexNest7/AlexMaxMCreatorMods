@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "foodandstuff_mod:seed_salad"
+    },
+    "title": {
+      "translate": "advancements.vegan_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.vegan_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "vegan_achievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "foodandstuff_mod:seed_salad",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "foodandstuff_mod:root_achievement"
+}

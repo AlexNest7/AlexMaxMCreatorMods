@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "foodandstuff_mod:blocks/void_ore",
+    "up": "foodandstuff_mod:blocks/void_ore",
+    "north": "foodandstuff_mod:blocks/void_ore",
+    "east": "foodandstuff_mod:blocks/dark_essence_ore_side",
+    "south": "foodandstuff_mod:blocks/dark_essence_ore_side",
+    "west": "foodandstuff_mod:blocks/void_ore",
+    "particle": "foodandstuff_mod:blocks/void_ore"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "group": "amfoodmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "foodandstuff_mod:dark_essence"
+    },
+    "1": {
+      "item": "foodandstuff_mod:dark_essence"
+    },
+    "2": {
+      "item": "foodandstuff_mod:dark_essence"
+    },
+    "3": {
+      "item": "foodandstuff_mod:dark_essence"
+    },
+    "4": {
+      "item": "foodandstuff_mod:dark_essence"
+    },
+    "5": {
+      "item": "foodandstuff_mod:dark_essence"
+    }
+  },
+  "result": {
+    "item": "foodandstuff_mod:darkessenceingot",
+    "count": 2
+  }
+}
