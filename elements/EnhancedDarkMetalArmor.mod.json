@@ -1,0 +1,66 @@
+{
+  "_fv": 18,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "dark_essence_visor_helmet",
+    "enableBody": true,
+    "textureBody": "enhanced_dark_metal_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "enhanced_dark_metal_leggings",
+    "enableBoots": true,
+    "textureBoots": "enhanced_dark_metal_boots",
+    "creativeTab": {
+      "value": "CUSTOM:AMFoodMod"
+    },
+    "armorTextureFile": "enhanced_darksteel_armor_",
+    "helmetName": "Enhanced Dark Metal Armor Helmet",
+    "bodyName": "Enhanced Dark Metal Armor Body",
+    "leggingsName": "Enhanced Dark Metal Armor Leggings",
+    "bootsName": "Enhanced Dark Metal Armor Boots",
+    "helmetSpecialInfo": [
+      "Wow, it looks much better now."
+    ],
+    "bodySpecialInfo": [
+      "This one is heavy!"
+    ],
+    "leggingsSpecialInfo": [
+      "They're quiet heavy."
+    ],
+    "bootsSpecialInfo": [
+      "It's harder to walk wearing these."
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 28,
+    "damageValueHelmet": 4,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 4,
+    "enchantability": 7,
+    "toughness": 1.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "item.armor.equip_diamond"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Darkessenceingot"
+      }
+    ]
+  }
+}

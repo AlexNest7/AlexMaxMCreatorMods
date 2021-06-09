@@ -7,22 +7,22 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.alexnestsfoodmod.item.ChocoCookieItem;
+import net.mcreator.alexnestsfoodmod.item.FlareGunItem;
 import net.mcreator.alexnestsfoodmod.FoodModModElements;
 
 @FoodModModElements.ModElement.Tag
-public class AMFoodModItemGroup extends FoodModModElements.ModElement {
-	public AMFoodModItemGroup(FoodModModElements instance) {
-		super(instance, 32);
+public class AMFaSRangedWeaponsItemGroup extends FoodModModElements.ModElement {
+	public AMFaSRangedWeaponsItemGroup(FoodModModElements instance) {
+		super(instance, 65);
 	}
 
 	@Override
 	public void initElements() {
-		tab = new ItemGroup("tabam_food_mod") {
+		tab = new ItemGroup("tabam_fa_s_ranged_weapons") {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(ChocoCookieItem.block, (int) (1));
+				return new ItemStack(FlareGunItem.block, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)

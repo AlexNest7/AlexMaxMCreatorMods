@@ -48,7 +48,7 @@ public class DarkessencearmorArmorItem extends FoodModModElements.ModElement {
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{3, 4, 5, 3}[slot.getIndex()];
+				return new int[]{3, 4, 4, 2}[slot.getIndex()];
 			}
 
 			@Override

@@ -2,9 +2,9 @@
   "_fv": 18,
   "_type": "tab",
   "definition": {
-    "name": "AM F&S Food",
+    "name": "AM F&S Tools",
     "icon": {
-      "value": "CUSTOM:ChocoCookie"
+      "value": "CUSTOM:KitchenKnife"
     },
     "showSearch": true
   }

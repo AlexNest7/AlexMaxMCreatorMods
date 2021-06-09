@@ -2,9 +2,9 @@
   "_fv": 18,
   "_type": "tab",
   "definition": {
-    "name": "AM F&S Food",
+    "name": "AM F&S Ranged Weapons",
     "icon": {
-      "value": "CUSTOM:ChocoCookie"
+      "value": "CUSTOM:FlareGun"
     },
     "showSearch": true
   }
