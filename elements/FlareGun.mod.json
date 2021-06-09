@@ -10,7 +10,7 @@
       "Only use in case of emergency! JK, go on."
     ],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:AMFaSRangedWeapons"
     },
     "stackSize": 1,
     "ammoItem": {
@@ -36,9 +36,6 @@
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
-      "name": "FlareGunOnHit"
-    },
-    "onBulletHitsPlayer": {
       "name": "FlareGunOnHit"
     },
     "onBulletHitsEntity": {

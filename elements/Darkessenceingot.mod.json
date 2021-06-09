@@ -8,7 +8,7 @@
     "name": "Dark Essence Ingot",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AMFoodMod"
     },
     "stackSize": 64,
     "enchantability": 0,

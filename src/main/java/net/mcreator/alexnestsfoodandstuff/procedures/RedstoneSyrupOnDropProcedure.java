@@ -10,18 +10,14 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.Block;
 
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModMod;
 
 import java.util.Map;
-import java.util.Collections;
 
 @FoodandstuffModModElements.ModElement.Tag
 public class RedstoneSyrupOnDropProcedure extends FoodandstuffModModElements.ModElement {
@@ -71,14 +67,6 @@ public class RedstoneSyrupOnDropProcedure extends FoodandstuffModModElements.Mod
 			((PlayerEntity) sourceentity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 					((PlayerEntity) sourceentity).container.func_234641_j_());
 		}
-		{
-			Entity _ent = sourceentity;
-			_ent.setPositionAndUpdate(x, y, z);
-			if (_ent instanceof ServerPlayerEntity) {
-				((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, y, z, _ent.rotationYaw, _ent.rotationPitch, Collections.emptySet());
-			}
-		}
-		world.playEvent(2001, new BlockPos((int) x, (int) y, (int) z), Block.getStateId(Blocks.GLASS.getDefaultState()));
 		if (world instanceof World && !world.isRemote()) {
 			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),

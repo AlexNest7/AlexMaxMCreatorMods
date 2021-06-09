@@ -22,7 +22,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.ShootableItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -35,6 +34,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.alexnestsfoodandstuff.procedures.FlareGunOnHitProcedure;
+import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFaSRangedWeaponsItemGroup;
 import net.mcreator.alexnestsfoodandstuff.entity.renderer.FlareGunRenderer;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 
@@ -62,7 +62,7 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(70));
+			super(new Item.Properties().group(AMFaSRangedWeaponsItemGroup.tab).maxDamage(70));
 			setRegistryName("flare_gun");
 		}
 
@@ -166,24 +166,6 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 		@Override
 		protected ItemStack getArrowStack() {
 			return new ItemStack(FlaregunAmmoItem.block, (int) (1));
-		}
-
-		@Override
-		public void onCollideWithPlayer(PlayerEntity entity) {
-			super.onCollideWithPlayer(entity);
-			Entity sourceentity = this.func_234616_v_();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			World world = this.world;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				FlareGunOnHitProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

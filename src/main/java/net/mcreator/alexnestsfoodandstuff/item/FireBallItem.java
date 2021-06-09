@@ -34,7 +34,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFoodModItemGroup;
+import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFaSRangedWeaponsItemGroup;
 import net.mcreator.alexnestsfoodandstuff.entity.renderer.FireBallRenderer;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 
@@ -60,7 +60,7 @@ public class FireBallItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(16));
+			super(new Item.Properties().group(AMFaSRangedWeaponsItemGroup.tab).maxStackSize(16));
 			setRegistryName("fire_ball");
 		}
 

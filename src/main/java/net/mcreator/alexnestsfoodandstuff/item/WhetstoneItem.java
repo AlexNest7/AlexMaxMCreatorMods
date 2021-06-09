@@ -8,11 +8,11 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 
 import java.util.List;
@@ -31,7 +31,7 @@ public class WhetstoneItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxDamage(120).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxDamage(120).rarity(Rarity.COMMON));
 			setRegistryName("whetstone");
 		}
 
