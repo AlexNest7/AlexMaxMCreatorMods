@@ -9,7 +9,6 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.alexnestsfoodandstuff.item.FlaregunAmmoItem;
@@ -17,7 +16,6 @@ import net.mcreator.alexnestsfoodandstuff.item.FlareGunItem;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModMod;
 
-import java.util.Random;
 import java.util.Map;
 
 @FoodandstuffModModElements.ModElement.Tag
@@ -72,19 +70,8 @@ public class FlareGunWhenUsedProcedure extends FoodandstuffModModElements.ModEle
 								.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
-			if (entity instanceof LivingEntity) {
-				Entity _ent = entity;
-				if (!_ent.world.isRemote()) {
-					FlareGunItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 1, (float) 5, (int) 5);
-				}
-			}
-			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(FlaregunAmmoItem.block, (int) (1));
-				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-						((PlayerEntity) entity).container.func_234641_j_());
-			}
 			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).getCooldownTracker().setCooldown((new ItemStack(FlareGunItem.block, (int) (1))).getItem(), (int) 60);
+				((PlayerEntity) entity).getCooldownTracker().setCooldown((new ItemStack(FlareGunItem.block, (int) (1))).getItem(), (int) 30);
 		} else {
 			if (world instanceof World && !world.isRemote()) {
 				((World) world)

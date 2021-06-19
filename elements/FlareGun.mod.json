@@ -25,13 +25,13 @@
     "animation": "crossbow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "onEntitySwing": {
+    "onRangedItemUsed": {
       "name": "FlareGunWhenUsed"
     },
     "bulletPower": 1.5,
-    "bulletDamage": 3.9999999999999996,
+    "bulletDamage": 4.0,
     "bulletKnockback": 1,
-    "bulletParticles": true,
+    "bulletParticles": false,
     "bulletIgnitesFire": true,
     "bulletItemTexture": {
       "value": "CUSTOM:FlaregunAmmo"
