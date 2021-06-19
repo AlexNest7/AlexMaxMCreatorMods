@@ -45,6 +45,12 @@ public class FoodandstuffModModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public FoodandstuffModModElements() {
+		sounds.put(new ResourceLocation("foodandstuff_mod", "flare_gun_shot"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("foodandstuff_mod", "flare_gun_shot")));
+		sounds.put(new ResourceLocation("foodandstuff_mod", "flare_gun_dry_shot"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("foodandstuff_mod", "flare_gun_dry_shot")));
+		sounds.put(new ResourceLocation("foodandstuff_mod", "fire_ball_launch"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("foodandstuff_mod", "fire_ball_launch")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("foodandstuff_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

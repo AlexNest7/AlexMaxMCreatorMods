@@ -1,1 +1,32 @@
-{}
+{
+  "flare_gun_shot": {
+    "category": "master",
+    "subtitle": "subtitles.flare_gun_shot",
+    "sounds": [
+      {
+        "name": "foodandstuff_mod:flare_gun_shot",
+        "stream": false
+      }
+    ]
+  },
+  "flare_gun_dry_shot": {
+    "category": "master",
+    "subtitle": "subtitles.flare_gun_dry_shot",
+    "sounds": [
+      {
+        "name": "foodandstuff_mod:flare_gun_dry_shot",
+        "stream": false
+      }
+    ]
+  },
+  "fire_ball_launch": {
+    "category": "master",
+    "subtitle": "subtitles.fire_ball_launch",
+    "sounds": [
+      {
+        "name": "foodandstuff_mod:fire_ball_shot",
+        "stream": false
+      }
+    ]
+  }
+}

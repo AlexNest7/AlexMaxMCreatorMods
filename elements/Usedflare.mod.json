@@ -8,7 +8,7 @@
     "name": "Empty Flare",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:AMFoodMod"
+      "value": "CUSTOM:AMFaSItems"
     },
     "stackSize": 64,
     "enchantability": 0,

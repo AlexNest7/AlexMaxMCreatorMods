@@ -911,10 +911,105 @@
       "ids": {},
       "registry_name": "am_fa_s_armor",
       "path": "~/CreativeTab"
+    },
+    {
+      "name": "FlareGunWhenUsed",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flare_gun_when_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ranged_Weapons_Rules"
+    },
+    {
+      "name": "DarkessenseNugget",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkessense_nugget",
+      "path": "~/Items"
+    },
+    {
+      "name": "DarksteelIngotCraft",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darksteel_ingot_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "FlareGunCraft",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flare_gun_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "AMFaSItems",
+      "type": "tab",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "am_fa_s_items",
+      "path": "~/CreativeTab"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "flare_gun_shot",
+      "files": [
+        "flare_gun_shot"
+      ],
+      "category": "master",
+      "subtitle": "Flare Gun fires"
+    },
+    {
+      "name": "flare_gun_dry_shot",
+      "files": [
+        "flare_gun_dry_shot"
+      ],
+      "category": "master",
+      "subtitle": "Flare Gun Dry Shot"
+    },
+    {
+      "name": "fire_ball_launch",
+      "files": [
+        "fire_ball_shot"
+      ],
+      "category": "master",
+      "subtitle": "Fire Ball launched"
+    }
+  ],
   "language_map": {
     "ru_ru": {
       "item.food_mod.enhanced_dark_metal_armor_boots": "Enhanced Dark Metal Armor Boots",
@@ -922,6 +1017,7 @@
       "item.food_mod.berry_jam": "Варенье из Сладких ягод",
       "item.foodandstuff_mod.whetstone": "Whetstone",
       "item.foodandstuff_mod.flare_gun": "Flare Gun",
+      "subtitles.flare_gun_dry_shot": "Flare Gun Dry Shot",
       "item.food_mod.flare_gun": "Сигнальная Ракетница",
       "itemGroup.tabam_fa_s_tools": "AM Fa S Tools",
       "item.food_mod.chopping_hammer": "Отбивной молоток",
@@ -936,7 +1032,9 @@
       "advancements.vegan_achievement.descr": "Сделай семенной салат. И да, он съедобен.",
       "advancements.sweet_tooth.title": "Сладкоежка",
       "item.food_mod.kitchen_knife": "Кухонный Нож",
+      "itemGroup.tabam_fa_s_items": "AM F\u0026S Items",
       "advancements.vegan_achievement.title": "100% Веганский!",
+      "subtitles.fire_ball_launch": "Fire Ball launched",
       "item.food_mod.whetstone": "Точильный Камень",
       "advancements.sweet_tooth.descr": "Сделай плитку шоколада. Ммм, шоколад...",
       "item.food_mod.raw_chopped_pork": "Сырая Свиная Отбивная",
@@ -969,7 +1067,9 @@
       "item.foodandstuff_mod.berry_jam": "Berry Jam Jar",
       "item.foodandstuff_mod.flaregun_ammo": "Flaregun Ammo",
       "advancements.jam_hater.descr": "Эм...Зачем ты это сделал?",
+      "item.foodandstuff_mod.darkessense_nugget": "Darksteel Nugget",
       "item.foodandstuff_mod.darkessencearmor_armor_boots": "Dark Steel Boots",
+      "subtitles.flare_gun_shot": "Flare Gun fires",
       "item.food_mod.broken_berry_jam_jar": "Разбитая банка ягодного варенья",
       "item.food_mod.choco_cookie": "Шоколадное печенье",
       "item.food_mod.chocolate_bar": "Плитка шоколада",
@@ -1002,6 +1102,7 @@
       "item.food_mod.berry_jam": "Berry Jam Jar",
       "item.foodandstuff_mod.whetstone": "Whetstone",
       "item.foodandstuff_mod.flare_gun": "Flare Gun",
+      "subtitles.flare_gun_dry_shot": "Flare Gun Dry Shot",
       "item.food_mod.flare_gun": "Flare Gun",
       "itemGroup.tabam_fa_s_tools": "AM F\u0026S Tools",
       "item.food_mod.chopping_hammer": "Chopping Hammer",
@@ -1016,7 +1117,9 @@
       "advancements.vegan_achievement.descr": "Make a seed salat! Trust me, it\u0027s edible.",
       "advancements.sweet_tooth.title": "Sweet Tooth",
       "item.food_mod.kitchen_knife": "Kitchen Knife",
+      "itemGroup.tabam_fa_s_items": "AM F\u0026S Items",
       "advancements.vegan_achievement.title": "100% Vegan!",
+      "subtitles.fire_ball_launch": "Fire Ball launched",
       "item.food_mod.whetstone": "Whetstone",
       "item.food_mod.raw_chopped_pork": "Raw Chopped Pork",
       "advancements.sweet_tooth.descr": "Make a chocolate bar. Mmm, chocolate...",
@@ -1049,7 +1152,9 @@
       "item.foodandstuff_mod.berry_jam": "Berry Jam Jar",
       "item.foodandstuff_mod.flaregun_ammo": "Flaregun Ammo",
       "advancements.jam_hater.descr": "...Why did you do this?",
+      "item.foodandstuff_mod.darkessense_nugget": "Darksteel Nugget",
       "item.foodandstuff_mod.darkessencearmor_armor_boots": "Dark Steel Boots",
+      "subtitles.flare_gun_shot": "Flare Gun fires",
       "item.food_mod.broken_berry_jam_jar": "Broken Berry Jam Jar",
       "item.food_mod.choco_cookie": "Choco Chip Cookie",
       "item.food_mod.chocolate_bar": "Chocolate Bar",

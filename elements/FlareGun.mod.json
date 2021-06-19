@@ -19,12 +19,15 @@
     "shootConstantly": true,
     "usageCount": 70,
     "actionSound": {
-      "value": "entity.firework.shoot"
+      "value": "CUSTOM:flare_gun_shot"
     },
     "hasGlow": false,
     "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "FlareGunWhenUsed"
+    },
     "bulletPower": 1.5,
     "bulletDamage": 3.9999999999999996,
     "bulletKnockback": 1,

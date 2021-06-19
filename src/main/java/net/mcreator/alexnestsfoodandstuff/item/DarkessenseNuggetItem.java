@@ -18,11 +18,11 @@ import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 import java.util.List;
 
 @FoodandstuffModModElements.ModElement.Tag
-public class UsedflareItem extends FoodandstuffModModElements.ModElement {
-	@ObjectHolder("foodandstuff_mod:usedflare")
+public class DarkessenseNuggetItem extends FoodandstuffModModElements.ModElement {
+	@ObjectHolder("foodandstuff_mod:darkessense_nugget")
 	public static final Item block = null;
-	public UsedflareItem(FoodandstuffModModElements instance) {
-		super(instance, 59);
+	public DarkessenseNuggetItem(FoodandstuffModModElements instance) {
+		super(instance, 73);
 	}
 
 	@Override
@@ -31,8 +31,8 @@ public class UsedflareItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(AMFaSItemsItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.COMMON));
-			setRegistryName("usedflare");
+			super(new Item.Properties().group(AMFaSItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("darkessense_nugget");
 		}
 
 		@Override
@@ -53,7 +53,7 @@ public class UsedflareItem extends FoodandstuffModModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("I can refill this shell with blaze powder."));
+			list.add(new StringTextComponent("A small piece of Dark Steel."));
 		}
 	}
 }

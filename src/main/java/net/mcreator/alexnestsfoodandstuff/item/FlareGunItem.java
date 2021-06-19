@@ -33,6 +33,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 
+import net.mcreator.alexnestsfoodandstuff.procedures.FlareGunWhenUsedProcedure;
 import net.mcreator.alexnestsfoodandstuff.procedures.FlareGunOnHitProcedure;
 import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFaSRangedWeaponsItemGroup;
 import net.mcreator.alexnestsfoodandstuff.entity.renderer.FlareGunRenderer;
@@ -126,6 +127,14 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 								if (stack.isEmpty())
 									entity.inventory.deleteStack(stack);
 							}
+						}
+						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("x", x);
+							$_dependencies.put("y", y);
+							$_dependencies.put("z", z);
+							$_dependencies.put("world", world);
+							FlareGunWhenUsedProcedure.executeProcedure($_dependencies);
 						}
 					}
 					entity.stopActiveHand();
@@ -221,7 +230,7 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.shoot")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
@@ -242,7 +251,7 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.shoot")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}

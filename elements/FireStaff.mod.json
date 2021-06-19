@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Fire Staff",
     "specialInfo": [
-      "I feel like i know how to use it..."
+      "I feel like I know how to use it..."
     ],
     "creativeTab": {
       "value": "CUSTOM:AMFaSRangedWeapons"
@@ -19,9 +19,9 @@
     "shootConstantly": true,
     "usageCount": 65,
     "actionSound": {
-      "value": "entity.generic.extinguish_fire"
+      "value": "CUSTOM:fire_ball_launch"
     },
-    "hasGlow": false,
+    "hasGlow": true,
     "animation": "bow",
     "enableMeleeDamage": true,
     "damageVsEntity": 2.0,

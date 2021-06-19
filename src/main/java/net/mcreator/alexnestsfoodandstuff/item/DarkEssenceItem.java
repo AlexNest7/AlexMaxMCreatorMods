@@ -15,7 +15,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.alexnestsfoodandstuff.procedures.DarkEssenceFoodEatenProcedure;
-import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFoodModItemGroup;
+import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFaSItemsItemGroup;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 
 import java.util.Map;
@@ -36,7 +36,7 @@ public class DarkEssenceItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(16).rarity(Rarity.UNCOMMON)
+			super(new Item.Properties().group(AMFaSItemsItemGroup.tab).maxStackSize(16).rarity(Rarity.UNCOMMON)
 					.food((new Food.Builder()).hunger(6).saturation(0.5f).meat().build()));
 			setRegistryName("dark_essence");
 		}

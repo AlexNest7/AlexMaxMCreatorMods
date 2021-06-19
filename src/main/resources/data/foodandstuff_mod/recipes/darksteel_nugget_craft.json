@@ -1,0 +1,13 @@
+{
+  "group": "foodandstuff_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "foodandstuff_mod:darkessenceingot"
+    }
+  ],
+  "result": {
+    "item": "foodandstuff_mod:darkessense_nugget",
+    "count": 9
+  }
+}

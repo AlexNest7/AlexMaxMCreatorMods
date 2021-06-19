@@ -15,7 +15,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.alexnestsfoodandstuff.procedures.SunflowerOilCraftedProcedure;
-import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFoodModItemGroup;
+import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFaSItemsItemGroup;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 
 import java.util.Map;
@@ -36,7 +36,7 @@ public class SunflowerOilItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(AMFaSItemsItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON));
 			setRegistryName("sunflower_oil");
 		}
 

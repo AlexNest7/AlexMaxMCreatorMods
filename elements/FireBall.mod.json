@@ -19,7 +19,7 @@
     "shootConstantly": true,
     "usageCount": 0,
     "actionSound": {
-      "value": "entity.blaze.burn"
+      "value": "CUSTOM:fire_ball_launch"
     },
     "hasGlow": true,
     "animation": "bow",

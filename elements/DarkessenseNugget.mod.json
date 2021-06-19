@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "dark_essence_ingot",
+    "texture": "darksteel_nugget",
     "customModelName": "Normal",
-    "name": "Dark Essence Ingot",
-    "rarity": "UNCOMMON",
+    "name": "Darksteel Nugget",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:AMFaSItems"
     },
@@ -19,13 +19,13 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "It feels cold to the touch..."
+      "A small piece of Dark Steel."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

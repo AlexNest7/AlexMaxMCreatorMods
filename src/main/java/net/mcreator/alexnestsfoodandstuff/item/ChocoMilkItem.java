@@ -59,7 +59,7 @@ public class ChocoMilkItem extends FoodandstuffModModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("It contains both chocolate and milk."));
+			list.add(new StringTextComponent("It contains both chocolate and milk. Cool!"));
 		}
 
 		@Override
