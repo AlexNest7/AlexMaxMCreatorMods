@@ -63,7 +63,7 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(AMFaSRangedWeaponsItemGroup.tab).maxDamage(70));
+			super(new Item.Properties().group(AMFaSRangedWeaponsItemGroup.tab).maxDamage(72));
 			setRegistryName("flare_gun");
 		}
 
@@ -74,14 +74,33 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 		}
 
 		@Override
+		public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+			boolean retval = super.onEntitySwing(itemstack, entity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			World world = entity.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				FlareGunWhenUsedProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
+		}
+
+		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("Only use in case of emergency! JK, go on."));
+			list.add(new StringTextComponent("Light it up!"));
 		}
 
 		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.BOW;
+			return UseAction.CROSSBOW;
 		}
 
 		@Override
@@ -127,14 +146,6 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 								if (stack.isEmpty())
 									entity.inventory.deleteStack(stack);
 							}
-						}
-						{
-							Map<String, Object> $_dependencies = new HashMap<>();
-							$_dependencies.put("x", x);
-							$_dependencies.put("y", y);
-							$_dependencies.put("z", z);
-							$_dependencies.put("world", world);
-							FlareGunWhenUsedProcedure.executeProcedure($_dependencies);
 						}
 					}
 					entity.stopActiveHand();
@@ -230,8 +241,8 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
-				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")), SoundCategory.PLAYERS, 1,
+				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -251,8 +262,8 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
-				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")), SoundCategory.PLAYERS, 1,
+				1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

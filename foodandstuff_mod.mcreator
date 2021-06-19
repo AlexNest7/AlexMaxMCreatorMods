@@ -923,6 +923,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -981,6 +985,16 @@
       "ids": {},
       "registry_name": "am_fa_s_items",
       "path": "~/CreativeTab"
+    },
+    {
+      "name": "SpectralFlare",
+      "type": "item",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spectral_flare",
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -994,20 +1008,20 @@
       "subtitle": "Flare Gun fires"
     },
     {
-      "name": "flare_gun_dry_shot",
-      "files": [
-        "flare_gun_dry_shot"
-      ],
-      "category": "master",
-      "subtitle": "Flare Gun Dry Shot"
-    },
-    {
       "name": "fire_ball_launch",
       "files": [
         "fire_ball_shot"
       ],
       "category": "master",
       "subtitle": "Fire Ball launched"
+    },
+    {
+      "name": "flare_gun_dry_shot",
+      "files": [
+        "flare_gun_dry_shot"
+      ],
+      "category": "master",
+      "subtitle": "Flare Gun Dry Shot"
     }
   ],
   "language_map": {
@@ -1087,6 +1101,7 @@
       "advancements.beware_of_mosquitos.descr": "Джунгли - это опасное место, полное еды.",
       "item.food_mod.hot_chocolate": "Горячий шоколад",
       "advancements.jam_hater.title": "Я, блин, ненавижу это варенье",
+      "item.foodandstuff_mod.spectral_flare": "Spectral Flare",
       "item.foodandstuff_mod.cooked_chopped_pork": "Cooked Chopped Pork",
       "item.foodandstuff_mod.enhanced_dark_metal_armor_boots": "Enhanced Dark Metal Armor Boots",
       "item.food_mod.redstone_syrup": "Редстоуновый сироп",
@@ -1134,7 +1149,7 @@
       "advancements.root_achievement.descr": "Our food tour begins here!",
       "item.foodandstuff_mod.sunflower_oil": "Sunflower Oil",
       "item.food_mod.glowstone_syrup": "Glowstone Syrup",
-      "item.foodandstuff_mod.usedflare": "Empty Flare",
+      "item.foodandstuff_mod.usedflare": "Empty flare shell",
       "item.foodandstuff_mod.redstone_syrup": "Redstone Syrup",
       "item.foodandstuff_mod.darkessencearmor_armor_leggings": "Dark Steel Leggings",
       "itemGroup.tabam_fa_s_ranged_weapons": "AM F\u0026S Ranged Weapons",
@@ -1150,7 +1165,7 @@
       "item.foodandstuff_mod.choco_cookie": "Choco Chip Cookie",
       "item.foodandstuff_mod.enhanced_dark_metal_armor_helmet": "Enhanced Dark Metal Armor Helmet",
       "item.foodandstuff_mod.berry_jam": "Berry Jam Jar",
-      "item.foodandstuff_mod.flaregun_ammo": "Flaregun Ammo",
+      "item.foodandstuff_mod.flaregun_ammo": "Flare",
       "advancements.jam_hater.descr": "...Why did you do this?",
       "item.foodandstuff_mod.darkessense_nugget": "Darksteel Nugget",
       "item.foodandstuff_mod.darkessencearmor_armor_boots": "Dark Steel Boots",
@@ -1172,6 +1187,7 @@
       "advancements.beware_of_mosquitos.descr": "Jungle is a dangerous, yet rewarding place.",
       "item.food_mod.hot_chocolate": "Hot Chocolate",
       "advancements.jam_hater.title": "Jam Hater",
+      "item.foodandstuff_mod.spectral_flare": "Spectral Flare",
       "item.foodandstuff_mod.cooked_chopped_pork": "Cooked Chopped Pork",
       "item.foodandstuff_mod.enhanced_dark_metal_armor_boots": "Enhanced Dark Metal Armor Boots",
       "item.food_mod.redstone_syrup": "Redstone Syrup",
@@ -1249,7 +1265,6 @@
     "version": "1.2.0",
     "description": "My first mod, which adds a lot of stuff. Hope you\u0027ll like it!",
     "author": "AlexNest",
-    "websiteURL": "https://mcreator.net",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,

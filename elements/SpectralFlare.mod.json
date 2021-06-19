@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fire_bullet",
+    "texture": "spectral_flare",
     "customModelName": "Normal",
-    "name": "Flare",
+    "name": "Spectral Flare",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:AMFaSItems"
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "This flare can set things on fire!"
+      "Makes your target an easy-trackable prey."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Flare Gun",
     "specialInfo": [
-      "Only use in case of emergency! JK, go on."
+      "Light it up!"
     ],
     "creativeTab": {
       "value": "CUSTOM:AMFaSRangedWeapons"
@@ -17,15 +17,15 @@
       "value": "CUSTOM:FlaregunAmmo"
     },
     "shootConstantly": true,
-    "usageCount": 70,
+    "usageCount": 72,
     "actionSound": {
-      "value": "CUSTOM:flare_gun_shot"
+      "value": ""
     },
     "hasGlow": false,
-    "animation": "bow",
+    "animation": "crossbow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "onRangedItemUsed": {
+    "onEntitySwing": {
       "name": "FlareGunWhenUsed"
     },
     "bulletPower": 1.5,

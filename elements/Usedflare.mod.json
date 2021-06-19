@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "used_flare",
     "customModelName": "Normal",
-    "name": "Empty Flare",
+    "name": "Empty flare shell",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:AMFaSItems"
