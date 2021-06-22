@@ -8,17 +8,11 @@ import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.alexnestsfoodandstuff.item.UsedflareItem;
-import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModMod;
 
 import java.util.Map;
 
-@FoodandstuffModModElements.ModElement.Tag
-public class FlareGunOnHitProcedure extends FoodandstuffModModElements.ModElement {
-	public FlareGunOnHitProcedure(FoodandstuffModModElements instance) {
-		super(instance, 60);
-	}
-
+public class FlareGunOnHitProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

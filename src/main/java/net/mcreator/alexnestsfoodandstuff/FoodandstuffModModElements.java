@@ -47,10 +47,12 @@ public class FoodandstuffModModElements {
 	public FoodandstuffModModElements() {
 		sounds.put(new ResourceLocation("foodandstuff_mod", "flare_gun_shot"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("foodandstuff_mod", "flare_gun_shot")));
-		sounds.put(new ResourceLocation("foodandstuff_mod", "fire_ball_launch"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("foodandstuff_mod", "fire_ball_launch")));
 		sounds.put(new ResourceLocation("foodandstuff_mod", "flare_gun_dry_shot"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("foodandstuff_mod", "flare_gun_dry_shot")));
+		sounds.put(new ResourceLocation("foodandstuff_mod", "fire_ball_launch"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("foodandstuff_mod", "fire_ball_launch")));
+		sounds.put(new ResourceLocation("foodandstuff_mod", "syringe_use"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("foodandstuff_mod", "syringe_use")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("foodandstuff_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

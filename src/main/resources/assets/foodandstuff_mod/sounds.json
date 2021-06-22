@@ -9,6 +9,16 @@
       }
     ]
   },
+  "flare_gun_dry_shot": {
+    "category": "master",
+    "subtitle": "subtitles.flare_gun_dry_shot",
+    "sounds": [
+      {
+        "name": "foodandstuff_mod:flare_gun_dry_shot",
+        "stream": false
+      }
+    ]
+  },
   "fire_ball_launch": {
     "category": "master",
     "subtitle": "subtitles.fire_ball_launch",
@@ -19,12 +29,12 @@
       }
     ]
   },
-  "flare_gun_dry_shot": {
+  "syringe_use": {
     "category": "master",
-    "subtitle": "subtitles.flare_gun_dry_shot",
+    "subtitle": "subtitles.syringe_use",
     "sounds": [
       {
-        "name": "foodandstuff_mod:flare_gun_dry_shot",
+        "name": "foodandstuff_mod:syringe_use",
         "stream": false
       }
     ]

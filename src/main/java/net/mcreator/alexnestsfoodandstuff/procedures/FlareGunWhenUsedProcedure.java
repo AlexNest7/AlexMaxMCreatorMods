@@ -13,17 +13,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.alexnestsfoodandstuff.item.FlaregunAmmoItem;
 import net.mcreator.alexnestsfoodandstuff.item.FlareGunItem;
-import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModMod;
 
 import java.util.Map;
 
-@FoodandstuffModModElements.ModElement.Tag
-public class FlareGunWhenUsedProcedure extends FoodandstuffModModElements.ModElement {
-	public FlareGunWhenUsedProcedure(FoodandstuffModModElements instance) {
-		super(instance, 72);
-	}
-
+public class FlareGunWhenUsedProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

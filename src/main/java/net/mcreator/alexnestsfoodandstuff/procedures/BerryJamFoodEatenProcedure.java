@@ -5,17 +5,11 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModMod;
 
 import java.util.Map;
 
-@FoodandstuffModModElements.ModElement.Tag
-public class BerryJamFoodEatenProcedure extends FoodandstuffModModElements.ModElement {
-	public BerryJamFoodEatenProcedure(FoodandstuffModModElements instance) {
-		super(instance, 14);
-	}
-
+public class BerryJamFoodEatenProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

@@ -995,6 +995,69 @@
       "ids": {},
       "registry_name": "spectral_flare",
       "path": "~/Items"
+    },
+    {
+      "name": "WhetstoneCraft",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whetstone_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "EmptySyringe",
+      "type": "item",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_syringe",
+      "path": "~/Items"
+    },
+    {
+      "name": "HealingSyringeFoodUsed",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "healing_syringe_food_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealingSyringe",
+      "type": "food",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "healing_syringe",
+      "path": "~/Foods"
     }
   ],
   "variable_elements": [],
@@ -1008,6 +1071,14 @@
       "subtitle": "Flare Gun fires"
     },
     {
+      "name": "flare_gun_dry_shot",
+      "files": [
+        "flare_gun_dry_shot"
+      ],
+      "category": "master",
+      "subtitle": "Flare Gun Dry Shot"
+    },
+    {
       "name": "fire_ball_launch",
       "files": [
         "fire_ball_shot"
@@ -1016,12 +1087,12 @@
       "subtitle": "Fire Ball launched"
     },
     {
-      "name": "flare_gun_dry_shot",
+      "name": "syringe_use",
       "files": [
-        "flare_gun_dry_shot"
+        "syringe_use"
       ],
       "category": "master",
-      "subtitle": "Flare Gun Dry Shot"
+      "subtitle": "Syringe used"
     }
   ],
   "language_map": {
@@ -1039,9 +1110,11 @@
       "item.food_mod.flaregun_ammo": "Сигнальная Ракета",
       "item.food_mod.choco_milk": "Шоколадное молоко",
       "item.food_mod.fire_ball": "Фаерболл",
+      "item.foodandstuff_mod.empty_syringe": "Empty Syringe",
       "block.food_mod.void_ore": "Руда Тьмы",
       "item.food_mod.enhanced_dark_metal_armor_chestplate": "Enhanced Dark Metal Armor Body",
       "itemGroup.tabam_fa_s_armor": "AM F\u0026S Armor",
+      "subtitles.syringe_use": "Syringe used",
       "advancements.root_achievement.title": "AM Food Mod Достижения",
       "advancements.vegan_achievement.descr": "Сделай семенной салат. И да, он съедобен.",
       "advancements.sweet_tooth.title": "Сладкоежка",
@@ -1088,6 +1161,7 @@
       "item.food_mod.choco_cookie": "Шоколадное печенье",
       "item.food_mod.chocolate_bar": "Плитка шоколада",
       "item.foodandstuff_mod.raw_chopped_pork": "Raw Chopped Pork",
+      "item.foodandstuff_mod.healing_syringe": "Healing Syringe",
       "advancements.the_absorber.title": "Поглотитель",
       "item.foodandstuff_mod.seed_salad": "Seed Salad",
       "item.food_mod.enhanced_dark_metal_armor_leggings": "Enhanced Dark Metal Armor Leggings",
@@ -1125,9 +1199,11 @@
       "item.food_mod.flaregun_ammo": "Flaregun Ammo",
       "item.food_mod.choco_milk": "Choco Milk",
       "item.food_mod.fire_ball": "Fire Ball",
+      "item.foodandstuff_mod.empty_syringe": "Empty Syringe",
       "block.food_mod.void_ore": "Void Ore",
       "item.food_mod.enhanced_dark_metal_armor_chestplate": "Enhanced Dark Metal Armor Body",
       "itemGroup.tabam_fa_s_armor": "AM F\u0026S Armor",
+      "subtitles.syringe_use": "Syringe used",
       "advancements.root_achievement.title": "AM Food Mod Achievements",
       "advancements.vegan_achievement.descr": "Make a seed salat! Trust me, it\u0027s edible.",
       "advancements.sweet_tooth.title": "Sweet Tooth",
@@ -1174,6 +1250,7 @@
       "item.food_mod.choco_cookie": "Choco Chip Cookie",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
       "item.foodandstuff_mod.raw_chopped_pork": "Raw Chopped Pork",
+      "item.foodandstuff_mod.healing_syringe": "Healing Syringe",
       "advancements.the_absorber.title": "The Absorber",
       "item.foodandstuff_mod.seed_salad": "Seed Salad",
       "item.food_mod.enhanced_dark_metal_armor_leggings": "Enhanced Dark Metal Armor Leggings",
@@ -1279,5 +1356,5 @@
     "modElementsPackage": "net.mcreator.alexnestsfoodandstuff",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100118117
+  "mcreatorVersion": 202100226215
 }

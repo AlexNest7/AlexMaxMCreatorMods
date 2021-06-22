@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 21,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -8,13 +8,13 @@
     "name": "Whetstone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:AMFoodMod"
+      "value": "CUSTOM:AMFaSItems"
     },
-    "stackSize": 4,
+    "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 2,
+    "useDuration": 1,
     "toolType": 1.0,
-    "damageCount": 120,
+    "damageCount": 70,
     "recipeRemainder": {
       "value": ""
     },

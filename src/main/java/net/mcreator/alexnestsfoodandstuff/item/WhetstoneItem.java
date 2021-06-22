@@ -12,7 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFoodModItemGroup;
+import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFaSItemsItemGroup;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 
 import java.util.List;
@@ -31,7 +31,7 @@ public class WhetstoneItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxDamage(120).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(AMFaSItemsItemGroup.tab).maxDamage(70).rarity(Rarity.COMMON));
 			setRegistryName("whetstone");
 		}
 
@@ -62,7 +62,7 @@ public class WhetstoneItem extends FoodandstuffModModElements.ModElement {
 
 		@Override
 		public int getUseDuration(ItemStack itemstack) {
-			return 2;
+			return 1;
 		}
 
 		@Override

@@ -14,17 +14,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModMod;
 
 import java.util.Map;
 
-@FoodandstuffModModElements.ModElement.Tag
-public class RedstoneSyrupOnDropProcedure extends FoodandstuffModModElements.ModElement {
-	public RedstoneSyrupOnDropProcedure(FoodandstuffModModElements instance) {
-		super(instance, 33);
-	}
-
+public class RedstoneSyrupOnDropProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

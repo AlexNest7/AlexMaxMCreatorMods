@@ -1,0 +1,31 @@
+{
+  "_fv": 21,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "regen_syringe",
+    "customModelName": "Normal",
+    "name": "Healing Syringe",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Only downside - it will speed up your metabolism."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:AMFaSItems"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 0,
+    "saturation": 0.3,
+    "eatingSpeed": 25,
+    "resultItem": {
+      "value": "CUSTOM:EmptySyringe"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "block",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "HealingSyringeFoodUsed"
+    }
+  }
+}
