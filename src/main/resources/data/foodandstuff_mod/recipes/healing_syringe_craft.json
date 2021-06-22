@@ -1,0 +1,19 @@
+{
+  "group": "foodandstuff_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "item": "foodandstuff_mod:empty_syringe"
+    }
+  ],
+  "result": {
+    "item": "foodandstuff_mod:healing_syringe",
+    "count": 1
+  }
+}

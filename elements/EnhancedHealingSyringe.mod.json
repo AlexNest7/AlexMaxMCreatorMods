@@ -3,15 +3,16 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "regen_syringe",
+    "texture": "enhanced_healing_syringe",
     "customModelName": "Normal",
-    "name": "Healing Syringe",
-    "rarity": "COMMON",
+    "name": "Enhanced Healing Syringe",
+    "rarity": "RARE",
     "specialInfo": [
-      "Only downside - it will speed up your metabolism."
+      "Effect lasts longer...",
+      "Yet it's harder to make."
     ],
     "creativeTab": {
-      "value": "CUSTOM:AMFaSItems"
+      "value": "CUSTOM:AMFoodMod"
     },
     "stackSize": 16,
     "nutritionalValue": 0,
@@ -23,9 +24,9 @@
     "forDogs": false,
     "isAlwaysEdible": true,
     "animation": "block",
-    "hasGlow": false,
+    "hasGlow": true,
     "onEaten": {
-      "name": "HealingSyringeUsed"
+      "name": "EnhancedHealingSyringeUsed"
     }
   }
 }

@@ -1,0 +1,35 @@
+{
+  "_fv": 21,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "needle",
+    "customModelName": "Normal",
+    "name": "Needle",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:AMFaSItems"
+    },
+    "stackSize": 32,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 10,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 2.1,
+    "specialInfo": [
+      "It's sharp. What did you expect?"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 32
+  }
+}

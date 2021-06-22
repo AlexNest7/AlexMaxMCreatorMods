@@ -2,6 +2,8 @@
 package net.mcreator.alexnestsfoodandstuff.item;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
@@ -15,8 +17,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
-import net.mcreator.alexnestsfoodandstuff.procedures.HealingSyringeUsedProcedure;
-import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFaSItemsItemGroup;
+import net.mcreator.alexnestsfoodandstuff.procedures.EnhancedHealingSyringeUsedProcedure;
+import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 
 import java.util.Map;
@@ -24,11 +26,11 @@ import java.util.List;
 import java.util.HashMap;
 
 @FoodandstuffModModElements.ModElement.Tag
-public class HealingSyringeItem extends FoodandstuffModModElements.ModElement {
-	@ObjectHolder("foodandstuff_mod:healing_syringe")
+public class EnhancedHealingSyringeItem extends FoodandstuffModModElements.ModElement {
+	@ObjectHolder("foodandstuff_mod:enhanced_healing_syringe")
 	public static final Item block = null;
-	public HealingSyringeItem(FoodandstuffModModElements instance) {
-		super(instance, 79);
+	public EnhancedHealingSyringeItem(FoodandstuffModModElements instance) {
+		super(instance, 85);
 	}
 
 	@Override
@@ -37,14 +39,20 @@ public class HealingSyringeItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(AMFaSItemsItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON)
+			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(16).rarity(Rarity.RARE)
 					.food((new Food.Builder()).hunger(0).saturation(0.3f).setAlwaysEdible().build()));
-			setRegistryName("healing_syringe");
+			setRegistryName("enhanced_healing_syringe");
 		}
 
 		@Override
 		public int getUseDuration(ItemStack stack) {
 			return 25;
+		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public boolean hasEffect(ItemStack itemstack) {
+			return true;
 		}
 
 		@Override
@@ -55,7 +63,8 @@ public class HealingSyringeItem extends FoodandstuffModModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("Only downside - it will speed up your metabolism."));
+			list.add(new StringTextComponent("Effect lasts longer..."));
+			list.add(new StringTextComponent("Yet it's harder to make."));
 		}
 
 		@Override
@@ -72,7 +81,7 @@ public class HealingSyringeItem extends FoodandstuffModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				HealingSyringeUsedProcedure.executeProcedure($_dependencies);
+				EnhancedHealingSyringeUsedProcedure.executeProcedure($_dependencies);
 			}
 			if (itemstack.isEmpty()) {
 				return retval;

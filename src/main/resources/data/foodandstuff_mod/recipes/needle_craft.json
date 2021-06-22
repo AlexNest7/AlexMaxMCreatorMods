@@ -1,0 +1,19 @@
+{
+  "group": "foodandstuff_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "foodandstuff_mod:whetstone"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    }
+  ],
+  "result": {
+    "item": "foodandstuff_mod:needle",
+    "count": 2
+  }
+}

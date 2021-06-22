@@ -16,31 +16,31 @@ import net.mcreator.alexnestsfoodandstuff.FoodandstuffModMod;
 
 import java.util.Map;
 
-public class HealingSyringeFoodUsedProcedure {
+public class HealingSyringeUsedProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency entity for procedure HealingSyringeFoodUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency entity for procedure HealingSyringeUsed!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency x for procedure HealingSyringeFoodUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency x for procedure HealingSyringeUsed!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency y for procedure HealingSyringeFoodUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency y for procedure HealingSyringeUsed!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency z for procedure HealingSyringeFoodUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency z for procedure HealingSyringeUsed!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency world for procedure HealingSyringeFoodUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency world for procedure HealingSyringeUsed!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -58,8 +58,8 @@ public class HealingSyringeFoodUsedProcedure {
 					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 		}
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 300, (int) 2, (false), (false)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 240, (int) 2, (false), (false)));
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HUNGER, (int) 300, (int) 2, (false), (false)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HUNGER, (int) 240, (int) 2, (false), (false)));
 	}
 }
