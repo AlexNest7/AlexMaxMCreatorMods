@@ -1,8 +1,14 @@
 package net.mcreator.alexnestsfoodandstuff.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.block.Blocks;
@@ -43,6 +49,20 @@ public class FlareGunOnHitProcedure {
 			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(UsedflareItem.block, (int) (1)));
 			entityToSpawn.setPickupDelay((int) 10);
 			world.addEntity(entityToSpawn);
+		}
+		if (world instanceof World && !world.isRemote()) {
+			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
+					SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		} else {
+			((World) world).playSound(x, y, z,
+					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
+					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+		}
+		for (int index0 = 0; index0 < (int) (10); index0++) {
+			if (world instanceof ServerWorld) {
+				((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 5, 1, 1, 1, 1);
+			}
 		}
 	}
 }
