@@ -64,7 +64,7 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(AMFaSRangedWeaponsItemGroup.tab).maxDamage(72));
+			super(new Item.Properties().group(AMFaSRangedWeaponsItemGroup.tab).maxDamage(75));
 			setRegistryName("flare_gun");
 		}
 

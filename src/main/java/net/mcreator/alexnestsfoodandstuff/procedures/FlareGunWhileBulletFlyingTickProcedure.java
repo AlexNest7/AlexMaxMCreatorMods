@@ -35,7 +35,7 @@ public class FlareGunWhileBulletFlyingTickProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x, y, z, (int) 4, 1, 1, 1, 2);
+			((ServerWorld) world).spawnParticle(ParticleTypes.LARGE_SMOKE, x, y, z, (int) 5, 0, 0, 0, 1);
 		}
 	}
 }

@@ -66,9 +66,7 @@ public class FlareGunWhenUsedProcedure {
 			}
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown((new ItemStack(FlareGunItem.block, (int) (1))).getItem(), (int) 30);
-		} else if ((!((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(FlaregunAmmoItem.block, (int) (1)))
-				: false))) {
+		} else {
 			if (world instanceof World && !world.isRemote()) {
 				((World) world)
 						.playSound(null, new BlockPos((int) x, (int) y, (int) z),

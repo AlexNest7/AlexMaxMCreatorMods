@@ -68,13 +68,13 @@ public class PoisonSyringeUsedOnEntityProcedure {
 			private void run() {
 				entity.attackEntityFrom(DamageSource.MAGIC, (float) 2);
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON, (int) 200, (int) 1, (false), (false)));
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 300, (int) 2, (false), (false)));
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 200, (int) 2, (false), (false)));
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON, (int) 300, (int) 1, (false), (false)));
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.GLOWING, (int) 80, (int) 1, (false), (false)));
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}.start(world, (int) 60);
+		}.start(world, (int) 50);
 	}
 }
