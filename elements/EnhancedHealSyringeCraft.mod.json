@@ -13,7 +13,7 @@
         "value": ""
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "Items.FERMENTED_SPIDER_EYE"
       },
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "Blocks.CRIMSON_FUNGUS"
+        "value": "CUSTOM:RedstoneSyrup"
       },
       {
         "value": ""
@@ -31,7 +31,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:EmptySyringe"
+        "value": "CUSTOM:HealingSyringe"
       },
       {
         "value": ""

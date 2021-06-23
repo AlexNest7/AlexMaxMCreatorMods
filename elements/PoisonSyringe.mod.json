@@ -3,13 +3,12 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "enhanced_healing_syringe",
+    "texture": "poison_syringe",
     "customModelName": "Normal",
-    "name": "Enhanced Healing Syringe",
-    "rarity": "RARE",
+    "name": "Poison Syringe",
+    "rarity": "COMMON",
     "specialInfo": [
-      "Effect lasts longer...",
-      "Yet it's harder to make."
+      "Let's do it sneaky , shall we?"
     ],
     "creativeTab": {
       "value": "CUSTOM:AMFoodMod"
@@ -17,16 +16,16 @@
     "stackSize": 16,
     "nutritionalValue": 0,
     "saturation": 0.3,
-    "eatingSpeed": 10,
+    "eatingSpeed": 20,
     "resultItem": {
       "value": "CUSTOM:EmptySyringe"
     },
     "forDogs": false,
     "isAlwaysEdible": true,
     "animation": "block",
-    "hasGlow": true,
-    "onEaten": {
-      "name": "EnhancedHealingSyringeUsed"
+    "hasGlow": false,
+    "onEntityHitWith": {
+      "name": "PoisonSyringeUsedOnEntity"
     }
   }
 }

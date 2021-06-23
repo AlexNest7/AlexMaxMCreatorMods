@@ -8,13 +8,13 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:fermented_spider_eye"
     },
     "1": {
-      "item": "minecraft:crimson_fungus"
+      "item": "foodandstuff_mod:redstone_syrup"
     },
     "2": {
-      "item": "foodandstuff_mod:empty_syringe"
+      "item": "foodandstuff_mod:healing_syringe"
     }
   },
   "result": {

@@ -16,7 +16,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.alexnestsfoodandstuff.procedures.HealingSyringeUsedProcedure;
-import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFaSItemsItemGroup;
+import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFoodModItemGroup;
 import net.mcreator.alexnestsfoodandstuff.FoodandstuffModModElements;
 
 import java.util.Map;
@@ -37,14 +37,14 @@ public class HealingSyringeItem extends FoodandstuffModModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(AMFaSItemsItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON)
+			super(new Item.Properties().group(AMFoodModItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON)
 					.food((new Food.Builder()).hunger(0).saturation(0.3f).setAlwaysEdible().build()));
 			setRegistryName("healing_syringe");
 		}
 
 		@Override
 		public int getUseDuration(ItemStack stack) {
-			return 25;
+			return 10;
 		}
 
 		@Override

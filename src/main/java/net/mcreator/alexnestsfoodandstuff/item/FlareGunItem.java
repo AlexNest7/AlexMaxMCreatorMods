@@ -33,6 +33,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 
+import net.mcreator.alexnestsfoodandstuff.procedures.FlareGunWhileBulletFlyingTickProcedure;
 import net.mcreator.alexnestsfoodandstuff.procedures.FlareGunWhenUsedProcedure;
 import net.mcreator.alexnestsfoodandstuff.procedures.FlareGunOnHitProcedure;
 import net.mcreator.alexnestsfoodandstuff.itemgroup.AMFaSRangedWeaponsItemGroup;
@@ -170,7 +171,7 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(FlaregunAmmoItem.block, (int) (1));
+			return new ItemStack(FlareBulletItem.block, (int) (1));
 		}
 
 		@Override
@@ -205,6 +206,14 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				FlareGunWhileBulletFlyingTickProcedure.executeProcedure($_dependencies);
+			}
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
@@ -222,7 +231,7 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setIsCritical(false);
+		entityarrow.setIsCritical(true);
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
 		entityarrow.setFire(100);
@@ -245,7 +254,7 @@ public class FlareGunItem extends FoodandstuffModModElements.ModElement {
 		entityarrow.setSilent(true);
 		entityarrow.setDamage(4);
 		entityarrow.setKnockbackStrength(1);
-		entityarrow.setIsCritical(false);
+		entityarrow.setIsCritical(true);
 		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();

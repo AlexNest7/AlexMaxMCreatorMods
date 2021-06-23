@@ -3,17 +3,17 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:redstone"
+      "item": "minecraft:poisonous_potato"
     },
     {
-      "item": "minecraft:sweet_berries"
+      "item": "minecraft:spider_eye"
     },
     {
       "item": "foodandstuff_mod:empty_syringe"
     }
   ],
   "result": {
-    "item": "foodandstuff_mod:healing_syringe",
+    "item": "foodandstuff_mod:poison_syringe",
     "count": 1
   }
 }

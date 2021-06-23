@@ -17,31 +17,31 @@ import net.mcreator.alexnestsfoodandstuff.FoodandstuffModMod;
 
 import java.util.Map;
 
-public class FlareGunWhenUsedProcedure {
+public class FlareGunCanBeUsedProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency entity for procedure FlareGunWhenUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency entity for procedure FlareGunCanBeUsed!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency x for procedure FlareGunWhenUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency x for procedure FlareGunCanBeUsed!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency y for procedure FlareGunWhenUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency y for procedure FlareGunCanBeUsed!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency z for procedure FlareGunWhenUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency z for procedure FlareGunCanBeUsed!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				FoodandstuffModMod.LOGGER.warn("Failed to load dependency world for procedure FlareGunWhenUsed!");
+				FoodandstuffModMod.LOGGER.warn("Failed to load dependency world for procedure FlareGunCanBeUsed!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -66,9 +66,7 @@ public class FlareGunWhenUsedProcedure {
 			}
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown((new ItemStack(FlareGunItem.block, (int) (1))).getItem(), (int) 30);
-		} else if ((!((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(FlaregunAmmoItem.block, (int) (1)))
-				: false))) {
+		} else {
 			if (world instanceof World && !world.isRemote()) {
 				((World) world)
 						.playSound(null, new BlockPos((int) x, (int) y, (int) z),

@@ -31,10 +31,10 @@
     "bulletPower": 1.5,
     "bulletDamage": 4.0,
     "bulletKnockback": 1,
-    "bulletParticles": false,
+    "bulletParticles": true,
     "bulletIgnitesFire": true,
     "bulletItemTexture": {
-      "value": "CUSTOM:FlaregunAmmo"
+      "value": "CUSTOM:FlareBullet"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
@@ -43,6 +43,9 @@
     },
     "onBulletHitsEntity": {
       "name": "FlareGunOnHit"
+    },
+    "onBulletFlyingTick": {
+      "name": "FlareGunWhileBulletFlyingTick"
     }
   }
 }

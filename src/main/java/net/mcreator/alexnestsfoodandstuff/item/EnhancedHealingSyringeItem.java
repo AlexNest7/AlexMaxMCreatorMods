@@ -46,7 +46,7 @@ public class EnhancedHealingSyringeItem extends FoodandstuffModModElements.ModEl
 
 		@Override
 		public int getUseDuration(ItemStack stack) {
-			return 25;
+			return 10;
 		}
 
 		@Override

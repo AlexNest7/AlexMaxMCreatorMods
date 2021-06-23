@@ -11,12 +11,12 @@
       "Only downside - it will speed up your metabolism."
     ],
     "creativeTab": {
-      "value": "CUSTOM:AMFaSItems"
+      "value": "CUSTOM:AMFoodMod"
     },
     "stackSize": 16,
     "nutritionalValue": 0,
     "saturation": 0.3,
-    "eatingSpeed": 25,
+    "eatingSpeed": 10,
     "resultItem": {
       "value": "CUSTOM:EmptySyringe"
     },

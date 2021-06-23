@@ -13,7 +13,7 @@
         "value": ""
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "Items.POISONOUS_POTATO"
       },
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "Items.SWEET_BERRIES"
+        "value": "Items.SPIDER_EYE"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:HealingSyringe"
+      "value": "CUSTOM:PoisonSyringe"
     },
-    "name": "healing_syringe_craft",
+    "name": "poison_syringe_craft",
     "namespace": "mod"
   }
 }
