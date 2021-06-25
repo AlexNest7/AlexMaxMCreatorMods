@@ -10,18 +10,6 @@
     "textureLeggings": "dark_steel_leggings",
     "enableBoots": true,
     "textureBoots": "dark_metal_boots",
-    "onHelmetTick": {
-      "name": "DarkEssenceArmorWear"
-    },
-    "onBodyTick": {
-      "name": "DarkEssenceArmorWear"
-    },
-    "onLeggingsTick": {
-      "name": "DarkEssenceArmorWear"
-    },
-    "onBootsTick": {
-      "name": "DarkEssenceArmorWear"
-    },
     "creativeTab": {
       "value": "CUSTOM:AMFaSArmor"
     },

@@ -52,17 +52,31 @@ public class FlareGunWhenUsedProcedure {
 		if (((entity instanceof PlayerEntity)
 				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(FlaregunAmmoItem.block, (int) (1)))
 				: false)) {
-			if (world instanceof World && !world.isRemote()) {
-				((World) world)
-						.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-										.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
-								SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			if ((Math.random() < 0.5)) {
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+									.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_alt_shot")),
+							SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+									.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_alt_shot")),
+							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+				}
 			} else {
-				((World) world).playSound(x, y, z,
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-								.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
-						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+				if (world instanceof World && !world.isRemote()) {
+					((World) world)
+							.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+									(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+											.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
+									SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+									.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
+							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+				}
 			}
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown((new ItemStack(FlareGunItem.block, (int) (1))).getItem(), (int) 30);

@@ -662,24 +662,6 @@
       "path": "~/Armor"
     },
     {
-      "name": "DarkEssenceArmorWear",
-      "type": "procedure",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dark_essence_armor_wear",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Tool_Rules"
-    },
-    {
       "name": "DarknessIngotRecipe",
       "type": "recipe",
       "sortid": 57,
@@ -1255,40 +1237,6 @@
       "path": "~/Ranged_Weapons_Rules"
     },
     {
-      "name": "FlareGunCanBeUsed",
-      "type": "procedure",
-      "sortid": 96,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "flare_gun_can_be_used",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Ranged_Weapons_Rules"
-    },
-    {
       "name": "KitchenKnifeCraft",
       "type": "recipe",
       "sortid": 97,
@@ -1355,6 +1303,26 @@
         ]
       },
       "path": "~/Joke_Items"
+    },
+    {
+      "name": "DarkEssenceSlime",
+      "type": "mob",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence_slime",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DarkEssenceSlimeDrop",
+      "type": "loottable",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_essence_slime_drop",
+      "path": "~/Mobs"
     }
   ],
   "variable_elements": [],
@@ -1390,6 +1358,22 @@
       ],
       "category": "master",
       "subtitle": "Syringe used"
+    },
+    {
+      "name": "flare_burn",
+      "files": [
+        "flare_burn"
+      ],
+      "category": "master",
+      "subtitle": "Flare burns"
+    },
+    {
+      "name": "flare_gun_alt_shot",
+      "files": [
+        "flare_gun_shot_2"
+      ],
+      "category": "master",
+      "subtitle": "Flare Gun Shot"
     }
   ],
   "language_map": {
@@ -1407,14 +1391,14 @@
       "advancements.vegan_achievement.title": "100% Веганский!",
       "subtitles.fire_ball_launch": "Fire Ball launched",
       "item.food_mod.whetstone": "Точильный Камень",
-      "item.foodandstuff_mod.poison_syringe": "Poison Syringe",
       "item.foodandstuff_mod.flare_bullet": "Flare Bullet",
-      "item.food_mod.seed_salad": "Салат из семян",
+      "item.foodandstuff_mod.poison_syringe": "Poison Syringe",
       "item.foodandstuff_mod.kitchen_knife": "Kitchen Knife",
+      "item.food_mod.seed_salad": "Салат из семян",
       "item.food_mod.dark_essence": "Эссенция тьмы",
       "item.foodandstuff_mod.fire_staff": "Fire Staff",
-      "item.food_mod.darkessenceingot": "Слиток тёмной стали",
       "advancements.syringe_achievement.title": "Sharpie on a cylinder",
+      "item.food_mod.darkessenceingot": "Слиток тёмной стали",
       "advancements.root_achievement.descr": "Наше кулинарное приключение начинается!",
       "item.foodandstuff_mod.eraser": "Eraser",
       "itemGroup.tabam_fa_s_ranged_weapons": "AM FaS Ranged Weapons",
@@ -1427,8 +1411,8 @@
       "item.foodandstuff_mod.flaregun_ammo": "Flaregun Ammo",
       "item.foodandstuff_mod.darkessencearmor_armor_boots": "Dark Steel Boots",
       "advancements.poison_syringe_achievement.title": "The Poisoner",
-      "item.foodandstuff_mod.raw_chopped_pork": "Raw Chopped Pork",
       "item.foodandstuff_mod.healing_syringe": "Healing Syringe",
+      "item.foodandstuff_mod.raw_chopped_pork": "Raw Chopped Pork",
       "advancements.the_absorber.title": "Поглотитель",
       "item.food_mod.enhanced_dark_metal_armor_leggings": "Enhanced Dark Metal Armor Leggings",
       "item.foodandstuff_mod.choco_milk": "Choco Milk",
@@ -1450,11 +1434,13 @@
       "item.food_mod.choco_milk": "Шоколадное молоко",
       "item.food_mod.enhanced_dark_metal_armor_chestplate": "Enhanced Dark Metal Armor Body",
       "itemGroup.tabam_fa_s_armor": "AM F\u0026S Armor",
+      "entity.foodandstuff_mod.dark_essence_slime": "Dark Essence Slime",
       "subtitles.syringe_use": "Syringe used",
       "advancements.root_achievement.title": "AM Food Mod Достижения",
       "advancements.vegan_achievement.descr": "Сделай семенной салат. И да, он съедобен.",
       "item.food_mod.kitchen_knife": "Кухонный Нож",
       "itemGroup.tabam_fa_s_items": "AM F\u0026S Items",
+      "subtitles.flare_burn": "Flare burns",
       "item.foodandstuff_mod.dark_essence": "Dark Essence",
       "item.food_mod.raw_chopped_pork": "Сырая Свиная Отбивная",
       "advancements.sweet_tooth.descr": "Сделай плитку шоколада. Ммм, шоколад...",
@@ -1479,11 +1465,13 @@
       "item.food_mod.choco_cookie": "Шоколадное печенье",
       "item.food_mod.chocolate_bar": "Плитка шоколада",
       "item.foodandstuff_mod.seed_salad": "Seed Salad",
+      "subtitles.flare_gun_alt_shot": "Flare Gun Shot",
       "advancements.the_absorber.descr": "Поглоти темноту, стань темнотой",
       "item.foodandstuff_mod.needle": "Needle",
       "item.foodandstuff_mod.chocolate_bar": "Chocolate Bar",
       "item.foodandstuff_mod.glowstone_syrup": "Glowstone Syrup",
       "item.foodandstuff_mod.chopping_hammer": "Chopping Hammer",
+      "item.foodandstuff_mod.dark_essence_slime_spawn_egg": "Dark Essence Slime Spawn Egg",
       "advancements.jam_hater.title": "Я, блин, ненавижу это варенье",
       "advancements.medic_achievement.descr": "MEDIC! Oh, wait, I don\u0027t need one.",
       "item.foodandstuff_mod.cooked_chopped_pork": "Cooked Chopped Pork",
@@ -1507,14 +1495,14 @@
       "advancements.vegan_achievement.title": "100% Vegan!",
       "subtitles.fire_ball_launch": "Fire Ball launched",
       "item.food_mod.whetstone": "Whetstone",
-      "item.foodandstuff_mod.poison_syringe": "Poison Syringe",
       "item.foodandstuff_mod.flare_bullet": "Flare Bullet",
-      "item.food_mod.seed_salad": "Seed Salad",
+      "item.foodandstuff_mod.poison_syringe": "Poison Syringe",
       "item.foodandstuff_mod.kitchen_knife": "Kitchen Knife",
+      "item.food_mod.seed_salad": "Seed Salad",
       "item.food_mod.dark_essence": "Dark Essence",
       "item.foodandstuff_mod.fire_staff": "Fire Staff",
-      "item.food_mod.darkessenceingot": "Dark Essence Ingot",
       "advancements.syringe_achievement.title": "Sharpie on a cylinder",
+      "item.food_mod.darkessenceingot": "Dark Essence Ingot",
       "advancements.root_achievement.descr": "Our food tour begins here!",
       "item.foodandstuff_mod.eraser": "Eraser",
       "itemGroup.tabam_fa_s_ranged_weapons": "AM F\u0026S Ranged Weapons",
@@ -1527,8 +1515,8 @@
       "item.foodandstuff_mod.flaregun_ammo": "Flare",
       "item.foodandstuff_mod.darkessencearmor_armor_boots": "Dark Steel Boots",
       "advancements.poison_syringe_achievement.title": "The Poisoner",
-      "item.foodandstuff_mod.raw_chopped_pork": "Raw Chopped Pork",
       "item.foodandstuff_mod.healing_syringe": "Healing Syringe",
+      "item.foodandstuff_mod.raw_chopped_pork": "Raw Chopped Pork",
       "advancements.the_absorber.title": "The Absorber",
       "item.food_mod.enhanced_dark_metal_armor_leggings": "Enhanced Dark Metal Armor Leggings",
       "item.foodandstuff_mod.choco_milk": "Choco Milk",
@@ -1550,11 +1538,13 @@
       "item.food_mod.choco_milk": "Choco Milk",
       "item.food_mod.enhanced_dark_metal_armor_chestplate": "Enhanced Dark Metal Armor Body",
       "itemGroup.tabam_fa_s_armor": "AM F\u0026S Armor",
+      "entity.foodandstuff_mod.dark_essence_slime": "Dark Essence Slime",
       "subtitles.syringe_use": "Syringe used",
       "advancements.root_achievement.title": "AM Food Mod Achievements",
       "advancements.vegan_achievement.descr": "Make a seed salat! Trust me, it\u0027s edible.",
       "item.food_mod.kitchen_knife": "Kitchen Knife",
       "itemGroup.tabam_fa_s_items": "AM F\u0026S Items",
+      "subtitles.flare_burn": "Flare burns",
       "item.foodandstuff_mod.dark_essence": "Dark Essence",
       "advancements.sweet_tooth.descr": "Make a chocolate bar. Mmm, chocolate...",
       "item.food_mod.raw_chopped_pork": "Raw Chopped Pork",
@@ -1579,11 +1569,13 @@
       "item.food_mod.choco_cookie": "Choco Chip Cookie",
       "item.food_mod.chocolate_bar": "Chocolate Bar",
       "item.foodandstuff_mod.seed_salad": "Seed Salad",
+      "subtitles.flare_gun_alt_shot": "Flare Gun Shot",
       "advancements.the_absorber.descr": "Absorb the darkness, become the darkness",
       "item.foodandstuff_mod.needle": "Needle",
       "item.foodandstuff_mod.chocolate_bar": "Chocolate Bar",
       "item.foodandstuff_mod.glowstone_syrup": "Glowstone Syrup",
       "item.foodandstuff_mod.chopping_hammer": "Chopping Hammer",
+      "item.foodandstuff_mod.dark_essence_slime_spawn_egg": "Dark Essence Slime Spawn Egg",
       "advancements.jam_hater.title": "Jam Hater",
       "advancements.medic_achievement.descr": "MEDIC! Oh, wait, I don\u0027t need one.",
       "item.foodandstuff_mod.cooked_chopped_pork": "Cooked Chopped Pork",
@@ -1655,6 +1647,10 @@
       },
       {
         "name": "Joke_Items",
+        "children": []
+      },
+      {
+        "name": "Mobs",
         "children": []
       }
     ]

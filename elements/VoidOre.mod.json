@@ -60,6 +60,9 @@
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
     "colorOnMap": "BLACK",
     "creativePickItem": {
       "value": ""
@@ -81,6 +84,21 @@
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "STONE"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "luminance": 0,
     "unbreakable": false,
@@ -128,8 +146,8 @@
         "value": "Blocks.STONE#3"
       }
     ],
-    "frequencyPerChunks": 15,
-    "frequencyOnChunk": 9,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 8,
     "minGenerateHeight": 1,
     "maxGenerateHeight": 50
   }

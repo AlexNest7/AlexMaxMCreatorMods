@@ -1,0 +1,143 @@
+{
+  "_fv": 21,
+  "_type": "mob",
+  "definition": {
+    "mobName": "Dark Essence Slime",
+    "mobLabel": "",
+    "mobModelName": "Slime",
+    "mobModelTexture": "slime_texture_je1.png",
+    "mobModelGlowTexture": "darkessenceslime_glow.png",
+    "modelWidth": 2.0,
+    "modelHeight": 2.0,
+    "modelShadowSize": 0.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -15066598,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -16756463,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:AMFaSItems"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 4,
+    "attackKnockback": 0.5,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.2,
+    "armorBaseValue": 0.5,
+    "trackingRange": 64,
+    "health": 16,
+    "xpAmount": 6,
+    "waterMob": false,
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": true,
+    "immuneToArrows": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": false,
+    "immuneToDrowning": true,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": "entity.small_slime.squish"
+    },
+    "hurtSound": {
+      "value": "entity.slime.hurt"
+    },
+    "deathSound": {
+      "value": "entity.slime.death"
+    },
+    "stepSound": {
+      "value": "entity.slime.jump"
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "SLIME"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasAI": true,
+    "aiBase": "Slime",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"306\" y=\"-17\"></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": "CUSTOM:DarkEssence"
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 5,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 3,
+    "restrictionBiomes": [
+      {
+        "value": "the_end"
+      },
+      {
+        "value": "plains"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "swamp"
+      },
+      {
+        "value": "forest_hills"
+      },
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "birch_forest_hills"
+      }
+    ],
+    "spawnInDungeons": true
+  }
+}

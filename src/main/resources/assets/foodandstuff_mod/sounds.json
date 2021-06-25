@@ -38,5 +38,25 @@
         "stream": false
       }
     ]
+  },
+  "flare_burn": {
+    "category": "master",
+    "subtitle": "subtitles.flare_burn",
+    "sounds": [
+      {
+        "name": "foodandstuff_mod:flare_burn",
+        "stream": false
+      }
+    ]
+  },
+  "flare_gun_alt_shot": {
+    "category": "master",
+    "subtitle": "subtitles.flare_gun_alt_shot",
+    "sounds": [
+      {
+        "name": "foodandstuff_mod:flare_gun_shot_2",
+        "stream": false
+      }
+    ]
   }
 }

@@ -44,6 +44,11 @@ public class FlareGunOnHitProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+		for (int index0 = 0; index0 < (int) (10); index0++) {
+			if (world instanceof ServerWorld) {
+				((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 5, 1, 1, 1, 1);
+			}
+		}
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.FIRE.getDefaultState(), 3);
 		if (world instanceof World && !world.isRemote()) {
 			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(UsedflareItem.block, (int) (1)));
@@ -52,17 +57,12 @@ public class FlareGunOnHitProcedure {
 		}
 		if (world instanceof World && !world.isRemote()) {
 			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
+					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_burn")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		} else {
 			((World) world).playSound(x, y, z,
-					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_gun_shot")),
+					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("foodandstuff_mod:flare_burn")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-		}
-		for (int index0 = 0; index0 < (int) (10); index0++) {
-			if (world instanceof ServerWorld) {
-				((ServerWorld) world).spawnParticle(ParticleTypes.FLAME, x, y, z, (int) 5, 1, 1, 1, 1);
-			}
 		}
 	}
 }
