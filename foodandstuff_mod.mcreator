@@ -1287,6 +1287,74 @@
         ]
       },
       "path": "~/Ranged_Weapons_Rules"
+    },
+    {
+      "name": "KitchenKnifeCraft",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kitchen_knife_craft",
+      "path": "~/Craft_Recipes"
+    },
+    {
+      "name": "EraserOnEntityHit",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eraser_on_entity_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Joke_Items"
+    },
+    {
+      "name": "Eraser",
+      "type": "tool",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eraser",
+      "path": "~/Joke_Items"
+    },
+    {
+      "name": "EraserOnBlockClick",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eraser_on_block_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Joke_Items"
     }
   ],
   "variable_elements": [],
@@ -1348,6 +1416,7 @@
       "item.food_mod.darkessenceingot": "Слиток тёмной стали",
       "advancements.syringe_achievement.title": "Sharpie on a cylinder",
       "advancements.root_achievement.descr": "Наше кулинарное приключение начинается!",
+      "item.foodandstuff_mod.eraser": "Eraser",
       "itemGroup.tabam_fa_s_ranged_weapons": "AM FaS Ranged Weapons",
       "item.foodandstuff_mod.darkessencearmor_armor_chestplate": "Dark Steel Chestplate",
       "item.food_mod.sunflower_oil": "Подсолнечное Масло",
@@ -1447,6 +1516,7 @@
       "item.food_mod.darkessenceingot": "Dark Essence Ingot",
       "advancements.syringe_achievement.title": "Sharpie on a cylinder",
       "advancements.root_achievement.descr": "Our food tour begins here!",
+      "item.foodandstuff_mod.eraser": "Eraser",
       "itemGroup.tabam_fa_s_ranged_weapons": "AM F\u0026S Ranged Weapons",
       "item.foodandstuff_mod.darkessencearmor_armor_chestplate": "Dark Steel Chestplate",
       "item.food_mod.sunflower_oil": "Sunflower Oil",

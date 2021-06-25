@@ -1,0 +1,19 @@
+{
+  "group": "foodandstuff_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "foodandstuff_mod:whetstone"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "foodandstuff_mod:kitchen_knife",
+    "count": 1
+  }
+}
