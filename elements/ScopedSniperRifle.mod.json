@@ -1,0 +1,39 @@
+{
+  "_fv": 21,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "scoped_sniper_rifle",
+    "customModelName": "Normal",
+    "name": "Scoped Sniper Rifle",
+    "specialInfo": [
+      "With the scope attached , you can see a bit futher."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:AMFaSRangedWeapons"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:SpectralFlare"
+    },
+    "shootConstantly": false,
+    "usageCount": 125,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "crossbow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 2.2,
+    "bulletDamage": 5.6,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:FlareBullet"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}
